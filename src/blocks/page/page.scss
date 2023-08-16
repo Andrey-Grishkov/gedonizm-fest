@@ -1,0 +1,13 @@
+.page {
+  box-sizing: border-box;
+  width: 100%;
+  //font-family: $fontFamily;
+  color: #000000;
+  background-color: #FFFFFF;
+  @include flex(column, center, center);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
