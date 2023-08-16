@@ -61,6 +61,10 @@ module.exports = {
       filename: 'form.html',
       template: './src/pages/form.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'ui-kit.html',
+      template: './src/pages/ui-kit.html'
+    }),
     new HtmlReplaceWebpackPlugin([
       {
         pattern: /media="\(device-width:\s\d+px\)\sand\s\(device-height:\s\d+px\)\sand\s\(-webkit-device-pixel-ratio:\s\d\)\sand\s\(orientation:\s\w+\)"/g,

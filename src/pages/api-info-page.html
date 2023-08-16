@@ -6,8 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Страница с ответом от сервера (спасибо за помощь, спасибо за заявку, страница не найдена)">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=de6ccfa4-cdb5-4899-b61d-65a7d18cfc29&lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+      var myMap = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 7
+      });
+    }
+  </script>
 </head>
 <body>
-
+<div id="map" style="width: 600px; height: 400px"></div>
 </body>
 </html>
