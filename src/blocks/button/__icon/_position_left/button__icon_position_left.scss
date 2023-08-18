@@ -1,0 +1,9 @@
+.button__icon_position_left {
+  margin-right: 4px;
+}
+
+@media all and (min-width: 1024px) {
+  .button__icon_position_left {
+    margin-right: 8px;
+  }
+}

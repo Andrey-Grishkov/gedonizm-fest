@@ -1,0 +1,7 @@
+.button__icon__pointer {
+  background-image: url("../images/icons/icon-pointer-right.svg");
+}
+
+.button:disabled .button__icon__pointer {
+  background-image: url("../images/icons/icon-pointer-disabled.svg");
+}

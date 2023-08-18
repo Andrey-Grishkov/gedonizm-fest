@@ -1,0 +1,24 @@
+.button {
+  min-width: 148px;
+  min-height: 44px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button:disabled {
+  background-color: #ebe9ed;
+  color: #96949e;
+  border: none;
+}
+
+@media all and (min-width: 1024px) {
+  .button {
+    min-width: 164px;
+    min-height: 48px;
+    border-radius: 26px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
