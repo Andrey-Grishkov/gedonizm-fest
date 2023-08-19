@@ -8,6 +8,330 @@
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
 <body>
+     <!-- поля ввода  -->
+     <section style="display: flex; flex-direction: row; ">
+      <!-- Desktop -->
+      <section class="fields-desktop" style="display: flex; flex-direction: column; gap: 44px; padding: 160px;">
+        <!-- поля без заголовка и комментария -->
+        <section style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <input type="text" class="field" placeholder="поле ввода">
+          <!-- поле с ошибкой -->
+          <input type="text" class="field field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+        </section>
+
+        <!-- поля с заголовком и без комментария -->
+        <section class="fields-desktop-title" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field" placeholder="поле ввода">
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          </section>
+        </section>
+
+        <!-- простые поля -->
+        <!-- поля без заголовка с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field" placeholder="поле ввода">
+            <label class="field_warning">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- поля с заголовком и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field" placeholder="поле ввода">
+            <label class="field_warning">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- поля с иконкой -->
+        <!-- поля с иконкой без заголовка и комментария -->
+        <section style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <input type="text" class="field field_type_icon" placeholder="поле ввода">
+          <!-- поле с ошибкой -->
+          <input type="text" class="field field_type_icon field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+        </section>
+
+        <!-- поля с иконкой с заголовком и без комментария -->
+        <section class="fields-desktop-title" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field field_type_icon" placeholder="поле ввода">
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field field_type_icon field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          </section>
+        </section>
+
+        <!-- поля с иконкой без заголовка и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field field_type_icon" placeholder="поле ввода">
+            <label class="field_warning">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field field_type_icon field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- поля с иконкой с заголовком и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field field_type_icon" placeholder="поле ввода">
+            <label class="field_warning">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <input type="text" class="field field_type_icon field_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- многострочные поля -->
+        <!-- многострочные поля без заголовка и комментария -->
+        <section style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <textarea type="text" class="field field_multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+          <!-- поле с ошибкой -->
+          <textarea type="text" class="field field_multiline field_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+        </section>
+
+        <!-- многострочные поля с заголовком и без комментария -->
+        <section class="fields-desktop-title" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <textarea type="text" class="field field_multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <textarea type="text" class="field field_multiline field_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+          </section>
+        </section>
+
+        <!-- многострочные поля без заголовка и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <textarea type="text" class="field field_multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+            <label class="field_warning">28/140 символов</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <textarea type="text" class="field field_multiline field_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+            <label class="field_warning field_warning_error">228/140 символов</label>
+          </section>
+        </section>
+
+        <!-- многострочные поля с заголовком и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <textarea type="text" class="field field_multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+            <label class="field_warning">28/140 символов</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title">название поля</label>
+            <textarea type="text" class="field field_multiline field_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+            <label class="field_warning field_warning_error">228/140 символов</label>
+          </section>
+        </section>
+      </section>
+
+      <!-- Mobile -->
+      <section class="fields-mobile" style="display: flex; flex-direction: column; gap: 48px;  padding: 160px;">
+        <!-- поля без заголовка и комментария -->
+        <section style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <input type="text" class="field field_size_mobile" placeholder="поле ввода">
+          <!-- поле с ошибкой -->
+          <input type="text" class="field field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+        </section>
+
+        <!-- поля с заголовком и без комментария -->
+        <section class="fields-mobile-title" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_size_mobile" placeholder="поле ввода">
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          </section>
+        </section>
+
+        <!-- поля без заголовка и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field field_size_mobile" placeholder="поле ввода">
+            <label class="field_warning field_warning_size_mobile">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error field_warning_size_mobile">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- поля с заголовком и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_size_mobile" placeholder="поле ввода">
+            <label class="field_warning field_warning_size_mobile">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error field_warning_size_mobile">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- поля с иконкой -->
+        <section style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <input type="text" class="field field_type_icon field_size_mobile" placeholder="поле ввода">
+          <!-- поле с ошибкой -->
+          <input type="text" class="field field_type_icon field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+        </section>
+
+        <!-- поля с иконкой с заголовком и без комментария -->
+        <section class="fields-desktop-title" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_type_icon field_size_mobile" placeholder="поле ввода">
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_type_icon field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          </section>
+        </section>
+
+        <!-- поля с иконкой без заголовка и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field field_type_icon field_size_mobile" placeholder="поле ввода">
+            <label class="field_warning field_warning_size_mobile">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <input type="text" class="field field_type_icon field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error field_warning_size_mobile">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- поля с иконкой с заголовком и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_type_icon field_size_mobile" placeholder="поле ввода">
+            <label class="field_warning field_warning_size_mobile">контекстное сообщение</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label class="field_title field_title_size_mobile">название поля</label>
+            <input type="text" class="field field_type_icon field_state_error field_size_mobile" placeholder="поле ввода" value="ошибка в активном поле ввода">
+            <label class="field_warning field_warning_error field_warning_size_mobile">сообщение об ошибке</label>
+          </section>
+        </section>
+
+        <!-- многострочные поля -->
+        <!-- поля без заголовка и комментария -->
+        <section style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <textarea type="text" class="field field_multiline field_multiline_size_mobile" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+          <!-- поле с ошибкой -->
+          <textarea type="text" class="field field_multiline field_state_error field_multiline_size_mobile" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+        </section>
+
+        <!-- многострочные поля с заголовком и без комментария -->
+        <section class="fields-desktop-title" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label for="field" class="field_title field_title_size_mobile">название поля</label>
+            <textarea type="text" class="field field_multiline field_multiline_size_mobile" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label for="field" class="field_title field_title_size_mobile">название поля</label>
+            <textarea type="text" class="field field_multiline field_state_error field_multiline_size_mobile" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+          </section>
+        </section>
+
+        <!-- многострочные поля без заголовка и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <textarea type="text" class="field field_multiline field_multiline_size_mobile" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+            <label for="field" class="field_warning field_warning_size_mobile">28/140 символов</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <textarea type="text" class="field field_multiline field_state_error field_multiline_size_mobile" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+            <label for="field" class="field_warning field_warning_error field_warning_size_mobile">228/140 символов</label>
+          </section>
+        </section>
+
+        <!-- многострочные поля с заголовком и с комментарием -->
+        <section class="fields-desktop-warning" style="display: flex; flex-direction: row; gap: 120px;">
+          <!-- неактивное, активное и заполненное поле -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label for="field" class="field_title field_title_size_mobile">название поля</label>
+            <textarea type="text" class="field field_multiline field_multiline_size_mobile" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+            <label for="field" class="field_warning field_warning_size_mobile">28/140 символов</label>
+          </section>
+          <!-- поле с ошибкой -->
+          <section style="display: flex; gap: 8px; flex-direction: column;">
+            <label for="field" class="field_title field_title_size_mobile">название поля</label>
+            <textarea type="text" class="field field_multiline field_state_error field_multiline_size_mobile" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+            <label for="field" class="field_warning field_warning_error field_warning_size_mobile">228/140 символов</label>
+          </section>
+        </section>
+      </section>
+    </section>
 
 </body>
 </html>
