@@ -1,0 +1,16 @@
+.card__like-icon{
+    margin-left: 12px;
+    margin-top: 12px;
+    width: 24px;
+    height: 24px;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+@media all and (max-width:768px) and (min-width:320px){
+    .card__like-icon{
+        object-fit: cover;
+        width: 20px;
+        height: 20px;
+    }
+}
