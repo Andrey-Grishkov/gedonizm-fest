@@ -1,0 +1,53 @@
+.header {
+  @include flex(row, space-between, center);
+  background: $color-accident;
+  padding: 20px 40px;
+
+  &__logo {
+    @include flex(row, start, center);
+    gap: 40px;
+  }
+
+  &__navigation {
+    @include flex(row, start, center);
+    gap: 8px;
+  }
+
+  &__actions {
+    @include flex(row, start, center);
+    gap: 8px;
+  }
+
+  &__menu {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .header {
+    padding: 12px 20px;
+
+    &__location {
+      display: none;
+    }
+
+    &__navigation {
+      display: none;
+    }
+
+    &__actions {
+      gap: 16px;
+      
+      &_hidden_small {
+        display: none;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}

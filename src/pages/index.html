@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Гедонизм-фест</title>
@@ -7,8 +8,32 @@
   <meta name="description" content="Главная страница проекта Гедонизм-фест">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
+
 <body class="page">
   <header class="header">
+    <div class="header__logo">
+      <a class="logo logo_size_small" href="#"></a>
+      <button class="button header__location">
+        <img src="<%=require('../images/icons/location.svg')%>">
+        Cанкт-Петербург
+      </button>
+    </div>
+    <nav class="header__navigation">
+      <a href="#" class="button">куда пойти</a>
+      <a href="#" class="button">стать участником</a>
+      <a href="#" class="button">о фестивале</a>
+    </nav>
+    <div class="header__actions">
+      <button class="button">
+        хочу пойти
+      </button>
+      <button class="button button__primary header__actions_hidden_small">
+        поддержать
+      </button>
+      <button class="header__menu">
+        <img src="<%=require('../images/icons/menu.svg')%>">
+      </button>
+    </div>
   </header>
   <main class="content">
   </main>

@@ -2,5 +2,7 @@
 @import "../vendor/fonts.css";
 
 @import "../blocks/variables.scss";
+@import "../blocks/constants.scss";
 
-
+@import "../blocks/header/header.scss";
+@import "../blocks/logo/logo.scss";

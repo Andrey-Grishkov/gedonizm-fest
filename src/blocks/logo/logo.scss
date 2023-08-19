@@ -1,0 +1,12 @@
+.logo {
+  background-image: url('../images/icons/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 210px;
+  height: 152px;
+
+  &_size_small {
+    max-width: 60px;
+    max-height: 44px;
+  }
+}
