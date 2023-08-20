@@ -44,12 +44,16 @@ $color-accident: rgba(255, 212, 0, 1);
 
   &__menu {
     display: none;
+    @include backgroundImage('../images/icons/menu.svg');
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 
     @media all and (max-width: 1439px) {
       display: block;
-      border: none;
-      background-color: transparent;
-      padding: 0;
     }
   }
 }
