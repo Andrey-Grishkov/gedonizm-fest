@@ -11,26 +11,36 @@
 
 <body class="page">
   <header class="header">
-    <div class="header__logo">
-      <a class="logo logo_size_small" href="#"></a>
-      <button class="button header__location">
-        <img src="<%=require('../images/icons/location.svg')%>" alt="Город">
-        Cанкт-Петербург
-      </button>
-    </div>
-    <nav class="header__navigation">
-      <a href="#" class="button">куда пойти</a>
-      <a href="#" class="button">стать участником</a>
-      <a href="#" class="button">о фестивале</a>
-    </nav>
-    <div class="header__actions">
-      <button class="button">
-        хочу пойти
-      </button>
-      <button class="button button__primary header__actions_hidden_small">
-        поддержать
-      </button>
-      <button class="header__menu"></button>
+    <div class="content header__content">
+      <div class="header__logo">
+        <a class="logo logo_size_small" href="#"></a>
+        <button class="button header__location">
+          <img src="<%=require('../images/icons/location.svg')%>" alt="Город">
+          Cанкт-Петербург
+        </button>
+      </div>
+      <nav>
+        <ul class="list header__navigation">
+          <li class="list__item">
+            <a href="#" class="button">куда пойти</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="button">стать участником</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="button">о фестивале</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="button">
+          хочу пойти
+        </button>
+        <button class="button button__primary header__actions_hidden_small">
+          поддержать
+        </button>
+        <button class="header__menu"></button>
+      </div>
     </div>
   </header>
   <main class="content">

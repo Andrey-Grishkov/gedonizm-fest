@@ -1,12 +1,17 @@
 $color-accident: rgba(255, 212, 0, 1);
 
 .header {
-  @include flex(row, space-between, center);
   background: $color-accident;
   padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
 
   @media all and (max-width: 1439px) {
     padding: 12px 20px;
+  }
+
+  &__content {
+    @include flex(row, space-between, center);
   }
 
   &__location {
@@ -24,7 +29,7 @@ $color-accident: rgba(255, 212, 0, 1);
     @include flex(row, start, center);
     gap: 8px;
 
-    @media all and (max-width: 1439px) {
+    @media screen and (max-width: 1439px) {
       display: none;
     }
   }
@@ -33,7 +38,7 @@ $color-accident: rgba(255, 212, 0, 1);
     @include flex(row, start, center);
     gap: 8px;
 
-    @media all and (max-width: 1439px) {
+    @media screen and (max-width: 1439px) {
       gap: 16px;
 
       &_hidden_small {
@@ -52,7 +57,7 @@ $color-accident: rgba(255, 212, 0, 1);
     height: 20px;
     cursor: pointer;
 
-    @media all and (max-width: 1439px) {
+    @media screen and (max-width: 1439px) {
       display: block;
     }
   }
