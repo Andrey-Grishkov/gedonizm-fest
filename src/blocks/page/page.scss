@@ -1,10 +1,11 @@
 .page {
   box-sizing: border-box;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   //font-family: $fontFamily;
   color: #000000;
   background-color: #FFFFFF;
-  @include flex(column, center, center);
+  // @include flex(column, center, center);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
