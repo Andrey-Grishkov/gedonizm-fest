@@ -11,51 +11,54 @@
     />
   </head>
   <body>
-    <button class="button button_type_primary">
-      <div
-        class="button__icon button__icon_position_left button__icon__list"
-      ></div>
-      <span class="button__text">кнопка</span>
-    </button>
-    <!--цвет синий, иконка СПИСОК слева -->
-    <button class="button button_type_primary">
-      <span class="button__text">кнопка</span>
-      <div
-        class="button__icon button__icon_position_right button__icon__pointer"
-      ></div></button
-    ><!--цвет синий, иконка СТРЕЛКА справа -->
-    <button class="button button_type_primary">
-      <span class="button__text">кнопка</span></button
-    ><!--цвет синий, иконки нет -->
-    <button class="button button_type_secondary">
-      <div
-        class="button__icon button__icon_position_left button__icon__like"
-      ></div>
-      <span class="button__text">кнопка</span></button
-    ><!--цвет белый, бордер есть, иконка ЛАЙК слева -->
-    <button class="button button_type_secondary">
-      <span class="button__text">кнопка</span>
-      <div
-        class="button__icon button__icon_position_right button__icon__pointer-secondary"
-      ></div></button
-    ><!--цвет белый, бордер есть, иконка СТРЕЛКА справа -->
-    <button class="button button_type_secondary">
-      <span class="button__text">кнопка</span></button
-    ><!--цвет белый, бордер есть,иконки нет -->
-    <button class="button button_type_text">
-      <span class="button__text">кнопка</span></button
-    ><!--цвет белый, бордера нет, иконки нет -->
-    <button class="button button_type_text">
-      <div
-        class="button__icon button__icon_position_left button__icon__window"
-      ></div>
-      <span class="button__text">кнопка</span></button
-    ><!--цвет белый, бордера нет, иконка ОКНА слева -->
-    <button class="button button_type_text button__hiden-button">
-      <span class="button__text">кнопка</span>
-      <div
-        class="button__icon button__icon_position_right button__icon__pointer-secondary"
-      ></div></button
-    ><!--цвет белый, бордера нет, иконка СТРЕЛКА справа -->
+    <div class="container-buttons">
+      <button class="button button_type_primary">
+        <div
+          class="button__icon button__icon_position_left button__icon__list"
+        ></div>
+        <span class="button__text">кнопка</span>
+      </button>
+      <!--цвет синий, иконка СПИСОК слева -->
+      <button class="button button_type_primary">
+        <span class="button__text">кнопка</span>
+        <div
+          class="button__icon button__icon_position_right button__icon__pointer"
+        ></div></button
+      ><!--цвет синий, иконка СТРЕЛКА справа -->
+      <button class="button button_type_primary">
+        <span class="button__text">кнопка</span></button
+      ><!--цвет синий, иконки нет -->
+      <button class="button button_type_secondary">
+        <div
+          class="button__icon button__icon_position_left button__icon_type_like"
+        ></div>
+        <span class="button__text">кнопка</span></button
+      ><!--цвет белый, бордер есть, иконка ЛАЙК слева -->
+      <button class="button button_type_secondary">
+        <span class="button__text">кнопка</span>
+        <div
+          class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
+        ></div></button
+      ><!--цвет белый, бордер есть, иконка СТРЕЛКА справа -->
+      <button class="button button_type_secondary">
+        <span class="button__text">кнопка</span></button
+      ><!--цвет белый, бордер есть,иконки нет -->
+      <button class="button button_type_text">
+        <span class="button__text">кнопка</span></button
+      ><!--цвет белый, бордера нет, иконки нет -->
+      <button class="button button_type_text">
+        <div
+          class="button__icon button__icon_position_left button__icon_type_window"
+        ></div>
+        <span class="button__text">кнопка</span></button
+      ><!--цвет белый, бордера нет, иконка ОКНА слева -->
+      <button class="button button_type_text">
+        <span class="button__text">кнопка</span>
+        <div
+          class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
+        ></div></button
+      ><!--цвет белый, бордера нет, иконка СТРЕЛКА справа
+        disabled подкючается добавлением класса button__hiden-button_state-disabled-->
+    </div>
   </body>
 </html>

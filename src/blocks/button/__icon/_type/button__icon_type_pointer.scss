@@ -2,6 +2,6 @@
   background-image: url("../images/icons/icon-pointer-right.svg");
 }
 
-.button:disabled .button__icon__pointer {
+.button__hiden-button_state-disabled .button__icon__pointer {
   background-image: url("../images/icons/icon-pointer-disabled.svg");
 }

@@ -3,17 +3,18 @@
 
 @import "../blocks/variables.scss";
 
+@import "../blocks/container-buttons/container-buttons.scss";
 @import "../blocks/button/button.scss";
 @import "../blocks/button/__icon/button__icon.scss";
-@import "../blocks/button/__icon/_position_left/button__icon_position_left.scss";
-@import "../blocks/button/__icon/_position_right/button__icon_position_right.scss";
+@import "../blocks/button/__icon/_position/button__icon_position_left.scss";
+@import "../blocks/button/__icon/_position/button__icon_position_right.scss";
 @import "../blocks/button/__text/button__text.scss";
-@import "../blocks/button/_type_primary/button_type_primary.scss";
-@import "../blocks/button/_type_secondary/button_type_secondary.scss";
-@import "../blocks/button/_type_text/button_type_text.scss";
-@import "../blocks/button/__icon/__list/button__icon__list.scss";
-@import "../blocks/button/__icon/__pointer/button__icon__pointer.scss";
-@import "../blocks/button/__icon/__like/button__icon__like.scss";
-@import "../blocks/button/__icon/__pointer-secondary/button__icon__pointer-secondary.scss";
-@import "../blocks/button/__icon/__window/button__icon__window.scss";
-@import "../blocks/button/__hiden-button/button__hiden-button.scss";
+@import "../blocks/button/_type/button_type_primary.scss";
+@import "../blocks/button/_type/button_type_secondary.scss";
+@import "../blocks/button/_type/button_type_text.scss";
+@import "../blocks/button/__icon/_type/button__icon_type_like.scss";
+@import "../blocks/button/__icon/_type/button__icon_type_list.scss";
+@import "../blocks/button/__icon/_type/button__icon_type_pointer-secondary.scss";
+@import "../blocks/button/__icon/_type/button__icon_type_pointer.scss";
+@import "../blocks/button/__icon/_type/button__icon_type_window.scss";
+@import "../blocks/button/__hiden-button/_state-disabled/button__hiden-button_state-disabled.scss";

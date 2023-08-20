@@ -1,0 +1,13 @@
+.button__hiden-button_state-disabled {
+  background-color: #ebe9ed;
+  color: #96949e;
+  border: none;
+  pointer-events: none;
+}
+@media all and (min-width: 1024px) {
+  .button__hiden-button_state-disabled.button_type_text:has(
+      .button__icon_type_pointer-secondary
+    ) {
+    visibility: hidden;
+  }
+}
