@@ -1,6 +1,12 @@
 .mainscreen__more{
-    margin-bottom: 50px;
+    margin-top: -80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
+}
+@media screen and (max-width:768px){
+    .mainscreen__more{
+        margin-top: 0px;
+    }
 }

@@ -5,4 +5,14 @@
 
 /*mainScreen */
 @import '../blocks/mainScreen/mainscreen.scss';
-@import'../blocks/mainScreen/__more/mainscreen__more.scss';
+@import'../blocks/mainScreen/__more/mainscreen__more.scss'; 
+@import'../blocks/mainScreen/__more-text/mainscreen__more-text.scss';
+@import'../blocks/mainScreen/__more-button/mainscreen__more-button.scss';
+@import'../blocks/mainScreen/__more-buttonIcon/mainscreen__more-buttonIcon.scss';
+@import'../blocks/mainScreen/__img/mainscreen__img.scss';
+/* two columns*/ 
+@import '../blocks/two-columns/two-columns.scss';
+@import '../blocks/two-columns/__title/two-columns__title.scss';
+@import '../blocks/two-columns/__maintext/two-columns__maintext.scss';
+@import '../blocks/two-columns/__paragraph/two-columns__paragraph.scss';
+@import '../blocks/two-columns/__button/two-columns__button.scss';
