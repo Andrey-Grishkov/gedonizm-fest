@@ -1,10 +1,10 @@
 .button_type_primary {
-  background-color: #5100b8;
+  background-color: #7100ff;
   color: #ffffff;
-  cursor: pointer;
+  border: none;
   &:hover {
-    background-color: #7100ff;
-    color: #fcfaf7;
-    border: none;
+    background-color: #5100b8;
+    color: #ffffff;
+    cursor: pointer;
   }
 }
