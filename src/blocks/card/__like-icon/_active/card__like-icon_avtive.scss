@@ -1,7 +1,7 @@
 .card__like-icon_active{
     background-image: url(../images/icons/iconHeartActive.svg);
 }
-@media all and (max-width:768px) and (min-width:320px){
+@media screen and (max-width:768px) {
     .card__like-icon_active{
         background-image: url(../images/icons/iconHeartMobActive.svg);
     }
