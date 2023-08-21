@@ -3,4 +3,9 @@
 
 @import "../blocks/variables.scss";
 
-
+@import "../blocks/container-tags/container-tags.scss";
+@import "../blocks/filter-tag/filter-tag.scss";
+@import "../blocks/filter-tag/__text/filter-tag__text.scss";
+@import "../blocks/filter-tag/__close/filter-tag__close.scss";
+@import "../blocks/filter-tag/_type/filter-tag_type_off.scss";
+@import "../blocks/filter-tag/_type/filter-tag_type_on.scss";

@@ -1,0 +1,25 @@
+.filter-tag {
+  min-width: 63px;
+  min-height: 40px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  transition: 1s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    color: #5100b8;
+    border: 1px solid #5100b8;
+    background-color: #fcfaf7;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .filter-tag {
+    min-width: 59px;
+    min-height: 36px;
+  }
+}
