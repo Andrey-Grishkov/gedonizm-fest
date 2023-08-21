@@ -1,0 +1,10 @@
+.logo {
+  @include backgroundImage('../images/icons/logo.svg');
+  width: 210px;
+  height: 152px;
+
+  &_size_small {
+    max-width: 60px;
+    max-height: 44px;
+  }
+}
