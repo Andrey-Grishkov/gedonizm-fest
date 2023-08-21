@@ -6,7 +6,7 @@ $color-accident: rgba(255, 212, 0, 1);
   width: 100%;
   box-sizing: border-box;
 
-  @media all and (max-width: 1439px) {
+  @media screen and (max-width: 1439px) {
     padding: 12px 20px;
   }
 
@@ -15,7 +15,7 @@ $color-accident: rgba(255, 212, 0, 1);
   }
 
   &__location {
-    @media all and (max-width: 1439px) {
+    @media screen and (max-width: 1439px) {
       display: none;
     }
   }
