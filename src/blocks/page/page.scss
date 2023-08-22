@@ -1,10 +1,10 @@
-@import "variables_general.scss";
+@import "variables.scss";
 .page {
   box-sizing: border-box;
   width: 100%;
   font-family: $fontFamily;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: $black;
+  background-color: $white;
   @include flex(column, center, center);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
