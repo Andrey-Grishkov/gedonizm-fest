@@ -2,6 +2,20 @@
 @import "../vendor/fonts.css";
 
 @import "../blocks/variables.scss";
+/*card*/ 
+@import '../blocks/card/card.scss';
+@import '../blocks/card/__like/card__like.scss';
+@import '../blocks/card/__like-icon/card__like-icon.scss';
+@import '../blocks/card/__img/card__img.scss';
+@import '../blocks/card/__wrapper/card__wrapper.scss';
+@import '../blocks/card/__type/card__type.scss';
+@import '../blocks/card/__time/card__time.scss';
+@import '../blocks/card/__title/card__title.scss';
+@import '../blocks/card/__description/card__description.scss';
+@import '../blocks/card/__adress/card__adress.scss';
+@import '../blocks/card/__more/card__more.scss';
+@import '../blocks/card/__like-icon/_active/card__like-icon_avtive.scss';
+@import '../blocks/card/__close-icon/card__close-icon.scss';
 
 @import "../blocks/field/field.scss";
 @import "../blocks/field/__input/field__input.scss";
