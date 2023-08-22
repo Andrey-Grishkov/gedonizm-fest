@@ -1,7 +1,8 @@
+@import "variables_general.scss";
 .page {
   box-sizing: border-box;
   width: 100%;
-  //font-family: $fontFamily;
+  font-family: $fontFamily;
   color: #000000;
   background-color: #FFFFFF;
   @include flex(column, center, center);

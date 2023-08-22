@@ -1,3 +1,22 @@
+// margins
+$margin0_5: 4px;
+$margin1: 8px;
+$margin1_5: 12px;
+$margin2: 16px;
+$margin2_5: 20px;
+$margin3: 24px;
+$margin4: 32px;
+$margin4_5: 36px;
+$margin5: 40px;
+$margin6: 48px;
+$margin10: 80px;
+$margin15: 120px;
+$margin20: 160px;
+$margin30: 240px;
+$margin40: 320px;
+
+$fontFamily: 'TT Firs Neue', 'Arial', sans-serif;
+
 @mixin flex($flex-direction, $justify-content, $align-items) {
   display: flex;
   flex-direction: $flex-direction;
@@ -5,6 +24,66 @@
   align-items: $align-items;
 }
 
+@mixin header($font-size){
+  font-size: $font-size;
+  font-weight: 500;
+  color: #3B3748;
+}
 
+@mixin text($font-size){
+  font-size: $font-size;
+  font-weight: 500;
+  color: #3B3748;
+}
+
+// colors
+$dark: #0C0B0E;
+$purple: #7100FF;
+$yellow: #FFD400;
+$red: #F40934;
+$green: #00B998;
+$grey: #EBE9ED;
+$light_grey: #EBE9ED;
+$snowy: #FCFAF7;
+$white: #FFFFFF;
+$violet: #5100B8;
+
+//sizes
+@mixin size($min-width){
+  min-width: $min-width;
+}
+
+@mixin button($max-width, $max-height, $background-color, $border-color){
+  max-width: $max-width;
+  max-height: $max-height;
+  border-radius: 26px;
+  background-color: $background-color;
+  border-color: $border-color;
+  &:active{
+    background-color: $purple;
+    border-color: $purple;
+  };
+  &:hover{
+    background-color: $violet;
+    border-color: $violet;
+  };
+  &:disabled{
+    background-color: $light_grey;
+    border-color: $light_grey;
+  }
+}
+
+
+// icons
+$desktop_social_media_size_icon: 48px;
+$mobile_social_media_size_icon: 48px;
+$mobile_size_icon: 20px;
+$desktop_size_icon: 24px;
+$event_size_icon: 36px;
+
+@mixin icon($size, $url){
+  max-width: $size;
+  background-image: url($url);
+}
 
 
