@@ -1,16 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Гедонизм-фест</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="UI-Kit" />
-    <meta
-      name="keywords"
-      content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные"
-    />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Гедонизм-фест</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UI-Kit">
+  <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
+</head>
+<body>
+    <!-- поля ввода  -->
+    <form>
+      <!-- поля без заголовка и комментария -->
+      <fieldset class="field">
+        <h3>поля без заголовка и комментария</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <input type="text" class="field__input" placeholder="поле ввода">
+        <!-- поле с ошибкой -->
+        <input type="text" class="field__input field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+      </fieldset>
+
+      <!-- поля с заголовком и без комментария -->
+      <fieldset>
+        <h3>поля с заголовком и без комментария</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input" placeholder="поле ввода">
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+        </fieldset>
+      </fieldset>
+
+      <!-- поля без заголовка с комментарием -->
+      <fieldset>
+        <h3>поля без заголовка с комментарием</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <input type="text" class="field__input" placeholder="поле ввода">
+          <label class="field__warning">контекстное сообщение</label>
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <input type="text" class="field__input field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          <label class="field__warning field__warning_error">сообщение об ошибке</label>
+        </fieldset>
+      </fieldset>
+
+      <!-- поля с заголовком и с комментарием -->
+      <fieldset>
+        <h3>поля с заголовком и с комментарием</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input" placeholder="поле ввода">
+          <label class="field__warning">контекстное сообщение</label>
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          <label class="field__warning field__warning_error">сообщение об ошибке</label>
+        </fieldset>
+      </fieldset>
+
+      <!-- поля с иконкой без заголовка и комментария -->
+      <fieldset>
+        <h3>поля с иконкой без заголовка и комментария</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <input type="text" class="field__input field_type_icon" placeholder="поле ввода">
+        <!-- поле с ошибкой -->
+        <input type="text" class="field__input field_type_icon field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+      </fieldset>
+
+      <!-- поля с иконкой с заголовком и без комментария -->
+      <fieldset>
+        <h3>поля с иконкой с заголовком и без комментария</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input field_type_icon" placeholder="поле ввода">
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input field_type_icon field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+        </fieldset>
+      </fieldset>
+
+      <!-- поля с иконкой без заголовка и с комментарием -->
+      <fieldset>
+        <h3>поля с иконкой без заголовка и с комментарием</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <input type="text" class="field__input field_type_icon" placeholder="поле ввода">
+          <label class="field__warning">контекстное сообщение</label>
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <input type="text" class="field__input field_type_icon field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          <label class="field__warning field__warning_error">сообщение об ошибке</label>
+        </fieldset>
+      </fieldset>
+
+      <!-- поля с иконкой с заголовком и с комментарием -->
+      <fieldset>
+        <h3>поля с иконкой с заголовком и с комментарием</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input field_type_icon" placeholder="поле ввода">
+          <label class="field__warning">контекстное сообщение</label>
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <input type="text" class="field__input field_type_icon field__input_state_error" placeholder="поле ввода" value="ошибка в активном поле ввода">
+          <label class="field__warning field__warning_error">сообщение об ошибке</label>
+        </fieldset>
+      </fieldset>
+
+      <!-- многострочные поля без заголовка и комментария -->
+      <fieldset>
+        <h3>многострочные поля без заголовка и комментария</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <textarea type="text" class="field__input field__multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+        <!-- поле с ошибкой -->
+        <textarea type="text" class="field__input field__multiline field__input_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+      </fieldset>
+
+      <!-- многострочные поля с заголовком и без комментария -->
+      <fieldset>
+        <h3>многострочные поля с заголовком и без комментария</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <textarea type="text" class="field__input field__multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <textarea type="text" class="field__input field__multiline field__input_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+        </fieldset>
+      </fieldset>
+
+      <!-- многострочные поля без заголовка и с комментарием -->
+      <fieldset>
+        <h3>многострочные поля без заголовка и с комментарием</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <textarea type="text" class="field__input field__multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+          <label class="field__warning">28/140 символов</label>
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <textarea type="text" class="field__input field__multiline field__input_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+          <label class="field__warning field__warning_error">228/140 символов</label>
+        </fieldset>
+      </fieldset>
+
+      <!-- многострочные поля с заголовком и с комментарием -->
+      <fieldset>
+        <h3>многострочные поля с заголовком и с комментарием</h3>
+        <!-- неактивное, активное и заполненное поле -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <textarea type="text" class="field__input field__multiline" placeholder="поле ввода">заполненное поле ввода в несколько строк</textarea>
+          <label class="field__warning">28/140 символов</label>
+        </fieldset>
+        <!-- поле с ошибкой -->
+        <fieldset class="field">
+          <label class="field__title">название поля</label>
+          <textarea type="text" class="field__input field__multiline field__input_state_error" placeholder="поле ввода">ошибка в активном поле ввода в несколько строк</textarea>
+          <label class="field__warning field__warning_error">228/140 символов</label>
+        </fieldset>
+      </fieldset>
+    </form>
     <div class="container-buttons">
       <button class="button button_type_primary">
         <div
