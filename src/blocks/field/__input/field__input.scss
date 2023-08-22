@@ -1,0 +1,32 @@
+.field__input {
+  width: 432px;
+  height: 24px;
+  outline: none;
+  border: 2px solid #96949e;
+  border-radius: 24px;
+  padding: 12px 24px;
+  border-style: solid;
+  font-family: 'TT Firs Neue';
+  font-size: 18px;
+  font-weight: normal;
+  color: #3b3748;
+  line-height: 24px;
+  &:focus {
+    border-color: #7100ff;
+  }
+  &::placeholder{
+    color: #96949e;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .field__input {
+    width: 280px;
+    height: 20px;
+    border-radius: 22px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    background-size: 20px 20px;
+  }
+}
