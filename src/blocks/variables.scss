@@ -5,6 +5,8 @@
   align-items: $align-items;
 }
 
-
-
-
+@mixin backgroundImage($src) {
+  background-image: url($src);
+  background-repeat: no-repeat;
+  background-position: center center;
+}

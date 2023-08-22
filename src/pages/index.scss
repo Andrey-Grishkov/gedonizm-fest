@@ -3,6 +3,7 @@
 
 @import "../blocks/variables.scss";
 
+
 @import "../blocks/container-buttons/container-buttons.scss";
 @import "../blocks/button/button.scss";
 @import "../blocks/button/__icon/button__icon.scss";
@@ -19,3 +20,8 @@
 @import "../blocks/button/__icon/_type/button__icon_type_pointer.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_window.scss";
 @import "../blocks/button/__hiden-button/_state-disabled/button__hiden-button_state-disabled.scss";
+
+@import "../blocks/content/content.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/logo/logo.scss";
+@import "../blocks/list/list.scss";
