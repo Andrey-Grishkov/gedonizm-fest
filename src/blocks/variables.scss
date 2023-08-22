@@ -86,4 +86,8 @@ $event_size_icon: 36px;
   background-image: url($url);
 }
 
-
+@mixin backgroundImage($src) {
+  background-image: url($src);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
