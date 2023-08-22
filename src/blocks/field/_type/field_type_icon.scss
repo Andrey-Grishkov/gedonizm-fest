@@ -1,0 +1,12 @@
+.field_type_icon {
+  background: url('../images/icons/field_icon.svg') no-repeat;
+  background-position: right 24px center;
+  background-size: 24px 24px;
+}
+
+@media screen and (max-width: 360px) {
+  .field_type_icon {
+    background-position: right 20px center;
+    background-size: 20px 20px;
+  }
+}

@@ -1,0 +1,15 @@
+.card {
+    max-width: 322px;
+    min-height: 388px;
+    border-radius: 24px;
+    background-color: #FCFAF7;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    @media all and (max-width:768px){
+        max-width: 360px;
+        border-radius: 0;
+}
+}
