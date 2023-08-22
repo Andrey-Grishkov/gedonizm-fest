@@ -1,0 +1,12 @@
+.button__icon_type_window {
+  background-image: url("../images/icons/icon-window.svg");
+}
+
+.button__hiden-button_state-disabled .button__icon_type_window {
+  background-image: url("../images/icons/icon-window-disabled.svg");
+}
+.button_type_text:hover {
+  .button__icon_type_window {
+    background-image: url("../images/icons/icon-window-hover.svg");
+  }
+}
