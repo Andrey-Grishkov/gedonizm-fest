@@ -1,0 +1,81 @@
+.switch__checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+
+  &:checked + .switch:before {
+    color: #FFFFFF;
+  }
+
+  &:checked + .switch__label:before {
+    transform: translateX(141px);
+    transition: transform 300ms linear;
+  }
+
+  &:checked + .switch__label {
+    color:#96949E;
+  }
+
+  & + .switch__label {
+    position: relative;
+    width: 93px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    pointer-events: none;
+    transition: color 300ms;
+    color: #FFFFFF;
+
+    &:before {
+      content: "";
+      background: #7100FF;
+      height: 48px;
+      width: 141px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 26px;
+      transform: translateX(0);
+      transition: transform 300ms;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    & + .switch__label {
+      width: 55px;
+      padding: 12px 20px;
+      border-radius: 22px;
+    }
+
+    & + .switch__label:before {
+      width: 55px;
+      height: 20px;
+      padding: 12px 20px;
+      border-radius: 22px;
+    }
+
+    &:checked + .switch__label:before {
+      transform: translateX(95px);
+    }
+  }
+}
+
+
