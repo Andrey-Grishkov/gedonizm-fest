@@ -9,18 +9,12 @@
   opacity: 0;
   z-index: 2;
 
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 2;
-
-  &:checked + .switch:before {
+ &:checked + .switch__label .switch__span-content_list {
     color: #FFFFFF;
+  }
+
+  &:checked + .switch__label .switch__image_list {
+    filter: none;
   }
 
   &:checked + .switch__label:before {
@@ -28,52 +22,17 @@
     transition: transform 300ms linear;
   }
 
-  &:checked + .switch__label {
+  &:checked + .switch__label .switch__span-content_map {
     color:#96949E;
   }
 
-  & + .switch__label {
-    position: relative;
-    width: 93px;
-    padding: 12px 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    user-select: none;
-    pointer-events: none;
-    transition: color 300ms;
-    color: #FFFFFF;
-
-    &:before {
-      content: "";
-      background: #7100FF;
-      height: 48px;
-      width: 141px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      border-radius: 26px;
-      transform: translateX(0);
-      transition: transform 300ms;
-    }
+  &:checked + .switch__label .switch__image_map {
+    filter: invert(61%) sepia(6%) saturate(355%) hue-rotate(211deg) brightness(97%) contrast(90%);
   }
+
   @media screen and (max-width: 360px) {
-    & + .switch__label {
-      width: 55px;
-      padding: 12px 20px;
-      border-radius: 22px;
-    }
-
-    & + .switch__label:before {
-      width: 55px;
-      height: 20px;
-      padding: 12px 20px;
-      border-radius: 22px;
-    }
-
     &:checked + .switch__label:before {
-      transform: translateX(95px);
+      transform: translateX(90px);
     }
   }
 }

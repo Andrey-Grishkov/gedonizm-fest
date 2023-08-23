@@ -5,6 +5,7 @@
   align-self: center;
   z-index: 2;
   pointer-events: none;
+  transition: filter .3s linear;
 }
 
 @media screen and (max-width: 360px) {

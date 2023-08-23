@@ -15,20 +15,6 @@
   color: #96949E;
   display: flex;
   flex-direction: row;
-
-  &:before {
-    content: "список";
-    position: absolute;
-    top: 4px;
-    bottom: 4px;
-    right: 0;
-    width: 109px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-    pointer-events: none;
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -45,8 +31,5 @@
   }
 }
 
-.switch__checkbox:checked + .switch:before {
-  color:#FFFFFF;
-}
 
 
