@@ -1,4 +1,4 @@
-export class card{
+export  default class Card{
     constructor(item, selector){
         this._selector = selector
         this._img = item.img
@@ -26,5 +26,6 @@ export class card{
         this._element.querySelector(".card__description").textContent = this._description;
         this._element.querySelector(".card__adress").textContent = this._adress;
         this._element.querySelector(".card__more").textContent = this._more;
+        return this._element
     }
 }

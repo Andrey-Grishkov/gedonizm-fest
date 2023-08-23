@@ -1,4 +1,4 @@
-const Data = [{
+ export const DataCards = [{
     name: 'идентичность: почему нам сложно меняться?',
     type: 'лекция',
     description: 'лектор: Мария Бархатова',
