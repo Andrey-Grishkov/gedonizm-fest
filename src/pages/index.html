@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Гедонизм-фест</title>
@@ -7,35 +8,43 @@
   <meta name="description" content="Главная страница проекта Гедонизм-фест">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
+
 <body class="page">
   <header class="header">
     <div class="content header__content">
       <div class="header__logo">
         <a class="logo logo_size_small" href="#"></a>
-        <button class="button header__location">
-          <img src="<%=require('../images/icons/location.svg')%>" alt="Город">
-          Cанкт-Петербург
+        <button class="button button_type_text header__location">
+          <span class="button__icon button__icon_position_left button__icon_type_checkpoint"></span>
+          <span class="button__text">Cанкт-Петербург</span>
         </button>
       </div>
       <nav>
         <ul class="list header__navigation">
-          <li>
-            <a href="#" class="button">куда пойти</a>
+          <li class="list__item">
+            <a href="#" class="button button_type_text">
+              <span class="button__text">куда пойти</span>
+            </a>
           </li>
-          <li>
-            <a href="#" class="button">стать участником</a>
+          <li class="list__item">
+            <a href="#" class="button button_type_text">
+             <span class="button__text">стать участником</span> 
+            </a>
           </li>
-          <li>
-            <a href="#" class="button">о фестивале</a>
+          <li class="list__item">
+            <a href="#" class="button button_type_text">
+              <span class="button__text">о фестивале</span>
+            </a>
           </li>
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="button">
-          хочу пойти
+        <button class="button button_type_text">
+          <span class="button__icon button__icon_position_left button__icon_type_like"></span>
+          <span class="button__text">хочу пойти</span>
         </button>
-        <button class="button button__primary header__actions_hidden_small">
-          поддержать
+        <button class="button button_type_primary header__actions_hidden_small">
+          <span class="button__text">поддержать</span>
         </button>
         <button class="header__menu"></button>
       </div>
@@ -48,61 +57,66 @@
       <div class="footer__illustration"></div>
       <div class="footer__block">
         <h3 class="footer__block-title">организатор:</h3>
-        <ul class="list">
-          <li>
-            <button class="button footer__button">
-              Ночлежка
-              <img class="footer__button-icon" src="<%=require('../images/icons/link.svg')%>" alt="Ссылка">
-            </button>
-          </li>
-          <li>
-            <a class="button" href="mailto:info@hedonismfest.ru">info@hedonismfest.ru</a>
-          </li>
-        </ul>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Ночлежка</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="mailto:info@hedonismfest.ru" class="button button_type_text footer__button footer__button_color_primary">
+                <span class="button__text">info@hedonismfest.ru</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="footer__block">
         <h3 class="footer__block-title">сделано с любовью:</h3>
-        <ul class="list">
-          <li>
-            <button class="button footer__button">
-              Fastsol Digital
-              <img class="footer__button-icon" src="<%=require('../images/icons/link.svg')%>" alt="Ссылка">
-            </button>
-          </li>
-          <li>
-            <button class="button footer__button">
-              shishki.collective
-              <img class="footer__button-icon" src="<%=require('../images/icons/link.svg')%>" alt="Ссылка">
-            </button>
-          </li>
-          <li>
-            <button class="button footer__button">
-              студентами Яндекс.Практикума
-              <img class="footer__button-icon" src="<%=require('../images/icons/link.svg')%>" alt="Ссылка">
-            </button>
-          </li>
-        </ul>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Fastsol Digital</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">shishki.collective</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">студентами Яндекс.Практикума</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="footer__block">
         <h3 class="footer__block-title">мы в соцсетях:</h3>
-        <ul class="list footer__social">
-          <li>
-            <a href="#" class="footer__social_icon footer__social_icon-facebook"></a>
-          </li>
-          <li>
-            <a href="#" class="footer__social_icon footer__social_icon-instagram"></a>
-          </li>
-          <li>
-            <a href="#" class="footer__social_icon footer__social_icon-vk"></a>
-          </li>
-        </ul>
-        <div class="footer__social-links">
-          
-        </div>
+        <nav class="footer__nav">
+          <ul class="list footer__social">
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_facebook"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_instagram"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_vk"></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      </div>
-      <div class="footer__social"></div>
+    </div>
     </div>
   </footer>
 </body>
+
 </html>

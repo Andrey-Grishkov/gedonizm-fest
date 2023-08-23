@@ -1,111 +1,11 @@
-$light-secondary: rgba(235, 233, 237, 1);
-
 .footer {
-  background: $light-secondary;
+  background: $light-grey;
   width: 100%;
   box-sizing: border-box;
   padding: 80px 40px;
 
   @media screen and (max-width: 1439px) {
     padding: 40px 20px;
-    background: $color-accident;
-  }
-
-  &__content {
-    @include flex(row, flex-start, flex-start);
-    gap: 40px;
-
-    @media screen and (max-width: 1439px) {
-      @include flex(column, space-between, flex-start);
-    }
-  }
-
-  &__illustration {
-    @include backgroundImage('../images/footer-illustration.svg');
-    width: 193px;
-    height: 193px;
-
-    @media screen and (max-width: 1439px) {
-      display: none;
-    }
-  }
-
-  &__block {
-    @include flex(column, flex-start, start);
-    gap: 20px;
-    flex: 1;
-
-    @media screen and (max-width: 1439px) {
-      gap: 12px;
-      width: 100%;
-    }
-
-    &-title {
-      // TODO: заменить на mixin из variables
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 36px;
-      letter-spacing: -1%;
-      margin: 0;
-
-      @media screen and (max-width: 1439px) {
-        font-size: 24px;
-        line-height: 28px;
-      }
-    }
-  }
-
-  &__button {
-    @include flex(row, flex-start, center);
-    gap: 8px;
-    width: 100%;
-
-    @media screen and (max-width: 1439px) {
-      justify-content: space-between;
-    }
-
-    &-icon {
-      // TODO: заменить, когда появятся стили на кнопки
-      width: 24px;
-      height: 24px;
-
-      @media screen and (max-width: 1439px) {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-
-  &__social {
-    @include flex(row, flex-start, center);
-    gap: 24px;
-
-    @media screen and (max-width: 1439px) {
-      gap: 16px;
-    }    
-
-    &_icon {
-      display: block;
-      width: 48px;
-      height: 48px;
-
-      @media screen and (max-width: 1439px) {
-        width: 32px;
-        height: 32px;
-        background-size: 32px;
-      }
-    }
-
-    &_icon-facebook {
-      @include backgroundImage('../images/icons/facebook.svg');
-    }
-
-    &_icon-instagram {
-      @include backgroundImage('../images/icons/instagram.svg');
-    }
-
-    &_icon-vk {
-      @include backgroundImage('../images/icons/vk.svg');
-    }
+    background: $yellow;
   }
 }

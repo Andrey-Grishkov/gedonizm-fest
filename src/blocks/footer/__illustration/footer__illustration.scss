@@ -1,0 +1,9 @@
+.footer__illustration {
+  @include backgroundImage('../images/footer-illustration.svg');
+  width: 193px;
+  height: 193px;
+
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+}
