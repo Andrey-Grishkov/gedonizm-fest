@@ -1,0 +1,19 @@
+.button__icon_type_pointer-secondary {
+  background-image: url("../images/icons/icon-pointer-right-black.svg");
+}
+
+.button__hiden-button_state-disabled .button__icon_type_pointer-secondary {
+  background-image: url("../images/icons/icon-pointer-disabled.svg");
+}
+
+.button_type_secondary:hover {
+  .button__icon_type_pointer-secondary {
+    background-image: url("../images/icons/icon-pointer-right-blue.svg");
+  }
+}
+
+.button_type_text:hover {
+  .button__icon_type_pointer-secondary {
+    background-image: url("../images/icons/icon-pointer-right-blue.svg");
+  }
+}

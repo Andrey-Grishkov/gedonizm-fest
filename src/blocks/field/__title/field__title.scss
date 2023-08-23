@@ -1,0 +1,19 @@
+.field__title {
+  width: 432px;
+  padding: 0 24px;
+  font-family: 'TT Firs Neue';
+  font-size: 18px;
+  font-style: normal;
+  color: #96949E;
+  line-height: 24px;
+  margin: 0;
+}
+
+@media screen and (max-width: 360px) {
+  .field__title {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 20px;
+    width: 280px;
+  }
+}
