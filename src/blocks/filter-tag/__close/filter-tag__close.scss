@@ -1,2 +1,18 @@
 .filter-tag__close {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/icon-close.svg");
+  background-position: center;
+  background-size: initial;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+}
+@media all and (max-width: 1024px) {
+  .filter-tag__close {
+    background-size: initial;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+  }
 }

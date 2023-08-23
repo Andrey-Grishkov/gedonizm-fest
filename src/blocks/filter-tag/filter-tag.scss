@@ -7,14 +7,8 @@
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  transition: 1s ease-in;
+  transition: 0.3s ease-in;
   cursor: pointer;
-
-  &:hover {
-    color: #5100b8;
-    border: 1px solid #5100b8;
-    background-color: #fcfaf7;
-  }
 }
 
 @media all and (max-width: 1024px) {
