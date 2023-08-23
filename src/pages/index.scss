@@ -47,3 +47,13 @@
 @import "../blocks/header/header.scss";
 @import "../blocks/logo/logo.scss";
 @import "../blocks/list/list.scss";
+
+@import "../blocks/form/form.scss";
+@import "../blocks/form/__header/form__header.scss";
+@import "../blocks/form/__body/form__body.scss";
+@import "../blocks/form/__member-how/form__member-how.scss";
+@import "../blocks/form/__steps/form__steps.scss";
+@import "../blocks/form/__steps/_item/form__steps_item.scss";
+@import "../blocks/form/__steps/_description/form__steps_description.scss";
+@import "../blocks/form/__actions/form__actions.scss";
+@import "../blocks/form/__button/form__button.scss";

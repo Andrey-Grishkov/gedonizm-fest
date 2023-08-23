@@ -1,0 +1,17 @@
+.form {
+    max-width: 1440px;
+    margin: 40px 40px 80px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    font-family: 'TT Firs Neue';
+    font-weight: normal;
+    color: #3b3748;
+}
+
+@media screen and (max-width: 360px) {
+    .form {
+        max-width: 360px;
+        margin: 20px 20px 0;
+    }
+}
