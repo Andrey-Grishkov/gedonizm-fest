@@ -48,6 +48,16 @@
 @import "../blocks/logo/logo.scss";
 @import "../blocks/list/list.scss";
 
+
+@import "../blocks/switch/switch.scss";
+@import "../blocks/switch/__checkbox/switch__checkbox.scss";
+@import "../blocks/switch/__span/switch__span.scss";
+@import "../blocks/switch/__image/switch__image.scss";
+@import "../blocks/switch/__image/_list/switch__image_list.scss";
+@import "../blocks/switch/__span-content/switch__span-content.scss";
+@import "../blocks/switch/__span-content/_map/switch__span-content_map.scss";
+@import "../blocks/switch/__label/switch__label.scss";
+
 // Header
 @import "../blocks/header/__actions/_hidden_small/header__actions_hidden_small.scss";
 @import "../blocks/header/__actions/header__actions.scss";
