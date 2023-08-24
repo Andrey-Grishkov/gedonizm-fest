@@ -1,0 +1,4 @@
+.header__logo {
+  @include flex(row, start, center);
+  gap: 40px;
+}

@@ -1,12 +1,131 @@
-@mixin flex($flex-direction, $justify-content, $align-items) {
+// margins
+$margin0-5: 4px;
+$margin1: 8px;
+$margin1-5: 12px;
+$margin2: 16px;
+$margin2-5: 20px;
+$margin3: 24px;
+$margin4: 32px;
+$margin4-5: 36px;
+$margin5: 40px;
+$margin6: 48px;
+$margin10: 80px;
+$margin15: 120px;
+$margin20: 160px;
+$margin30: 240px;
+$margin40: 320px;
+
+$fontFamily: 'TT Firs Neue', 'Arial', sans-serif;
+
+@mixin flex($flex-direction: column, $justify-content: flex-start, $align-items: flex-start) {
   display: flex;
   flex-direction: $flex-direction;
   justify-content: $justify-content;
   align-items: $align-items;
 }
 
+@mixin text($font-size, $line-height, $font-weight: 500){
+  font-family: $fontFamily;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: #3B3748;
+  margin: 0;
+  padding: 0;
+}
+
+%mainTitle {
+  @include text(96px, 96px);
+  @media screen and (max-width: 1439px) {
+    @include text(44px, 44px);
+  }
+}
+
+%secondTitle {
+  @include text(48px, 52px);
+  @media screen and (max-width: 1439px) {
+    @include text(32px, 36px);
+  }
+}
+
+%thirdTitle {
+  @include text(32px, 36px);
+  @media screen and (max-width: 1439px) {
+    @include text(24px, 28px);
+  }
+}
+
+%fourthTitle {
+  @include text(24px, 24px);
+  @media screen and (max-width: 1439px) {
+    @include text(20px, 24px);
+  }
+}
+
+%mainText {
+  @include text(18px, 24px, 400);
+  @media screen and (max-width: 1439px) {
+    @include text(16px, 20px, 400);
+  }
+}
+
+%additionalText {
+  @include text(16px, 20px, 400);
+  @media screen and (max-width: 1439px) {
+    @include text(16px, 20px, 400);
+  }
+}
+
+
+// colors
+$black: #000000;
+$dark: #0C0B0E;
+$purple: #7100FF;
+$yellow: #FFD400;
+$red: #F40934;
+$green: #00B998;
+$grey: #EBE9ED;
+$light-grey: #EBE9ED;
+$snowy: #FCFAF7;
+$white: #FFFFFF;
+$violet: #5100B8;
+
+@mixin button($max-width, $max-height, $background-color, $border-color){
+  max-width: $max-width;
+  max-height: $max-height;
+  border-radius: 26px;
+  background-color: $background-color;
+  border-color: $border-color;
+  &:active{
+    background-color: $purple;
+    border-color: $purple;
+  };
+  &:hover{
+    background-color: $violet;
+    border-color: $violet;
+  };
+  &:disabled{
+    background-color: $light-grey;
+    border-color: $light-grey;
+  }
+}
+
+
+// icons
+$desktop-social-media-size-icon: 48px;
+$mobile-social-media-size-icon: 32px;
+$mobile-size-icon: 20px;
+$desktop-size-icon: 24px;
+$event-size-icon: 36px;
+
 @mixin backgroundImage($src) {
   background-image: url($src);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@mixin icon($size, $url, $object-fit: contain){
+  max-width: $size;
+  object-fit: $object-fit;
+  @include backgroundImage($url);
 }

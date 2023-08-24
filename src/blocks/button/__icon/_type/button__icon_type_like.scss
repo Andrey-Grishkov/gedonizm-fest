@@ -1,0 +1,19 @@
+.button__icon_type_like {
+  background-image: url("../images/icons/icon-like.svg");
+}
+
+.button__hiden-button_state-disabled .button__icon_type_like {
+  background-image: url("../images/icons/icon-like-disabled.svg");
+}
+
+.button_type_text:hover {
+  .button__icon_type_like {
+    background-image: url("../images/icons/icon-like-hover.svg");
+  }
+}
+
+.button_type_secondary:hover {
+  .button__icon_type_like {
+    background-image: url("../images/icons/icon-like-hover.svg");
+  }
+}

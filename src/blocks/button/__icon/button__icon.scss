@@ -1,0 +1,14 @@
+.button__icon {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: 100%;
+}
+
+@media all and (max-width: 1024px) {
+  .button__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
