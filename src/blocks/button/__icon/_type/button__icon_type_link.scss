@@ -1,0 +1,9 @@
+.button__icon_type_link {
+  background-image: url("../images/icons/link.svg");
+}
+
+.button_type_text:hover {
+  .button__icon_type_link {
+    background-image: url("../images/icons/link-hover.svg");
+  }
+}
