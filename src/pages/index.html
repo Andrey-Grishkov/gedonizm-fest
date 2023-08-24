@@ -9,6 +9,7 @@
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
 
+
 <body class="page">
   <header class="header">
     <div class="content header__content">
@@ -50,7 +51,7 @@
       </div>
     </div>
   </header>
-  <main class="content">
+    <main class="content">
     <section class="main-screen">
       <div   class="main-screen__img"></div>
       <div class="main-screen__more">
@@ -66,6 +67,38 @@
           <button class="about__button">узнать подробнее </button>
       </div>
       </section>
+  
+    <div class="slider">
+      <div class=" content slider__content">
+      <h2 class="slider__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
+      <div class="slider__buttons">
+        <button class="button button_type_secondary">
+          <span class="button__text">посетить мастер класс</span>
+          <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+        </button>
+        <button class="button button_type_secondary">
+          <span class="button__text">выпить кофе</span>
+          <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+        </button>
+        <button class="button button_type_secondary">
+          <span class="button__text">не выходит из дома</span>
+          <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+        </button>
+        <button class="button button_type_secondary">
+          <span class="button__text">сходить на экскурсию</span>
+          <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+        </button><button class="button button_type_secondary">
+          <span class="button__text">побывать в музее</span>
+          <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+        </button>
+      </div>
+      <div class="slider__elements"></div>
+      <div class="slider__button-container">
+        <button class="button button_type_primary" style="width: 100%;">
+          <span class="button__text">смотреть все события </span></button>
+      </div>
+    </div>
+  </div>
   </main>
   <footer class="footer">
     <div class="content footer__content">
@@ -130,7 +163,24 @@
         </nav>
       </div>
     </div>
-    </div>
   </footer>
+  <template id="card">
+    <div class="card">
+      <div class="card__like">
+        <button class="card__like-icon"></button>
+      </div>
+      <img class="card__img" src="../images/img.png" alt="">
+      <div class="card__wrapper">
+        <p class="card__type"></p>
+        <p class="card__time"></p>
+      </div>
+      <p class="card__title"> </p>
+      <p class="card__description"></p>
+      <div class="card__wrapper">
+        <p class="card__adress"></p>
+        <button class="card__more"></button>
+      </div>
+    </div>
+  </template>
 </body>
 </html>

@@ -1,0 +1,8 @@
+.slider__button-container{
+    max-width: 234px; 
+    min-width: 211px;
+    margin-bottom: 80px;
+    @media all and (max-width:768px){
+        margin-bottom: 40px;
+  }
+}
