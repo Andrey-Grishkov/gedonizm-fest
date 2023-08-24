@@ -1,4 +1,4 @@
- export const DataCards = [{
+ export const dataPeterburgCards = [{
     name: 'идентичность: почему нам сложно меняться?',
     type: 'лекция',
     description: 'лектор: Мария Бархатова',

@@ -1,9 +1,5 @@
 .slider{
-    display: flex;
-    flex-direction: column;
-    padding:80px 0 0 40px;
+    max-width: 100%;
     background-color: #EBE9ED;
-    @media all and (max-width:768px){
-        padding: 40px 0 0 20px;
-    }
+    box-sizing: border-box;
 }

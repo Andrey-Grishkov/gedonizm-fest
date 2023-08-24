@@ -1,0 +1,8 @@
+.header__actions {
+  @include flex(row, start, center);
+  gap: 8px;
+
+  @media screen and (max-width: 1439px) {
+    gap: 16px;
+  }
+}

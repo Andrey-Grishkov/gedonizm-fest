@@ -3,7 +3,6 @@
     flex-direction: row;
     gap: 20px 20px;
     flex-wrap: nowrap;
-    max-width: 1680px;
     overflow: scroll;
     margin: 24px 0;
     overflow-y: hidden;
@@ -16,11 +15,5 @@
     &::-webkit-scrollbar-thumb {
         background-color: #7100FF;
         border-radius: 2px;
-        -webkit-box-shadow: 0 0 10px 10px red inset;
-        border:  solid 3px transparent;
-    }
-    &::-webkit-scrollbar-track{
-        -webkit-box-shadow: 0 0 10px 10px green inset;
-        border:  solid 3px transparent;
     }
 }

@@ -20,6 +20,7 @@ export  default class Card{
     generate(){
         this._element = this._getElement();
         this._element.querySelector(".card__img").src =this._img;
+        this._element.querySelector(".card__img").alt =this._name;
         this._element.querySelector(".card__type").textContent =this._type;
         this._element.querySelector(".card__time").textContent = this._time;
         this._element.querySelector(".card__title").textContent = this._name;
