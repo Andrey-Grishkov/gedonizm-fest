@@ -1,64 +1,10 @@
-$color-accident: rgba(255, 212, 0, 1);
-
 .header {
-  background: $color-accident;
+  background: $yellow;
   padding: 20px 40px;
   width: 100%;
   box-sizing: border-box;
 
-  @media all and (max-width: 1439px) {
+  @media screen and (max-width: 1439px) {
     padding: 12px 20px;
-  }
-
-  &__content {
-    @include flex(row, space-between, center);
-  }
-
-  &__location {
-    @media all and (max-width: 1439px) {
-      display: none;
-    }
-  }
-
-  &__logo {
-    @include flex(row, start, center);
-    gap: 40px;
-  }
-
-  &__navigation {
-    @include flex(row, start, center);
-    gap: 8px;
-
-    @media screen and (max-width: 1439px) {
-      display: none;
-    }
-  }
-
-  &__actions {
-    @include flex(row, start, center);
-    gap: 8px;
-
-    @media screen and (max-width: 1439px) {
-      gap: 16px;
-
-      &_hidden_small {
-        display: none;
-      }
-    }
-  }
-
-  &__menu {
-    display: none;
-    @include backgroundImage('../images/icons/menu.svg');
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-
-    @media screen and (max-width: 1439px) {
-      display: block;
-    }
   }
 }
