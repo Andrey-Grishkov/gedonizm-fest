@@ -129,3 +129,10 @@ $event-size-icon: 36px;
   object-fit: $object-fit;
   @include backgroundImage($url);
 }
+
+
+@mixin grid($gap: 40px, $justify-content: left){
+  display: grid;
+  gap: $gap;
+  justify-content: $justify-content;
+}

@@ -1,18 +1,14 @@
 .form__steps_item {
-    display: grid;
+    @include grid(); 
     grid-template-columns: 77px 306px 417px;
-    gap: 40px;
-    justify-content: left;
-    list-style-type: none;
     box-shadow: 0px -1px 0px 0px #EBE9ED inset;
     padding: 20px 0;
-}
 
-@media screen and (max-width: 360px) {
-    .form__steps_item {
+    @media screen and (max-width: 1439px) {
         grid-template-columns: 68px 252px; 
         grid-template-rows: auto;
         column-gap: 0;
         row-gap: 16px;
     }
 }
+

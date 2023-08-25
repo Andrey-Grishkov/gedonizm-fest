@@ -1,13 +1,10 @@
 .form__body {
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-    padding-left: 240px;
-}
-
-@media screen and (max-width: 360px) {
-    .form__body {
-        gap:20px;
+    @include flex(column, flex-start, flex-start);
+    gap: $margin3;
+    padding-left: $margin30;
+    @media screen and (max-width: 1439px) {
+        gap:$margin2-5;
         padding-left: 0;
     }
 }
+
