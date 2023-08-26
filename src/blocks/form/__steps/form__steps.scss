@@ -1,6 +1,7 @@
 .form__steps {
-  display: flex;
+  @include flex(column, flex-start, flex-start);
   justify-items: end;
-  flex-direction: column;
-  gap: 32px;
+  gap: $margin4;
+  @extend %thirdTitle;
+  list-style-type: none;
 }

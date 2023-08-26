@@ -8,43 +8,85 @@
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
 <body>
-  <section class="form" id="member">
-    <h1 class="form__header">стать участником</h1>
-    <section class="form__body">
-      <h2 class="form__member-how">как участвовать?</h2>
-      <ul class="form__steps">
-        <li class="form__steps_item">
-          <span class="form__steps_num">1</span>
-          <span class="form__steps_name">выбор категории</span>
-          <span class="form__steps_description">Определите, как вы хотите поддержать акцию: продавать напитки, блюда, провести мастер-класс или каким-то другим способом</span>
+  <form action="" class="form">
+    <h1 class="form__header">Стать участником</h1>
+    <section class="form__main" id="formMain">
+      <h2 class="form__step-name">как участвовать?</h2>
+      <ol class="form__steps">
+        <li class="form__steps-item">
+          <p class="form__steps-num">1</p>
+          <p class="form__steps-name">выбор категории</p>
+          <p class="form__steps-description">Определите, как вы хотите поддержать акцию: продавать напитки, блюда, провести мастер-класс или каким-то другим способом</p>
         </li>
-        <li class="form__steps_item">
-          <span class="form__steps_num">2</span>
-          <span class="form__steps_name">фото и описание</span>
-          <span class="form__steps_description">Подготовьте описание и фото вашего заведения. Это нужно для создания карточки в нашем каталоге событий</span>
+        <li class="form__steps-item">
+          <p class="form__steps-num">2</p>
+          <p class="form__steps-name">фото и описание</p>
+          <p class="form__steps-description">Подготовьте описание и фото вашего заведения. Это нужно для создания карточки в нашем каталоге событий</p>
         </li>
-        <li class="form__steps_item">
-          <span class="form__steps_num">3</span>
-          <span class="form__steps_name">ссылки и соцсети</span>
-          <span class="form__steps_description">Опубликуйте ссылку на вашу карточку в соцсетях, расскажите у себя на сайте, чтобы больше людей узнали о вашем участии</span>
+        <li class="form__steps-item">
+          <p class="form__steps-num">3</p>
+          <p class="form__steps-name">ссылки и соцсети</p>
+          <p class="form__steps-description">Опубликуйте ссылку на вашу карточку в соцсетях, расскажите у себя на сайте, чтобы больше людей узнали о вашем участии</p>
         </li>
-        <li class="form__steps_item">
-          <span class="form__steps_num">4</span>
-          <span class="form__steps_name">координатор</span>
-          <span class="form__steps_description">Далее с вами свяжется координатор акции, который будет помогать по любым вопросам до и во время акции</span>
+        <li class="form__steps-item">
+          <p class="form__steps-num">4</p>
+          <p class="form__steps-name">координатор</p>
+          <p class="form__steps-description">Далее с вами свяжется координатор акции, который будет помогать по любым вопросам до и во время акции</p>
         </li>
-        <li class="form__steps_item">
-          <span class="form__steps_num">5</span>
-          <span class="form__steps_name">перевод средств</span>
-          <span class="form__steps_description">После акции переведите собранные пожертвования в Ночлежку через сайт или по безналичному расчету</span>
+        <li class="form__steps-item">
+          <p class="form__steps-num">5</p>
+          <p class="form__steps-name">перевод средств</p>
+          <p class="form__steps-description">После акции переведите собранные пожертвования в Ночлежку через сайт или по безналичному расчету</p>
         </li>
-      </ul>
-      <section class="form__actions">
+      </ol>
+      <div class="form__actions">
         <button class="button button_type_primary form__button">
           заполнить форму
         </button>
-      </section>
+      </div>
     </section>
-  </section>
+
+    <section class="form__main hide" id="formCategory">
+      <div class="form__main form__step">
+        <div class="form__step-header">
+          <p class="form__step-number">шаг 1 из 4</p>
+          <h2 class="form__step-name">выберите категорию</h2>
+        </div>
+        <div class="form__step-category">
+          <input class="form__step-checkbox" type="radio" id="cafe" name="category">
+          <label class="form__step-radiobutton" for="cafe">
+            <p class="form__step-caption">кафе/бар/ресторан</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+
+          <input class="form__step-checkbox" type="radio" id="lekture" name="category">
+          <label class="form__step-radiobutton" for="lekture">
+            <p class="form__step-caption">мастер-класс/лекция</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+
+          <input class="form__step-checkbox" type="radio" id="party" name="category">
+          <label class="form__step-radiobutton" for="party">
+            <p class="form__step-caption">посиделки/вечеринка</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+
+          <input class="form__step-checkbox" type="radio" id="other" name="category">
+          <label class="form__step-radiobutton" for="other">
+            <p class="form__step-caption">другое</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+        </div>
+      </div>
+      <div class="form__actions">
+        <button class="button">
+          назад
+        </button>
+        <button class="button button_type_primary">
+          далее
+        </button>
+      </div>
+    </section>
+  </form>
 </body>
 </html>

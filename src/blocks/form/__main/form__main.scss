@@ -1,4 +1,4 @@
-.form__body {
+.form__main {
     @include flex(column, flex-start, flex-start);
     gap: $margin3;
     padding-left: $margin30;

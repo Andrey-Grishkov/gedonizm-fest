@@ -1,4 +1,6 @@
 .form__actions {
-    max-width: 880px;
-    margin-top: 8px;    
+    @include flex(row, flex-end);
+    gap: $margin1-5;
+    width: 100%;
+    margin-top: 8px;
 }

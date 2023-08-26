@@ -50,18 +50,23 @@
 
 @import "../blocks/form/form.scss";
 @import "../blocks/form/__header/form__header.scss";
-@import "../blocks/form/__body/form__body.scss";
-@import "../blocks/form/__member-how/form__member-how.scss";
-@import "../blocks/form/__steps-preview/form__steps-preview.scss";
-@import "../blocks/form/__steps-preview/_item/form__steps-preview_item.scss";
-@import "../blocks/form/__steps-preview/_description/form__steps-preview_description.scss";
+@import "../blocks/form/__main/form__main.scss";
+@import "../blocks/form/__step-name/form__step-name.scss";
+@import "../blocks/form/__steps/form__steps.scss";
+@import "../blocks/form/__steps-item/form__steps-item.scss";
+@import "../blocks/form/__steps-description/form__steps-description.scss";
+@import "../blocks/form/__steps-num/form__steps-num.scss";
+@import "../blocks/form/__steps-name/form__steps-name.scss";
 @import "../blocks/form/__actions/form__actions.scss";
 @import "../blocks/form/__button/form__button.scss";
 
-@import "../blocks/form/__body/_step/form__body_step.scss";
-@import "../blocks/form/__header-step/form__header-step.scss";
-@import "../blocks/form/__steps/form__steps.scss";
+@import "../blocks/form/__step/form__step.scss";
+@import "../blocks/form/__step-header/form__step-header.scss";
 @import "../blocks/form/__step-number/form__step-number.scss";
-@import "../blocks/form/__steps-content/form__steps-content.scss";
-@import "../blocks/form/__steps-image/form__steps-image.scss";
-@import "../blocks/form/__steps-button/form__steps-button.scss";
+@import "../blocks/form/__step-category/form__step-category.scss";
+@import "../blocks/form/__step-caption/form__step-caption.scss";
+@import "../blocks/form/__step-image/form__step-image.scss";
+@import "../blocks/form/__step-radiobutton/form__step-radiobutton.scss";
+@import "../blocks/form/__step-checkbox/form__step-checkbox.scss";
+
+@import "../blocks/hide/hide.scss";

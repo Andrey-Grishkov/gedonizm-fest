@@ -3,9 +3,9 @@
     margin: $margin3 $margin3 $margin10;
     @include flex(column, flex-start, flex-start);
     @extend %mainText;
-    gap: 40px;
-    
+    gap: $margin5;
+
     @media screen and (max-width: 1439px) {
-        margin: 20px 20px 0;
+        margin: $margin2-5 $margin2-5 0;
     }
 }
