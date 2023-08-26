@@ -1,11 +1,11 @@
-.form__steps_description {
+.form__steps-preview_description {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
 }
 
 @media screen and (max-width: 360px) {
-    .form__steps_description {
+    .form__steps-preview_description {
         grid-column: 1 / 3;
     }
 }
