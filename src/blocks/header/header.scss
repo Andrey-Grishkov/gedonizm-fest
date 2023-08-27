@@ -1,0 +1,10 @@
+.header {
+  background: $yellow;
+  padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1439px) {
+    padding: 12px 20px;
+  }
+}
