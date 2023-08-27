@@ -1,5 +1,5 @@
 export  default class Card{
-    constructor({item ,handleLikeClick}, selector){
+    constructor({item ,handleLikeClick,handleCardClick}, selector){
         this._selector = selector
         this._img = item.img
         this._name = item.name
@@ -9,6 +9,7 @@ export  default class Card{
         this._adress = item.adress
         this._more = item.more
         this._handleLikeClick = handleLikeClick;
+        this._handleCardClick =handleCardClick;
     }
     _getElement() {
         const cardElement = document.
@@ -25,8 +26,8 @@ export  default class Card{
         this._element.querySelector(".card__type").textContent =this._type;
         this._element.querySelector(".card__time").textContent = this._time;
         this._element.querySelector(".card__title").textContent = this._name;
-        this._element.querySelector(".card__description").textContent = this._shortDescription;
-        this._element.querySelector(".card__adress").textContent = this._adress;
+        this._element.querySelector(".card__description").textContent = this._shortDescription;    
+        this._element.querySelector(".card__adress").textContent = this._adress[0];
         this._element.querySelector(".card__more").textContent = this._more;
         this._setEventListeners()
         return this._element
@@ -41,6 +42,9 @@ export  default class Card{
     _setEventListeners() {
    this._element.querySelector('.card__like-icon').addEventListener('click', (evt) => {
     this._handleLikeClick(evt)
+   })
+   this._element.querySelector('.card__title').addEventListener('click', () => {
+    this._handleCardClick()
    })
     }
 }

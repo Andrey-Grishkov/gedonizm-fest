@@ -110,7 +110,9 @@
 @import '../blocks/slider/__content/slider__content.scss';
 /* popupCard*/
 @import '../blocks/popup/popup.scss';
+@import '../blocks/popup/_opened/popup_opened.scss';
 @import '../blocks/popup/__content-card/popup__content-card.scss';
+@import '../blocks/popup/__content-card/_adress-more/popup__content-card_adress-more.scss';
 @import '../blocks/popup/__content-card/_close/popup__content-card_close.scss';
 @import '../blocks/popup/__content-card/_close-icon/popup__content-card_close-icon.scss';
 @import '../blocks/popup/__content-card/_img/popup__content-card_img.scss';
