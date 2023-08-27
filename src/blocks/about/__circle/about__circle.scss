@@ -1,0 +1,9 @@
+.about__circle {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  height: 480px;
+  width: 480px;
+  border-radius: 100%;
+  background-color: $yellow;
+}

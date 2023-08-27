@@ -1,0 +1,6 @@
+.main-text {
+  position: relative;
+  @extend %mainText;
+  max-width: 537px;
+  align-self: start;
+}

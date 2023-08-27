@@ -1,0 +1,8 @@
+.about__trust-pic {
+  @include backgroundImage('../images/man-illustration.svg');
+  min-width: 480px;
+  min-height: 248px;
+  object-fit: cover;
+  margin-top: 48px;
+  padding-left: 40px;
+}

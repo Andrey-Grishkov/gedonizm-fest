@@ -1,0 +1,16 @@
+.about__help-pic {
+  // position: absolute;
+  @include backgroundImage('../images/hug-illustration.svg');
+  min-width: 480px;
+  min-height: 248px;
+  margin-top: 48px;
+}
+// .about__why-pic {
+//   @include backgroundImage('../../');
+//   width: 480px;
+//   height: 248px;
+
+//   @media screen and (max-width: 1439px) {
+//     // display: none;
+//   }
+// }

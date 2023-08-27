@@ -1,0 +1,9 @@
+.second-title {
+  padding: 0;
+  margin: 0;
+  @extend %secondTitle;
+  text-transform: lowercase;
+  margin-right: 40px;
+  align-self: start;
+  margin-bottom: $margin3;
+}

@@ -1,0 +1,11 @@
+.about__info {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(543px, 1fr));
+  row-gap: 80px;
+  column-gap: 40px;
+  justify-items: center;
+}
