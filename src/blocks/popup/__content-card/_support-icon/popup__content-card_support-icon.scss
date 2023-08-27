@@ -1,8 +1,15 @@
 .popup__content-card_support-icon{
     display: inline-block;
+    fill: none;
     width: 20px;
     height: 20px;
     background-image: url(../images/icons/field_warning_icon.svg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 40px;
     margin-right: 12px;
+    @media screen and (max-width:768px){
+        margin-right: 8px;
+        margin-left: 20px;
+    }
 }
