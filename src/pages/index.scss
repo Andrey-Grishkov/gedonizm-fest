@@ -1,7 +1,7 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts.css";
 @import "../blocks/variables.scss";
-@import "../blocks/page.scss";
+@import "../blocks/page/page.scss";
 
 /*card*/
 @import '../blocks/card/card.scss';
@@ -85,12 +85,12 @@
 
 /*mainScreen */
 @import '../blocks/mainScreen/main-screen.scss';
-@import'../blocks/mainScreen/__more/main-screen__more.scss'; 
+@import'../blocks/mainScreen/__more/main-screen__more.scss';
 @import'../blocks/mainScreen/__more-text/main-screen__more-text.scss';
 @import'../blocks/mainScreen/__more-button/main-screen__more-button.scss';
 @import'../blocks/mainScreen/__more-buttonIcon/main-screen__more-buttonIcon.scss';
 @import'../blocks/mainScreen/__img/main-screen__img.scss';
-/* about*/ 
+/* about*/
 @import '../blocks/about/about.scss';
 @import '../blocks/about/__title/about__title.scss';
 @import '../blocks/about/__maintext/about__maintext.scss';
