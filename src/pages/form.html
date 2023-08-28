@@ -8,6 +8,124 @@
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
 <body>
+  <form action="" class="form">
+    <h1 class="form__header">Стать участником</h1>
+    <fieldset class="form__main" id="formMain">
+      <h2 class="form__step-name">как участвовать?</h2>
+      <ol class="form__steps">
+        <li class="form__steps-item">
+          <p class="form__steps-num">1</p>
+          <p class="form__steps-name">выбор категории</p>
+          <p class="form__steps-description">Определите, как вы хотите поддержать акцию: продавать напитки, блюда, провести мастер-класс или каким-то другим способом</p>
+        </li>
+        <li class="form__steps-item">
+          <p class="form__steps-num">2</p>
+          <p class="form__steps-name">фото и описание</p>
+          <p class="form__steps-description">Подготовьте описание и фото вашего заведения. Это нужно для создания карточки в нашем каталоге событий</p>
+        </li>
+        <li class="form__steps-item">
+          <p class="form__steps-num">3</p>
+          <p class="form__steps-name">ссылки и соцсети</p>
+          <p class="form__steps-description">Опубликуйте ссылку на вашу карточку в соцсетях, расскажите у себя на сайте, чтобы больше людей узнали о вашем участии</p>
+        </li>
+        <li class="form__steps-item">
+          <p class="form__steps-num">4</p>
+          <p class="form__steps-name">координатор</p>
+          <p class="form__steps-description">Далее с вами свяжется координатор акции, который будет помогать по любым вопросам до и во время акции</p>
+        </li>
+        <li class="form__steps-item">
+          <p class="form__steps-num">5</p>
+          <p class="form__steps-name">перевод средств</p>
+          <p class="form__steps-description">После акции переведите собранные пожертвования в Ночлежку через сайт или по безналичному расчету</p>
+        </li>
+      </ol>
+      <div class="form__actions">
+        <button class="button button_type_primary form__button">
+          заполнить форму
+        </button>
+      </div>
+    </fieldset>
 
+    <fieldset class="form__main hide" id="formCategory">
+      <div class="form__main form__step">
+        <div class="form__step-header">
+          <p class="form__step-number">шаг 1 из 4</p>
+          <h2 class="form__step-name">выберите категорию</h2>
+        </div>
+        <div class="form__step-category">
+          <input class="form__step-checkbox" type="radio" id="cafe" name="category">
+          <label class="form__step-radiobutton" for="cafe">
+            <p class="form__step-caption">кафе/бар/ресторан</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+
+          <input class="form__step-checkbox" type="radio" id="lekture" name="category">
+          <label class="form__step-radiobutton" for="lekture">
+            <p class="form__step-caption">мастер-класс/лекция</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+
+          <input class="form__step-checkbox" type="radio" id="party" name="category">
+          <label class="form__step-radiobutton" for="party">
+            <p class="form__step-caption">посиделки/вечеринка</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+
+          <input class="form__step-checkbox" type="radio" id="other" name="category">
+          <label class="form__step-radiobutton" for="other">
+            <p class="form__step-caption">другое</p>
+            <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+          </label>
+        </div>
+      </div>
+      <div class="form__actions">
+        <button class="button">
+          назад
+        </button>
+        <button class="button button_type_primary">
+          далее
+        </button>
+      </div>
+    </fieldset>
+
+    <fieldset class="form__main hide" id="formRegisterCafe">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 2 из 4</p>
+        <h2 class="form__step-name">Заполните форму</h2>
+        <p class="form__step-description">Для участия вы можете выбрать:</p>
+        <p class="form__step-description"></p>
+        <ul class="form__step-description">
+          <li>определенную позицию из меню</li>
+          <li>группу позиций</li>
+          <li>процент от продаж определенных позиций или всего меню</li>
+        </ul>
+      </div>
+      <div class="form__step-category">
+        <input class="form__step-checkbox" type="checkbox" checked>
+        <label class="form__step-radiobutton form__step-radiobutton_checked" for="cafe">
+          <p class="form__step-caption">кафе/бар/ресторан</p>
+          <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+        </label>
+        <div class="form__step-inputs">
+          <fieldset class="field">
+            <label class="field__title">город</label>
+            <input type="text" class="field__input field_type_icon" placeholder="выберите из списка">
+          </fieldset>
+
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        далее
+      </button>
+    </div>
+  </fieldset>
+
+  </form>
 </body>
 </html>

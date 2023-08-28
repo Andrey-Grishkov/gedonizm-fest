@@ -1,0 +1,12 @@
+.form__step-category {
+  max-width: 531px;
+  @include flex(column, flex-start, flex-start);
+  gap: $margin1-5;
+  @extend %additionalText;
+  margin-top: $margin6;
+
+  @media screen and (max-width: 1439px) {
+    max-width: 320px;
+    margin-top: $margin2-5;
+  }
+}

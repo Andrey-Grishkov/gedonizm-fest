@@ -1,8 +1,9 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts.css";
-
 @import "../blocks/variables.scss";
-/*card*/ 
+@import "../blocks/page.scss";
+
+/*card*/
 @import '../blocks/card/card.scss';
 @import '../blocks/card/__like/card__like.scss';
 @import '../blocks/card/__like-icon/card__like-icon.scss';
@@ -56,7 +57,31 @@
 @import "../blocks/content/content.scss";
 @import "../blocks/logo/logo.scss";
 @import "../blocks/list/list.scss";
-@import "../blocks/page/page.scss";
+
+@import "../blocks/form/form.scss";
+@import "../blocks/form/__header/form__header.scss";
+@import "../blocks/form/__main/form__main.scss";
+@import "../blocks/form/__step-name/form__step-name.scss";
+@import "../blocks/form/__steps/form__steps.scss";
+@import "../blocks/form/__steps-item/form__steps-item.scss";
+@import "../blocks/form/__steps-description/form__steps-description.scss";
+@import "../blocks/form/__steps-num/form__steps-num.scss";
+@import "../blocks/form/__steps-name/form__steps-name.scss";
+@import "../blocks/form/__actions/form__actions.scss";
+@import "../blocks/form/__button/form__button.scss";
+
+@import "../blocks/form/__step/form__step.scss";
+@import "../blocks/form/__step-header/form__step-header.scss";
+@import "../blocks/form/__step-number/form__step-number.scss";
+@import "../blocks/form/__step-category/form__step-category.scss";
+@import "../blocks/form/__step-caption/form__step-caption.scss";
+@import "../blocks/form/__step-image/form__step-image.scss";
+@import "../blocks/form/__step-radiobutton/form__step-radiobutton.scss";
+@import "../blocks/form/__step-checkbox/form__step-checkbox.scss";
+@import "../blocks/form/__step-description/form__step-description.scss";
+@import "../blocks/form/__step-radiobutton/_checked/form__step-radiobutton_checked.scss";
+
+@import "../blocks/hide/hide.scss";
 
 /*mainScreen */
 @import '../blocks/mainScreen/main-screen.scss';
