@@ -7,42 +7,184 @@
   <meta name="description" content="Главная страница проекта Гедонизм-фест">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
+
 <body class="page">
   <header class="header">
     <div class="content header__content">
       <div class="header__logo">
         <a class="logo logo_size_small" href="#"></a>
-        <button class="button header__location">
-          <img src="<%=require('../images/icons/location.svg')%>" alt="Город">
-          Cанкт-Петербург
+        <button class="button button_type_text header__location">
+          <span class="button__icon button__icon_position_left button__icon_type_checkpoint"></span>
+          <span class="button__text">Cанкт-Петербург</span>
         </button>
       </div>
       <nav>
         <ul class="list header__navigation">
           <li class="list__item">
-            <a href="#" class="button">куда пойти</a>
+            <a href="#" class="button button_type_text">
+              <span class="button__text">куда пойти</span>
+            </a>
           </li>
           <li class="list__item">
-            <a href="#" class="button">стать участником</a>
+            <a href="#" class="button button_type_text">
+              <span class="button__text">стать участником</span>
+            </a>
           </li>
           <li class="list__item">
-            <a href="#" class="button">о фестивале</a>
+            <a href="#" class="button button_type_text">
+              <span class="button__text">о фестивале</span>
+            </a>
           </li>
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="button">
-          хочу пойти
+        <button class="button button_type_text">
+          <span class="button__icon button__icon_position_left button__icon_type_like"></span>
+          <span class="button__text">хочу пойти</span>
         </button>
-        <button class="button button__primary header__actions_hidden_small">
-          поддержать
+        <button class="button button_type_primary header__actions_hidden_small">
+          <span class="button__text">поддержать</span>
         </button>
         <button class="header__menu"></button>
       </div>
     </div>
   </header>
-  <main class="content">
+  <main>
+    <section class="main-screen">
+      <div class="main-screen__img"></div>
+      <div class="main-screen__more">
+        <p class="main-screen__more-text">Узнать больше </p>
+        <a href="#about" class="main-screen__more-button"><img class="main-screen__more-buttonIcon"
+            src="../images/icons/downPointer.svg"></a>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h2 class="about__title">просто приятно помогать</h2>
+      <div class="about__maintext">
+        <p class="about__paragraph">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
+          домашние посиделки с друзьями — и помогайте бездомным! </p>
+        <p class="about__paragraph">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
+        <button class="about__button">узнать подробнее </button>
+      </div>
+    </section>
+
+    <div class="slider">
+      <div class=" content slider__content">
+        <h2 class="slider__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
+        <div class="slider__buttons">
+          <button class="button button_type_secondary">
+            <span class="button__text">посетить мастер класс</span>
+            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+          </button>
+          <button class="button button_type_secondary">
+            <span class="button__text">выпить кофе</span>
+            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+          </button>
+          <button class="button button_type_secondary">
+            <span class="button__text">не выходит из дома</span>
+            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+          </button>
+          <button class="button button_type_secondary">
+            <span class="button__text">сходить на экскурсию</span>
+            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+          </button><button class="button button_type_secondary">
+            <span class="button__text">побывать в музее</span>
+            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+          </button>
+        </div>
+        <div class="slider__elements"></div>
+        <div class="slider__button-container">
+          <button class="button button_type_primary" style="width: 100%;">
+            <span class="button__text">смотреть все события </span></button>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="content footer__content">
+      <div class="footer__illustration"></div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">организатор:</h3>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Ночлежка</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="mailto:info@hedonismfest.ru"
+                class="button button_type_text footer__button footer__button_color_primary">
+                <span class="button__text">info@hedonismfest.ru</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">сделано с любовью:</h3>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Fastsol Digital</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">shishki.collective</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">студентами Яндекс.Практикума</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">мы в соцсетях:</h3>
+        <nav class="footer__nav">
+          <ul class="list footer__social">
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_facebook"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_instagram"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_vk"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <template id="card">
+    <div class="card">
+      <div class="card__like">
+        <button class="card__like-icon"></button>
+      </div>
+      <img class="card__img" src="../images/img.png" alt="">
+      <div class="card__wrapper">
+        <p class="card__type"></p>
+        <p class="card__time"></p>
+      </div>
+      <p class="card__title"> </p>
+      <p class="card__description"></p>
+      <div class="card__wrapper">
+        <p class="card__adress"></p>
+        <button class="card__more"></button>
+      </div>
+    </div>
+  </template>
+  <div id="location-popover" class="popover">
+    <ul class="popover__list"></ul>
+  </div>
 </body>
 </html>

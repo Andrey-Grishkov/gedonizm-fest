@@ -1,0 +1,29 @@
+.switch__label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    gap: 0;
+
+    &:before {
+      content: "";
+      background: #7100FF;
+      height: 48px;
+      width: 141px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 26px;
+      transform: translateX(0);
+      transition: transform 300ms;
+    }
+}
+
+@media screen and (max-width: 360px) {
+     .switch__label:before {
+      width: 50px;
+      height: 20px;
+      padding: 12px 20px;
+      border-radius: 22px;
+    }
+}

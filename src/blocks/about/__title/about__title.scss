@@ -1,0 +1,14 @@
+.about__title {
+    margin: 0 40px 0 0;
+    width: 44vh;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    font-family: 'TT Firs Neue';
+    @media screen and (max-width:768px){
+        margin: 0 auto 12px auto;
+        width: 320px;
+        font-size: 32px;
+        line-height: 36px;
+}
+}
