@@ -56,6 +56,7 @@
 @import "../blocks/content/content.scss";
 @import "../blocks/logo/logo.scss";
 @import "../blocks/list/list.scss";
+@import "../blocks/page/page.scss";
 
 /*mainScreen */
 @import '../blocks/mainScreen/main-screen.scss';
@@ -113,3 +114,11 @@
 @import '../blocks/slider/__elements/slider__elements.scss';
 @import '../blocks/slider/__button-container/slider__button-container.scss';
 @import '../blocks/slider/__content/slider__content.scss';
+
+// Popover
+@import "../blocks/popover/popover.scss";
+@import "../blocks/popover/_visible/popover_visible.scss";
+@import "../blocks/popover/__list/popover__list.scss";
+@import "../blocks/popover/__list-item/popover__list-item.scss";
+@import "../blocks/popover/__list-item/_selected/popover__list-item_selected.scss";
+@import "../blocks/popover/__list-icon/popover__list-icon.scss";
