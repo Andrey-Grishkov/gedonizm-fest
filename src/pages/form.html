@@ -10,6 +10,7 @@
 <body>
   <form action="" class="form">
     <h1 class="form__header">Стать участником</h1>
+    <!-- начальная форма -->
     <fieldset class="form__main hide" id="formMain">
       <h2 class="form__step-name">как участвовать?</h2>
       <ol class="form__steps">
@@ -46,6 +47,8 @@
       </div>
     </fieldset>
 
+    <!-- Шаг 1 -->
+    <!-- выбор категории мероприятия -->
     <fieldset class="form__main hide" id="formCategory">
       <div class="form__main form__step">
         <div class="form__step-header">
@@ -88,6 +91,8 @@
       </div>
     </fieldset>
 
+    <!-- Шаг 2 -->
+    <!-- начало регистрации (кафе) -->
     <fieldset class="form__main hide" id="formRegisterCafe">
     <div class="form__main form__step">
       <div class="form__step-header">
@@ -141,6 +146,7 @@
     </div>
   </fieldset>
 
+  <!-- начало регистрации (лекция) -->
   <fieldset class="form__main hide" id="formRegisterLekture">
     <div class="form__main form__step">
       <div class="form__step-header">
@@ -202,6 +208,7 @@
     </div>
   </fieldset>
 
+  <!-- начало регистрации (вечеринка) -->
   <fieldset class="form__main hide" id="formRegisterParty">
     <div class="form__main form__step">
       <div class="form__step-header">
@@ -271,7 +278,8 @@
     </div>
   </fieldset>
 
-  <fieldset class="form__main" id="formRegisterOther">
+  <!-- начало регистрации (другое) -->
+  <fieldset class="form__main hide" id="formRegisterOther">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 2 из 4</p>
@@ -321,6 +329,214 @@
             <label class="field__title">телефон для связи с организатором</label>
             <input type="text" class="field__input" placeholder="+7(">
           </fieldset>
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        далее
+      </button>
+    </div>
+  </fieldset>
+
+  <!-- Шаг 3 -->
+  <!-- контакты (кафе) -->
+  <fieldset class="form__main hide" id="formContactsCafe">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 3 из 4</p>
+        <h2 class="form__step-name">укажите контакты и часы работы</h2>
+        <p class="form__step-description">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий.</p>
+      </div>
+      <div class="form__step-category">
+        <div class="form__step-inputs">
+          <fieldset class="field">
+            <label class="field__title">часы работы заведения</label>
+            <input type="text" class="field__input field_type_icon" placeholder="например: 10:00-13:00, 13:00-19:00">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">адрес заведения</label>
+            <input type="text" class="field__input" placeholder="каждый адрес с новой строки">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">номер телефона заведения</label>
+            <input type="text" class="field__input" placeholder="+7(" value="+7(">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">ссылка на сайт</label>
+            <input type="text" class="field__input" placeholder="https://" value="https://">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">ссылки на соцсети</label>
+            <input type="text" class="field__input" placeholder="каждую ссылку с новой строки">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">описание</label>
+            <textarea type="text" class="field__input field__multiline" placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
+          </fieldset>
+
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        далее
+      </button>
+    </div>
+  </fieldset>
+
+  <!-- контакты (лекция) -->
+  <fieldset class="form__main hide" id="formContactsLekture">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 3 из 4</p>
+        <h2 class="form__step-name">укажите контакты и часы работы</h2>
+        <p class="form__step-description">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий.</p>
+      </div>
+      <div class="form__step-category">
+        <div class="form__step-inputs">
+          <fieldset class="field">
+            <label class="field__title">время проведения</label>
+            <input type="text" class="field__input field_type_icon" placeholder="например: 18:00-22:00">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">адрес проведения</label>
+            <input type="text" class="field__input" placeholder="каждый адрес с новой строки">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">номер телефона для бронирования</label>
+            <input type="text" class="field__input" placeholder="+7(" value="+7(">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">стоимость участия</label>
+            <input type="text" class="field__input" placeholder="укажите стоимость в рублях">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">описание</label>
+            <textarea type="text" class="field__input field__multiline" placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"></textarea>
+          </fieldset>
+
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        далее
+      </button>
+    </div>
+  </fieldset>
+
+  <!-- контакты (вечеринка) -->
+  <fieldset class="form__main" id="formContactsParty">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 3 из 4</p>
+        <h2 class="form__step-name">укажите контакты и часы работы</h2>
+        <p class="form__step-description">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий.</p>
+      </div>
+      <div class="form__step-category">
+        <div class="form__step-inputs">
+          <fieldset class="field">
+            <label class="field__title">время проведения</label>
+            <input type="text" class="field__input field_type_icon" placeholder="например: 18:00-22:00">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">адрес проведения</label>
+            <input type="text" class="field__input" placeholder="каждый адрес с новой строки">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">номер телефона для бронирования</label>
+            <input type="text" class="field__input" placeholder="+7(" value="+7(">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">стоимость участия</label>
+            <input type="text" class="field__input" placeholder="укажите стоимость в рублях">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">ссылка на сайт</label>
+            <input type="text" class="field__input" placeholder="https://" value="https://">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">ссылки на соцсети</label>
+            <input type="text" class="field__input" placeholder="каждую ссылку с новой строки">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">описание</label>
+            <textarea type="text" class="field__input field__multiline" placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"></textarea>
+          </fieldset>
+
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        далее
+      </button>
+    </div>
+  </fieldset>
+
+  <!-- контакты (другое) -->
+  <fieldset class="form__main hide" id="formContactsOther">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 3 из 4</p>
+        <h2 class="form__step-name">укажите контакты и часы работы</h2>
+        <p class="form__step-description">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий.</p>
+      </div>
+      <div class="form__step-category">
+        <div class="form__step-inputs">
+          <fieldset class="field">
+            <label class="field__title">время проведения</label>
+            <input type="text" class="field__input field_type_icon" placeholder="например: 18:00-22:00">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">адрес проведения</label>
+            <input type="text" class="field__input" placeholder="каждый адрес с новой строки">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">номер телефона для бронирования</label>
+            <input type="text" class="field__input" placeholder="+7(" value="+7(">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">стоимость участия</label>
+            <input type="text" class="field__input" placeholder="укажите стоимость в рублях">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">описание</label>
+            <textarea type="text" class="field__input field__multiline" placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
+          </fieldset>
+
         </div>
       </div>
     </div>
