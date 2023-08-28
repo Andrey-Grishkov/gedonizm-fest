@@ -10,7 +10,7 @@
 <body>
   <form action="" class="form">
     <h1 class="form__header">Стать участником</h1>
-    <section class="form__main" id="formMain">
+    <fieldset class="form__main" id="formMain">
       <h2 class="form__step-name">как участвовать?</h2>
       <ol class="form__steps">
         <li class="form__steps-item">
@@ -44,9 +44,9 @@
           заполнить форму
         </button>
       </div>
-    </section>
+    </fieldset>
 
-    <section class="form__main hide" id="formCategory">
+    <fieldset class="form__main hide" id="formCategory">
       <div class="form__main form__step">
         <div class="form__step-header">
           <p class="form__step-number">шаг 1 из 4</p>
@@ -86,7 +86,46 @@
           далее
         </button>
       </div>
-    </section>
+    </fieldset>
+
+    <fieldset class="form__main hide" id="formRegisterCafe">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 2 из 4</p>
+        <h2 class="form__step-name">Заполните форму</h2>
+        <p class="form__step-description">Для участия вы можете выбрать:</p>
+        <p class="form__step-description"></p>
+        <ul class="form__step-description">
+          <li>определенную позицию из меню</li>
+          <li>группу позиций</li>
+          <li>процент от продаж определенных позиций или всего меню</li>
+        </ul>
+      </div>
+      <div class="form__step-category">
+        <input class="form__step-checkbox" type="checkbox" checked>
+        <label class="form__step-radiobutton form__step-radiobutton_checked" for="cafe">
+          <p class="form__step-caption">кафе/бар/ресторан</p>
+          <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+        </label>
+        <div class="form__step-inputs">
+          <fieldset class="field">
+            <label class="field__title">город</label>
+            <input type="text" class="field__input field_type_icon" placeholder="выберите из списка">
+          </fieldset>
+
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        далее
+      </button>
+    </div>
+  </fieldset>
+
   </form>
 </body>
 </html>
