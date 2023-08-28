@@ -178,6 +178,24 @@
 @import "../blocks/popover/__list-item/_selected/popover__list-item_selected.scss";
 @import "../blocks/popover/__list-icon/popover__list-icon.scss";
 
+// Photo-block
+@import "../blocks/photo-block/photo__block.scss";
+@import "../blocks/photo-block/__title/photo-block__title.scss";
+@import "../blocks/photo-block/__subtitle/photo-block__subtitle.scss";
+
+//gallery
+@import "../blocks/gallery/gallery.scss";
+@import "../blocks/gallery/__image/gallery__image.scss";
+@import "../blocks/gallery/__image1/gallery__image1.scss";
+@import "../blocks/gallery/__image2/gallery__image2.scss";
+@import "../blocks/gallery/__image3/gallery__image3.scss";
+@import "../blocks/gallery/__image4/gallery__image4.scss";
+@import "../blocks/gallery/__image5/gallery__image5.scss";
+@import "../blocks/gallery/__image/_mobile_visible/gallery__image_mobile_visible.scss";
+@import "../blocks/gallery/__slider/gallery__slider.scss";
+@import "../blocks/gallery/__slider-item/gallery__slider-item.scss";
+@import "../blocks/gallery/__slider-item/_active/gallery__slider-item_active.scss";
+
 // Team
 @import "../blocks/team/team.scss";
 @import "../blocks/team/__title/team__title.scss";
