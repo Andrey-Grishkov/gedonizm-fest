@@ -6,15 +6,15 @@ import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');
-const cardPopup= new popupCard('#popup-card');
-cardPopup.setEventListeners()
+const cardPopup= new popupCard('.popup');
 if(sliderContainerElement) {
 const CardforSlider = new Section({items:dataPeterburgCards,
      renderer: (item) =>{
-     const card = new Card({item:item,handleLikeClick:(evt)=>{
+     const card = new Card({item:item, handleLikeClick:(evt)=>{
           card.likeCard(evt)
-     },handleCardClick: ()=>{
+     }, handleCardClick: ()=>{
           cardPopup.open(item)
+          cardPopup.setEventListeners()
      }},'#card')
      const cardElement = card.generate()
      CardforSlider.addItem(cardElement)
