@@ -1,0 +1,19 @@
+.filter-tag {
+  min-width: 63px;
+  min-height: 40px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  .filter-tag {
+    min-width: 59px;
+    min-height: 36px;
+  }
+}

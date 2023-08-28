@@ -17,6 +17,15 @@
 @import '../blocks/card/__like-icon/_active/card__like-icon_avtive.scss';
 @import '../blocks/card/__close-icon/card__close-icon.scss';
 
+@import "../blocks/container-tags/container-tags.scss";
+@import "../blocks/filter-tag/filter-tag.scss";
+@import "../blocks/filter-tag/__text/filter-tag__text.scss";
+@import "../blocks/filter-tag/__close/filter-tag__close.scss";
+@import "../blocks/filter-tag/_type/filter-tag_type_off.scss";
+@import "../blocks/filter-tag/_type/filter-tag_type_on.scss";
+@import "../blocks/filter-tag/__close/_state/filter-tag__close_state_visible.scss";
+@import "../blocks/filter-tag/__close/_state/filter-tag__close_state_invisible.scss";
+
 @import "../blocks/field/field.scss";
 @import "../blocks/field/__input/field__input.scss";
 @import "../blocks/field/_type/field_type_icon.scss";
@@ -49,7 +58,6 @@
 @import "../blocks/list/list.scss";
 @import "../blocks/page/page.scss";
 
-
 /*mainScreen */
 @import '../blocks/mainScreen/main-screen.scss';
 @import'../blocks/mainScreen/__more/main-screen__more.scss'; 
@@ -63,7 +71,6 @@
 @import '../blocks/about/__maintext/about__maintext.scss';
 @import '../blocks/about/__paragraph/about__paragraph.scss';
 @import '../blocks/about/__button/about__button.scss';
-
 
 @import "../blocks/switch/switch.scss";
 @import "../blocks/switch/__checkbox/switch__checkbox.scss";
