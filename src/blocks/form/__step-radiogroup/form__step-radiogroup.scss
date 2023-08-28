@@ -1,13 +1,17 @@
 .form__step-radiogroup {
-  @include flex(row);
-  gap: $margin1;
-  width: 531px;
   cursor: pointer;
+  background: url("../images/icons/icon-radio-off.svg") no-repeat left;
+  background-size: $margin3;
+  margin: $margin1-5 0;
+  padding-left: $margin4;
 
-  & + .form__step-checkbox:checked {
-    & + img:nth-child(1) {
-        src: url("../images/icons/icon-radio-on.svg");
-    }
+  .form__step-checkbox:checked + & {
+    background-image: url("../images/icons/icon-radio-on.svg");
+  }
+
+  @media screen and (max-width: 1439px) {
+    background-size: $margin2-5;
+    padding-left: $margin3;
   }
 }
 
