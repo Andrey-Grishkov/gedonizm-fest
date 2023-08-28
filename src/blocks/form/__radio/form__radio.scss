@@ -1,0 +1,6 @@
+.form__radio {
+  @include flex(column, flex-start, flex-start);
+  @extend %mainText;
+  margin: $margin2-5 0;
+  gap: $margin2;
+}

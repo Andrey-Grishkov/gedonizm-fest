@@ -10,7 +10,7 @@
 <body>
   <form action="" class="form">
     <h1 class="form__header">Стать участником</h1>
-    <fieldset class="form__main" id="formMain">
+    <fieldset class="form__main hide" id="formMain">
       <h2 class="form__step-name">как участвовать?</h2>
       <ol class="form__steps">
         <li class="form__steps-item">
@@ -98,7 +98,7 @@
         <ul class="form__step-description">
           <li>определенную позицию из меню</li>
           <li>группу позиций</li>
-          <li>процент от продаж определенных позиций или всего меню</li>
+          <li><span>процент от продаж определенных позиций или всего меню</span></li>
         </ul>
       </div>
       <div class="form__step-category">
@@ -112,7 +112,89 @@
             <label class="field__title">город</label>
             <input type="text" class="field__input field_type_icon" placeholder="выберите из списка">
           </fieldset>
+          <fieldset class="field">
+            <label class="field__title">название заведения</label>
+            <input type="text" class="field__input" placeholder="введите название заведения">
+          </fieldset>
+          <fieldset class="field">
+            <label class="field__title">контактное лицо</label>
+            <input type="text" class="field__input" placeholder="введите ФИО">
+          </fieldset>
+          <fieldset class="field">
+            <label class="field__title">телефон для связи с организатором</label>
+            <input type="text" class="field__input" placeholder="+7(">
+          </fieldset>
+          <fieldset class="field">
+            <label class="field__title">описание</label>
+            <textarea type="text" class="field__input field__multiline" placeholder="Укажите, что из меню будет принимать участие в акции"></textarea>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        далее
+      </button>
+    </div>
+  </fieldset>
 
+  <fieldset class="form__main" id="formRegisterLekture">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 2 из 4</p>
+        <h2 class="form__step-name">Заполните форму</h2>
+        <p class="form__step-description">Определитесь с типом мероприятия — лекция, консультация или мастер-класс.</p>
+        <p class="form__step-description"></p>
+        <p class="form__step-description">Когда люди будут покупать билеты, вам будут приходить уведомления на электронную почту.</p>
+      </div>
+      <div class="form__step-category">
+        <input class="form__step-checkbox" type="checkbox" checked>
+        <label class="form__step-radiobutton form__step-radiobutton_checked" for="cafe">
+          <p class="form__step-caption">мастер-класс/лекция</p>
+          <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
+        </label>
+        <div class="form__step-inputs">
+          <div class="form__radio">
+            <input class="form__step-checkbox" type="radio" id="lektureOnline" name="lektureOnline" checked>
+            <label class="form__step-radiogroup" for="lektureOnline">
+              <img class="form__step-image" src="../images/icons/icon-radio-on.svg" alt="онлайн">
+              <p class="form__step-caption">онлайн</p>
+            </label>
+
+            <input class="form__step-checkbox" type="radio" id="lektureOffline" name="lektureOnline">
+            <label class="form__step-radiogroup" for="lektureOffline">
+              <img class="form__step-image" src="../images/icons/icon-radio-off.svg" alt="оффлайн">
+              <p class="form__step-caption">оффлайн</p>
+            </label>
+          </div>
+
+          <fieldset class="field">
+            <label class="field__title">город</label>
+            <input type="text" class="field__input field_type_icon" placeholder="выберите из списка">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">название мероприятия</label>
+            <input type="text" class="field__input" placeholder="введите название">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">дата проведения</label>
+            <input type="text" class="field__input" placeholder="укажите дату в формате дд.мм.гггг">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">контактное лицо</label>
+            <input type="text" class="field__input" placeholder="введите ФИО">
+          </fieldset>
+
+          <fieldset class="field">
+            <label class="field__title">телефон для связи с организатором</label>
+            <input type="text" class="field__input" placeholder="+7(">
+          </fieldset>
         </div>
       </div>
     </div>

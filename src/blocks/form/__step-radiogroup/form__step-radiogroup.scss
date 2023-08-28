@@ -1,0 +1,13 @@
+.form__step-radiogroup {
+  @include flex(row);
+  gap: $margin1;
+  width: 531px;
+  cursor: pointer;
+
+  & + .form__step-checkbox:checked {
+    & + img:nth-child(1) {
+        src: url("../images/icons/icon-radio-on.svg");
+    }
+  }
+}
+
