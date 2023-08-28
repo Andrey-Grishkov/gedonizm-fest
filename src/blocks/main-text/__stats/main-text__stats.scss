@@ -2,4 +2,9 @@
   position: absolute;
   max-width: 303px;
   bottom: $margin5;
+
+  @media screen and (max-width: 1199px) {
+    bottom: -$margin15;
+    text-align: center;
+  }
 }

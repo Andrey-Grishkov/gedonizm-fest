@@ -6,4 +6,8 @@
   margin-right: 40px;
   align-self: start;
   margin-bottom: $margin3;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
 }

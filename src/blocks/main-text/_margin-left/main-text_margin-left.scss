@@ -1,4 +1,8 @@
 .main-text_margin-left {
   margin-left: 280px;
   margin-right: -40px;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+  }
 }

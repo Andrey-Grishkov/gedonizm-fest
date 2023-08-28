@@ -5,4 +5,9 @@
   object-fit: cover;
   margin-top: 48px;
   padding-left: 40px;
+
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }

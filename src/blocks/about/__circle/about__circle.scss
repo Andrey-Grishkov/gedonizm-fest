@@ -6,4 +6,9 @@
   width: 480px;
   border-radius: 100%;
   background-color: $yellow;
+
+  @media screen and (max-width: 1199px) {
+    height: 320px;
+    width: 320px;
+  }
 }
