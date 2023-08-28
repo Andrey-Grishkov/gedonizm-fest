@@ -298,11 +298,11 @@
         </label>
         <div class="form__step-inputs">
           <div class="form__radio">
-            <input class="form__step-checkbox" type="radio" id="lektureOnline" name="lektureOnline" checked>
-            <label class="form__step-radiogroup" for="lektureOnline">онлайн</label>
+            <input class="form__step-checkbox" type="radio" id="otherOnline" name="otherOnline" checked>
+            <label class="form__step-radiogroup" for="otherOnline">онлайн</label>
 
-            <input class="form__step-checkbox" type="radio" id="lektureOffline" name="lektureOnline">
-            <label class="form__step-radiogroup" for="lektureOffline">оффлайн</label>
+            <input class="form__step-checkbox" type="radio" id="otherOffline" name="otherOnline">
+            <label class="form__step-radiogroup" for="otherOffline">оффлайн</label>
           </div>
 
           <fieldset class="field">
@@ -445,7 +445,7 @@
   </fieldset>
 
   <!-- контакты (вечеринка) -->
-  <fieldset class="form__main" id="formContactsParty">
+  <fieldset class="form__main hide" id="formContactsParty">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
@@ -550,6 +550,41 @@
     </div>
   </fieldset>
 
-  </form>
+  <!-- Шаг 4 -->
+  <fieldset class="form__main" id="formFoto">
+    <div class="form__main form__step">
+      <div class="form__step-header">
+        <p class="form__step-number">шаг 4 из 4</p>
+        <h2 class="form__step-name">добавьте фото</h2>
+        <p class="form__step-description">Как правило, профессиональные фото выглядят более привлекательно.</p>
+        <p class="form__step-description"></p>
+        <p class="form__step-description">Технические требования:</p>
+        <p class="form__step-description"></p>
+        <ul class="form__step-description">
+          <li>формат: jpeg, png</li>
+          <li>вес: не более 5 МБ</li>
+          <li>альбомная ориентация</li>
+          <li>соотношение сторон: 16:9</li>
+          <li>ширина не менее 1600 пикселей</li>
+        </ul>
+      </div>
+      <div class="form__step-category">
+        <div class="form__foto">
+          <img src="../images/icons/icon-foto.svg" alt="фото" class="form__foto-icon">
+          <span class="form__foto-label"></span>
+        </div>
+      </div>
+    </div>
+    <div class="form__actions">
+      <button class="button">
+        назад
+      </button>
+      <button class="button button_type_primary">
+        завершить
+      </button>
+    </div>
+  </fieldset>
+
+</form>
 </body>
 </html>
