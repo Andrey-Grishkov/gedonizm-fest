@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Гедонизм-фест</title>
@@ -81,7 +82,7 @@
             <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
           </button>
           <button class="button button_type_secondary">
-            <span class="button__text">не выходит из дома</span>
+            <span class="button__text">не выходить из дома</span>
             <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
           </button>
           <button class="button button_type_secondary">
@@ -165,6 +166,91 @@
       </div>
     </div>
   </footer>
+  <div class="popup">
+    <div class=" popup-card">
+      <div class="popup-card__close">
+        <div class="popup__close"></div>
+      </div>
+      <img class="popup-card__img" src="../images/img.png" alt="">
+      <div class="popup-card__support">
+        <div class="popup-card__support-icon"></div>
+        <p class="popup-card__support-text"> перечисляем в
+          пользу Ночлежки 10% от выручки</p>
+      </div>
+      <div class="popup-card__content">
+        <div class="popup-card__wrapper">
+          <p class="popup-card__type">тип</p>
+          <p class="popup-card__time">время</p>
+        </div>
+        <p class="popup-card__title">Название</p>
+        <p class="popup-card__description">Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь
+          состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а
+          какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно
+          обратить на это внимание и переписать их, сделав подлинно своими.<br>
+          апра
+        </p>
+        <div class="popup-card__wrapper popup-card__wrapper-grey">
+          <p class="popup-card__info-text">длительность</p>
+          <p class="popup-card__info-text" id="duration"></p>
+        </div>
+        <div class="popup-card__wrapper">
+          <p class="popup-card__info-text">стоимость</p>
+          <p class="popup-card__info-text" id="cost">11</p>
+        </div>
+        <div class="popup-card__wrapper popup-card__wrapper-grey">
+          <p class="popup-card__info-text">площадка</p>
+          <p class="popup-card__info-text" id="place">11</p>
+        </div>
+        <div class="popup-card__wrapper">
+          <p class="popup-card__info-text">адрес</p>
+          <div class="popup-card__adress-wrapper">
+            <p class="popup-card__info-text" id="adress">11</p>
+            <p class=" popup-card__info-text popup-card__adress-more"></p>
+          </div>
+        </div>
+        <div class="popup-card__wrapper popup-card__wrapper-grey">
+          <p class="popup-card__info-text">телефон</p>
+          <p class="popup-card__info-text" id="phone">11</p>
+        </div>
+        <div class="popup-card__wrapper ">
+          <p class="popup-card__info-text">соц.сети</p>
+          <p class="popup-card__info-text" id="social">11</p>
+        </div>
+        <div class="popup-card__wrapper popup-card__share">
+          <div class="footer__block popup-card__share-links">
+            <h3 class="footer__block-title">мы в соцсетях:</h3>
+            <nav class="footer__nav popup-card__share-icons">
+              <ul class="list footer__social">
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_facebook"></a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_vk"></a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_twitter"></a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_telegram"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="button button_type_text popup-card__share-text">
+            <div class="button__icon button__icon_position_left button__icon_type_window "></div>скопировать ссылку
+          </button>
+        </div>
+      </div>
+      <div class="popup-card__buttons">
+        <button class="button button_type_secondary popup-card__button" >
+          <div class="button__icon button__icon_position_left button__icon_type_like"></div>
+          <span class="button__text">хочу пойти</span>
+        </button>
+        <button class="button button_type_primary  popup-card__button " >
+          <span class="button__text">купить билет</span></button>
+      </div>
+    </div>
+  </div>
   <template id="card">
     <div class="card">
       <div class="card__like">

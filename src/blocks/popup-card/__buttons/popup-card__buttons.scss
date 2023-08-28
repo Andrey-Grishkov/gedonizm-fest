@@ -1,0 +1,4 @@
+.popup-card__buttons{
+    @include flex(row, center, flex-start);
+    padding-top: 20px;
+}
