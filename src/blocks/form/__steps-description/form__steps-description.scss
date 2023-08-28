@@ -1,0 +1,7 @@
+.form__steps-description {
+  @extend %mainText;
+
+  @media screen and (max-width: 1439px) {
+    grid-column: 1 / 3;
+  }
+}

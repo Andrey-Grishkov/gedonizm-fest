@@ -2,7 +2,9 @@
 @import "../vendor/fonts.css";
 @import "../blocks/page/page_hidden.scss";
 @import "../blocks/variables.scss";
-/*card*/ 
+@import "../blocks/page/page.scss";
+
+/*card*/
 @import '../blocks/card/card.scss';
 @import '../blocks/card/__like/card__like.scss';
 @import '../blocks/card/__like-icon/card__like-icon.scss';
@@ -57,14 +59,39 @@
 @import "../blocks/logo/logo.scss";
 @import "../blocks/list/list.scss";
 
+@import "../blocks/form/form.scss";
+@import "../blocks/form/__header/form__header.scss";
+@import "../blocks/form/__main/form__main.scss";
+@import "../blocks/form/__step-name/form__step-name.scss";
+@import "../blocks/form/__steps/form__steps.scss";
+@import "../blocks/form/__steps-item/form__steps-item.scss";
+@import "../blocks/form/__steps-description/form__steps-description.scss";
+@import "../blocks/form/__steps-num/form__steps-num.scss";
+@import "../blocks/form/__steps-name/form__steps-name.scss";
+@import "../blocks/form/__actions/form__actions.scss";
+@import "../blocks/form/__button/form__button.scss";
+
+@import "../blocks/form/__step/form__step.scss";
+@import "../blocks/form/__step-header/form__step-header.scss";
+@import "../blocks/form/__step-number/form__step-number.scss";
+@import "../blocks/form/__step-category/form__step-category.scss";
+@import "../blocks/form/__step-caption/form__step-caption.scss";
+@import "../blocks/form/__step-image/form__step-image.scss";
+@import "../blocks/form/__step-radiobutton/form__step-radiobutton.scss";
+@import "../blocks/form/__step-checkbox/form__step-checkbox.scss";
+@import "../blocks/form/__step-description/form__step-description.scss";
+@import "../blocks/form/__step-radiobutton/_checked/form__step-radiobutton_checked.scss";
+
+@import "../blocks/hide/hide.scss";
+
 /*mainScreen */
 @import '../blocks/mainScreen/main-screen.scss';
-@import'../blocks/mainScreen/__more/main-screen__more.scss'; 
+@import'../blocks/mainScreen/__more/main-screen__more.scss';
 @import'../blocks/mainScreen/__more-text/main-screen__more-text.scss';
 @import'../blocks/mainScreen/__more-button/main-screen__more-button.scss';
 @import'../blocks/mainScreen/__more-buttonIcon/main-screen__more-buttonIcon.scss';
 @import'../blocks/mainScreen/__img/main-screen__img.scss';
-/* about*/ 
+/* about*/
 @import '../blocks/about/about.scss';
 @import '../blocks/about/__title/about__title.scss';
 @import '../blocks/about/__maintext/about__maintext.scss';
@@ -115,6 +142,7 @@
 @import '../blocks/slider/__elements/slider__elements.scss';
 @import '../blocks/slider/__button-container/slider__button-container.scss';
 @import '../blocks/slider/__content/slider__content.scss';
+
 /* popup*/
 @import '../blocks/popup/popup.scss';
 @import '../blocks/popup/_opened/popup_opened.scss';
@@ -141,3 +169,11 @@
 @import '../blocks/popup-card/__adress-more/popup-card__adress-more.scss';
 @import '../blocks/popup-card/__buttons/popup-card__buttons.scss';
 @import '../blocks/popup-card/__button/popup-card__button.scss';
+
+// Popover
+@import "../blocks/popover/popover.scss";
+@import "../blocks/popover/_visible/popover_visible.scss";
+@import "../blocks/popover/__list/popover__list.scss";
+@import "../blocks/popover/__list-item/popover__list-item.scss";
+@import "../blocks/popover/__list-item/_selected/popover__list-item_selected.scss";
+@import "../blocks/popover/__list-icon/popover__list-icon.scss";

@@ -1,0 +1,7 @@
+.form__steps {
+  @include flex(column, flex-start, flex-start);
+  justify-items: end;
+  gap: $margin4;
+  @extend %thirdTitle;
+  list-style-type: none;
+}

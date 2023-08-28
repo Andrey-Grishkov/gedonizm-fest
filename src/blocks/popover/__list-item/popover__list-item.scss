@@ -1,0 +1,10 @@
+.popover__list-item {
+  padding: 12px 24px;
+  @include flex(row, space-between, center);
+  gap: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+}

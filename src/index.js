@@ -4,6 +4,8 @@ import Section from './scripts/section';
 import Card from './scripts/Card';
 import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
+import { LocationPopover } from './scripts/Popover';
+
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');
 const cardPopup= new popupCard('.popup');
@@ -21,6 +23,10 @@ const CardforSlider = new Section({items:dataPeterburgCards,
 }}, '.slider__elements')
 CardforSlider.renderItems()
 }
+
+// Выбор локации
+const locationPopover = new LocationPopover('#location-popover', '.header__location');
+locationPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург'], 'Санкт-Петербург');
 
 /* фильтр-тэги */
 const containerTags = document.querySelector(".container-tags");

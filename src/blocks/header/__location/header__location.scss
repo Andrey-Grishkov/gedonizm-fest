@@ -1,4 +1,6 @@
 .header__location {
+  justify-content: flex-start;
+  min-width: 230px;
   @media screen and (max-width: 1439px) {
     display: none;
   }
