@@ -1,0 +1,8 @@
+.team {
+  padding: 0 40px 80px;
+
+  @media screen and (max-width: 1439px) {
+    background-color: $light-grey;
+    padding: 40px 20px;
+  }
+}
