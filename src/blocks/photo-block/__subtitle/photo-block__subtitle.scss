@@ -1,0 +1,8 @@
+.photo-block__subtitle {
+  @extend %mainText;
+  margin-top: 24px;
+  
+  @media screen and (max-width: 1439px) {
+    margin-top: 12px;    
+  }
+}

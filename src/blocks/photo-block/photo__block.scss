@@ -1,0 +1,10 @@
+.photo-block {
+  padding: 80px 40px;
+  background-color: $snowy;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1439px) {
+    padding: 40px 20px;
+  }
+}
