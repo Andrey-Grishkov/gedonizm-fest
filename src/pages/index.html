@@ -59,7 +59,7 @@
             src="../images/icons/downPointer.svg"></a>
       </div>
     </section>
-    <section id="about" class="about">
+    <section id="about" class="about content">
       <h2 class="about__title">просто приятно помогать</h2>
       <div class="about__maintext">
         <p class="about__paragraph">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
@@ -100,11 +100,12 @@
         </div>
       </div>
     </div>
-    <div class="photo-block">
+    <div class="photo-block content">
       <h2 class="photo-block__title">#hedonismfest</h2>
       <p class="photo-block__subtitle">Ставь хештег и попади в ленту на сайте</p>
       <div class="gallery">
-        <img class="gallery__image gallery__image1 gallery__image_mobile_visible" src="<%=require('../images/gallery/image-1.svg')%>">
+        <img class="gallery__image gallery__image1 gallery__image_mobile_visible"
+          src="<%=require('../images/gallery/image-1.svg')%>">
         <img class="gallery__image gallery__image2" src="<%=require('../images/gallery/image-2.svg')%>">
         <img class="gallery__image gallery__image3" src="<%=require('../images/gallery/image-3.svg')%>">
         <img class="gallery__image gallery__image4" src="<%=require('../images/gallery/image-4.svg')%>">
@@ -117,6 +118,19 @@
           <div class="gallery__slider-item"></div>
         </div>
       </div>
+    </div>
+    <div class="team content">
+      <h2 class="team__title">уже в команде</h2>
+      <ul class="team__list">
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+      </ul>
     </div>
   </main>
   <footer class="footer">
@@ -260,11 +274,11 @@
         </div>
       </div>
       <div class="popup-card__buttons">
-        <button class="button button_type_secondary popup-card__button" >
+        <button class="button button_type_secondary popup-card__button">
           <div class="button__icon button__icon_position_left button__icon_type_like"></div>
           <span class="button__text">хочу пойти</span>
         </button>
-        <button class="button button_type_primary  popup-card__button " >
+        <button class="button button_type_primary  popup-card__button ">
           <span class="button__text">купить билет</span></button>
       </div>
     </div>
@@ -291,4 +305,5 @@
     <ul class="popover__list"></ul>
   </div>
 </body>
+
 </html>

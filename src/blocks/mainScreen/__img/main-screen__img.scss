@@ -1,14 +1,13 @@
 .main-screen__img {
-    background-image: url(../images/logo_size_big.jpg);
-    background-size: cover;
-    background-position: center center;
+    @include backgroundImage("../images/logo_size_big.svg");
     max-width: 1440px;
     width: 100%;
     height: 720px;
     box-sizing: border-box;
-    @media screen and (max-width:768px){
+
+    @media screen and (max-width:768px) {
         height: 600px;
         margin: 0 auto;
-        background-image: url(../images/logo_size_mob.jpg);
-}
+        background-image: url(../images/logo_size_mob.svg);
+    }
 }
