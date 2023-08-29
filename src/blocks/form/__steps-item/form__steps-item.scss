@@ -5,7 +5,7 @@
    padding: $margin2-5 0;
    max-width: 100%;
 
-   @media screen and (max-width: 1439px) {
+   @media screen and (max-width: $desktop) {
       grid-template-columns: 68px auto;
       grid-template-rows: auto;
       column-gap: 0;

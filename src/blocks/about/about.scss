@@ -3,7 +3,7 @@
     flex-direction: row;
     margin: 30px auto 0 auto;
     justify-content: center;
-    @media screen and (max-width:768px){   
+    @media screen and (max-width:$tablet){   
             flex-direction: column;
             margin: 0 auto;
 }

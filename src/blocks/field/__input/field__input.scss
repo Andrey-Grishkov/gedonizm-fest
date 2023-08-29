@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: $desktop) {
   .field__input {
     width: 280px;
     height: 20px;
