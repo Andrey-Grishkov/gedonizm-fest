@@ -7,11 +7,45 @@
   <meta name="description" content="Форма участника">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
-<body>
+<body class="page">
+  <header class="header">
+    <div class="content header__content">
+      <div class="header__logo">
+        <a class="logo logo_size_small" href="#"></a>
+        <button class="button header__location">
+          <img src="<%=require('../images/icons/location.svg')%>" alt="Город">
+          Cанкт-Петербург
+        </button>
+      </div>
+      <nav>
+        <ul class="list header__navigation">
+          <li class="list__item">
+            <a href="#" class="button">куда пойти</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="button">стать участником</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="button">о фестивале</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="button">
+          хочу пойти
+        </button>
+        <button class="button button__primary header__actions_hidden_small">
+          поддержать
+        </button>
+        <button class="header__menu"></button>
+      </div>
+    </div>
+  </header>
+
   <form action="" class="form">
     <h1 class="form__header">Стать участником</h1>
     <!-- начальная форма -->
-    <fieldset class="form__main hide" id="formMain">
+    <fieldset class="form__main" id="formMain">
       <h2 class="form__step-name">как участвовать?</h2>
       <ol class="form__steps">
         <li class="form__steps-item">
@@ -41,7 +75,7 @@
         </li>
       </ol>
       <div class="form__actions">
-        <button class="button button_type_primary form__button">
+        <button class="button button_type_primary form__button" id="next" type="button">
           заполнить форму
         </button>
       </div>
@@ -49,7 +83,7 @@
 
     <!-- Шаг 1 -->
     <!-- выбор категории мероприятия -->
-    <fieldset class="form__main hide" id="formCategory">
+    <fieldset class="form__main hidden" id="formCategory">
       <div class="form__main form__step">
         <div class="form__step-header">
           <p class="form__step-number">шаг 1 из 4</p>
@@ -93,7 +127,7 @@
 
     <!-- Шаг 2 -->
     <!-- начало регистрации (кафе) -->
-    <fieldset class="form__main hide" id="formRegisterCafe">
+    <fieldset class="form__main hidden" id="formRegisterCafe">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 2 из 4</p>
@@ -147,7 +181,7 @@
   </fieldset>
 
   <!-- начало регистрации (лекция) -->
-  <fieldset class="form__main hide" id="formRegisterLekture">
+  <fieldset class="form__main hidden" id="formRegisterLekture">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 2 из 4</p>
@@ -209,7 +243,7 @@
   </fieldset>
 
   <!-- начало регистрации (вечеринка) -->
-  <fieldset class="form__main hide" id="formRegisterParty">
+  <fieldset class="form__main hidden" id="formRegisterParty">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 2 из 4</p>
@@ -279,7 +313,7 @@
   </fieldset>
 
   <!-- начало регистрации (другое) -->
-  <fieldset class="form__main hide" id="formRegisterOther">
+  <fieldset class="form__main hidden" id="formRegisterOther">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 2 из 4</p>
@@ -344,7 +378,7 @@
 
   <!-- Шаг 3 -->
   <!-- контакты (кафе) -->
-  <fieldset class="form__main hide" id="formContactsCafe">
+  <fieldset class="form__main hidden" id="formContactsCafe">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
@@ -397,7 +431,7 @@
   </fieldset>
 
   <!-- контакты (лекция) -->
-  <fieldset class="form__main hide" id="formContactsLekture">
+  <fieldset class="form__main hidden" id="formContactsLekture">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
@@ -445,7 +479,7 @@
   </fieldset>
 
   <!-- контакты (вечеринка) -->
-  <fieldset class="form__main hide" id="formContactsParty">
+  <fieldset class="form__main hidden" id="formContactsParty">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
@@ -503,7 +537,7 @@
   </fieldset>
 
   <!-- контакты (другое) -->
-  <fieldset class="form__main hide" id="formContactsOther">
+  <fieldset class="form__main hidden" id="formContactsOther">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
@@ -551,7 +585,7 @@
   </fieldset>
 
   <!-- Шаг 4 -->
-  <fieldset class="form__main" id="formFoto">
+  <fieldset class="form__main hidden" id="formFoto">
     <div class="form__main form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 4 из 4</p>

@@ -4,8 +4,20 @@
     @include flex(column, flex-start, flex-start);
     @extend %mainText;
     gap: $margin5;
+    justify-self: center;
+
+    @media screen and (min-width: 1488px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (max-width: 1439px) {
-        margin: $margin2-5 $margin2-5 0;
+        max-width: 825px;
+        margin: $margin2-5 auto 0;
+    }
+
+    @media screen and (max-width: 865px) {
+        margin-left: $margin2-5;
+        margin-right: $margin2-5;
     }
 }
