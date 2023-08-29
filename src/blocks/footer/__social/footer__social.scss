@@ -2,7 +2,7 @@
   @include flex(row, flex-start, center);
   gap: 24px;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     gap: 16px;
   }
 }

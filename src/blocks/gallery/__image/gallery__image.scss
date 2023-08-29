@@ -1,7 +1,7 @@
 .gallery__image {
   width: 100%;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $tablet) {
     display: none;  
     max-height: 320px; 
   }

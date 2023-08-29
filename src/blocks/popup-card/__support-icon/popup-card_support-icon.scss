@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     margin-left: 40px;
     margin-right: 12px;
-    @media screen and (max-width:768px){
+    @media screen and (max-width:$tablet){
         margin-right: 8px;
         margin-left: 20px;
     }

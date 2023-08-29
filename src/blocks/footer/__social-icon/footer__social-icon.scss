@@ -3,7 +3,7 @@
   width: $desktop-social-media-size-icon;
   height: $desktop-social-media-size-icon;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     width: $mobile-social-media-size-icon;
     height: $mobile-social-media-size-icon;
     background-size: $mobile-social-media-size-icon;

@@ -1,3 +1,9 @@
+// breakpoints
+$mobile: 360px;
+$tablet: 767px;
+$desktop: 1439px;
+
+
 // margins
 $margin0-5: 4px;
 $margin1: 8px;
@@ -36,42 +42,42 @@ $fontFamily: 'TT Firs Neue', 'Arial', sans-serif;
 
 %mainTitle {
   @include text(96px, 96px);
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     @include text(44px, 44px);
   }
 }
 
 %secondTitle {
   @include text(48px, 52px);
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     @include text(32px, 36px);
   }
 }
 
 %thirdTitle {
   @include text(32px, 36px);
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     @include text(24px, 28px);
   }
 }
 
 %fourthTitle {
   @include text(24px, 24px);
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     @include text(20px, 24px);
   }
 }
 
 %mainText {
   @include text(18px, 24px, 400);
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     @include text(16px, 20px, 400);
   }
 }
 
 %additionalText {
   @include text(16px, 20px, 400);
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     @include text(16px, 20px, 400);
   }
 }

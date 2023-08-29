@@ -1,7 +1,7 @@
 .popup-card__button{
     width: 304px;
     margin-right: 12px;
-    @media screen and (max-width:768px){
+    @media screen and (max-width:$tablet){
         width: 154px;
     }
 }

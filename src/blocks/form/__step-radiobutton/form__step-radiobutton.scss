@@ -11,7 +11,7 @@
   cursor: pointer;
   z-index: 2;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     height: 20px;
     width: 280px;
     padding: $margin1-5 $margin2-5;

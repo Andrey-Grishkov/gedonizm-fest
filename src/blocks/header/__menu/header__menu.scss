@@ -8,7 +8,7 @@
   height: 20px;
   cursor: pointer;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     display: block;
   }
 }

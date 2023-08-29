@@ -2,7 +2,7 @@
     max-width: 234px; 
     min-width: 211px;
     margin-bottom: 80px;
-    @media all and (max-width:768px){
+    @media all and (max-width:$tablet){
         margin-bottom: 40px;
   }
 }

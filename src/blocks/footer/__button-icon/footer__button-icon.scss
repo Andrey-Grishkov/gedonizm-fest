@@ -2,7 +2,7 @@
   width: $desktop-size-icon;
   height: $desktop-size-icon;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $tablet) {
     width: $mobile-size-icon;
     height: $mobile-size-icon;
   }
