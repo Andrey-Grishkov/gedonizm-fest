@@ -4,4 +4,8 @@
     font-weight: 500;
     line-height: 24px;
     font-family: 'TT Firs Neue';
+    cursor: pointer;
+    &:hover{
+        opacity: 0.4;
+    }
 }

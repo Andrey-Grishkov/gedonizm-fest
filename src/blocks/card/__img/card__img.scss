@@ -3,4 +3,8 @@
     object-fit: cover;
     overflow: hidden;
     width: 100%;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.4;
+    }
 }
