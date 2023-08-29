@@ -1,0 +1,8 @@
+.about__subtitle_margin_left {
+  margin-left: 280px;
+  margin-right: 0;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+  }
+}

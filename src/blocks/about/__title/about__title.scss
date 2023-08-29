@@ -1,0 +1,14 @@
+.about__title {
+  @extend %mainTitle;
+  margin: $margin5;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 1440px) {
+    margin: 20px;
+    max-width: 640px;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: 280px;
+  }
+}
