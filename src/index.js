@@ -41,7 +41,6 @@ if (containerTagsTypeEvt) {
         );
         const tagElement = filterTag.generate();
         tagForContainer.addItem(tagElement);
-        filterTag.setEventListeners();
       },
     },
     ".container-tags_type_evt"
@@ -62,8 +61,6 @@ if (containerTagsTypeDays) {
         );
         const tagElement = filterTag.generate();
         tagForContainer.addItem(tagElement);
-
-        filterTag.setEventListeners();
       },
     },
     ".container-tags_type_days"

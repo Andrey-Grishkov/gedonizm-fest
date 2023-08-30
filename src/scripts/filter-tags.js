@@ -1,14 +1,28 @@
 export default class FilterTag {
   constructor(selectorContainerTags, selectorFilterTag, item, idTemplate) {
-    this.containerTags = document.querySelector(selectorContainerTags);
-    this.filterTags = this.containerTags.querySelectorAll(selectorFilterTag);
+    this._containerTags = document.querySelector(selectorContainerTags);
+
+    this._filterTags = this._containerTags.querySelectorAll(selectorFilterTag);
     this._selectorFilterTag = selectorFilterTag;
     this._item = item;
     this._idTemplate = idTemplate;
   }
+  //метод находит массив фильтр-тегов и первому индуксу присваиваем класс "без крестика"
+  _toogleFirstTag(element) {
+    const arrFilterTag = element.querySelectorAll(this._selectorFilterTag);
+    if (arrFilterTag.length > 0) {
+      arrFilterTag[0].classList.replace(
+        "filter-tag_close_yes",
+        "filter-tag_close_no"
+      );
+    }
+  }
+
   //метод меняет стиль тэгов (колбэк слушателя событий)
   _togglTagStyle(evt) {
     const filterTag = evt.target.closest(".filter-tag");
+    const filterTagParentElement = filterTag.parentElement;
+    this._toogleFirstTag(filterTagParentElement);
     if (filterTag.classList.contains("filter-tag_type_off")) {
       //если тег неактивный
       filterTag.classList.replace("filter-tag_type_off", "filter-tag_type_on"); // то делаем его активным
@@ -36,18 +50,8 @@ export default class FilterTag {
   _disableOtherTags(evt) {
     const filterTag = evt.target.closest(".filter-tag");
     const filterTagParentElement = filterTag.parentElement;
-    //находим масств фильтр-тегов и первому индуксу присваиваем класс "без крестика"
-    const arrFilterTag = filterTagParentElement.querySelectorAll(
-      this._selectorFilterTag
-    );
-    if (arrFilterTag.length > 0) {
-      arrFilterTag[0].classList.replace(
-        "filter-tag_close_yes",
-        "filter-tag_close_no"
-      );
-    }
-
-    if (this.containerTags.querySelector(".filter-tag_close_no")) {
+    this._toogleFirstTag(filterTagParentElement);
+    if (this._containerTags.querySelector(".filter-tag_close_no")) {
       if (
         //если активен тег "все",
         filterTag.classList.contains("filter-tag_type_on") &
@@ -86,22 +90,23 @@ export default class FilterTag {
       .querySelector(this._idTemplate)
       .content.querySelector(".filter-tag")
       .cloneNode(true);
+
     return tagElement;
   }
   //метод добавления фильтр-тега
   generate() {
     this._element = this._getElement();
     this._element.querySelector(".filter-tag__text").textContent = this._item;
+    this._setEventListeners(this._element);
     return this._element;
   }
 
   //метод - набор слушателей
-  setEventListeners() {
-    this.filterTags.forEach((tag) => {
-      tag.addEventListener("click", (evt) => {
-        this._togglTagStyle(evt);
-        this._disableOtherTags(evt);
-      });
+
+  _setEventListeners(element) {
+    element.addEventListener("click", (evt) => {
+      this._togglTagStyle(evt);
+      this._disableOtherTags(evt);
     });
   }
 }
