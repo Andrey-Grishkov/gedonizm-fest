@@ -1,5 +1,5 @@
 import './pages/index.scss';
-import { buttonUp } from './scripts/constants';
+import { buttonUp, configPhotoGallery, initialPhotoGalleryImages } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
 import Section from './scripts/section';
@@ -42,24 +42,14 @@ if (containerTags) {
      filterTagEvent.setEventListeners();
 }
 
-if(buttonUp) {
-  new ButtonUpManager(buttonUp).addEventListener();
+if (buttonUp) {
+     new ButtonUpManager(buttonUp).addEventListener();
 }
 
 // Слайдер для фото-галереи
 
-const photoGallery = new PhotoGallery({
-     rootSelector: '.gallery',
-     imageClass: 'gallery__image',
-     sliderSelector: '.gallery__slider',
-     sliderItemClass: 'gallery__slider-item',
-     activeImageClass: 'gallery__image_mobile_visible',
-     activeSliderItemClass: 'gallery__slider-item_active'
-});
-photoGallery.setImages([
-     { src: '../images/gallery/image-park.svg', alt: 'Парк' },
-     { src: '../images/gallery/image-girl.svg', alt: 'Девушка' },
-     { src: '../images/gallery/image-coctails.svg', alt: 'Коктели' },
-     { src: '../images/gallery/image-exhibition.svg', alt: 'Выставка' },
-     { src: '../images/gallery/image-party.svg', alt: 'Вечеринка' }
-]);
+const galleryContainerElement = document.querySelector(configPhotoGallery.rootSelector);
+if (galleryContainerElement) {
+     const photoGallery = new PhotoGallery(configPhotoGallery);
+     photoGallery.setImages(initialPhotoGalleryImages);
+}
