@@ -5,6 +5,7 @@
     border: 0 none;
     background-color: transparent;
     background-image: url(../images/icons/iconHeart.svg);
+    z-index: 2;
     cursor: pointer;
     &:hover {
         opacity: 0.5;

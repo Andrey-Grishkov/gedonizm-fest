@@ -3,8 +3,9 @@
     object-fit: cover;
     overflow: hidden;
     width: 100%;
+    z-index: 1;
     cursor: pointer;
     &:hover{
-        opacity: 0.4;
+        opacity: 0.8;
     }
 }

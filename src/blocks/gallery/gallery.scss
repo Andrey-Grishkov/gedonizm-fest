@@ -1,0 +1,12 @@
+.gallery {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  margin-top: 40px; 
+
+  @media screen and (max-width: 1439px) {
+    display: block; 
+    margin-top: 20px;  
+  }
+}

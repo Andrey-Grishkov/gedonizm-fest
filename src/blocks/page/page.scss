@@ -1,14 +1,11 @@
-@import "variables.scss";
 .page {
   box-sizing: border-box;
   width: 100%;
-  font-family: $fontFamily;
-  color: $black;
-  background-color: $white;
-  @include flex(column, center, center);
+  background-color: $snowy;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @extend %mainText;
 }
