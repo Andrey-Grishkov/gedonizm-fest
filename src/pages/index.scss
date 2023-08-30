@@ -44,6 +44,7 @@
 @import "../blocks/button/__icon/_type/button__icon_type_pointer.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_window.scss";
 @import "../blocks/button/__hiden-button/_state-disabled/button__hiden-button_state-disabled.scss";
+@import "../blocks/button/__hiden-button/_state-hidden/button__hiden-button_state-hidden.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_link";
 
 @import "../blocks/content/content.scss";
@@ -82,7 +83,7 @@
 @import "../blocks/about/__info/about__info.scss";
 @import "../blocks/about/__title/about__title.scss";
 @import "../blocks/about/__text-list/about__text-list.scss";
-@import "../blocks/about/__text-list/_part/about__text-list_part.scss";
+@import "../blocks/about/__text-list/about__text-list-part.scss";
 @import "../blocks/about/__text-list/_stats/about__text-list_stats.scss";
 @import "../blocks/about/__text-list/_stats/_position/about__text-list_stats_position_left.scss";
 @import "../blocks/about/__text-list/_stats/_position/about__text-list_stats_position_right.scss";
