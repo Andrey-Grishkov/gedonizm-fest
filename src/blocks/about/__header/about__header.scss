@@ -1,0 +1,8 @@
+.about__header {
+  margin: $margin5;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 640px) {
+    margin: $margin5;
+  }
+}

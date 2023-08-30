@@ -42,10 +42,12 @@
 @import "../blocks/button/__icon/button__icon.scss";
 @import "../blocks/button/__icon/_position/button__icon_position_left.scss";
 @import "../blocks/button/__icon/_position/button__icon_position_right.scss";
+@import "../blocks/button/__icon/_position/button__icon_position_center.scss";
 @import "../blocks/button/__text/button__text.scss";
 @import "../blocks/button/_type/button_type_primary.scss";
 @import "../blocks/button/_type/button_type_secondary.scss";
 @import "../blocks/button/_type/button_type_text.scss";
+@import "../blocks/button/_type/button_type_up.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_like.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_list.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_checkpoint.scss";
@@ -53,6 +55,7 @@
 @import "../blocks/button/__icon/_type/button__icon_type_pointer.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_window.scss";
 @import "../blocks/button/__hiden-button/_state-disabled/button__hiden-button_state-disabled.scss";
+@import "../blocks/button/__hiden-button/_state-hidden/button__hiden-button_state-hidden.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_link";
 
 @import "../blocks/content/content.scss";
@@ -134,6 +137,29 @@
 @import "../blocks/footer/__social-icon/footer__social-icon.scss";
 @import "../blocks/footer/__social/footer__social.scss";
 @import "../blocks/footer/footer.scss";
+
+// About
+@import "../blocks/page/page.scss";
+@import "../blocks/about/about.scss";
+@import "../blocks/about/__info/about__info.scss";
+@import "../blocks/about/__title/about__title.scss";
+@import "../blocks/about/__text-list/about__text-list.scss";
+@import "../blocks/about/__text-list/about__text-list-part.scss";
+@import "../blocks/about/__text-list/_stats/about__text-list_stats.scss";
+@import "../blocks/about/__text-list/_stats/_position/about__text-list_stats_position_left.scss";
+@import "../blocks/about/__text-list/_stats/_position/about__text-list_stats_position_right.scss";
+@import "../blocks/about/__text-list/_position/about__text-list_position_left.scss";
+@import "../blocks/about/__text-list/_position/about__text-list_position_right.scss";
+@import "../blocks/about/__circle/about__circle.scss";
+@import "../blocks/about/__circle/_position/about__circle_position_left.scss";
+@import "../blocks/about/__circle/_position/about__circle_position_right.scss";
+@import "../blocks/about/__subtitle/about__subtitle.scss";
+@import "../blocks/about/__subtitle/_margin/about__subtitle_margin_left.scss";
+@import "../blocks/about/__subtitle/_position/about__subtitle_position_left.scss";
+@import "../blocks/about/__subtitle/_position/about__subtitle_position_right.scss";
+@import "../blocks/about/__why/about__why-pic.scss";
+@import "../blocks/about/__help/about__help-pic.scss";
+@import "../blocks/about/__trust/about__trust-pic.scss";
 
 /* slider */
 @import '../blocks/slider/slider.scss';
