@@ -1,0 +1,9 @@
+.form__step {
+  flex-direction: row;
+  padding-left: 0;
+
+  @media screen and (max-width: $desktop) {
+    flex-direction: column;
+    gap: $margin2-5;
+  }
+}

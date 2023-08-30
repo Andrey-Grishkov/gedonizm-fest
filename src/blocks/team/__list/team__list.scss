@@ -1,0 +1,16 @@
+.team__list {
+  @include flex(row, flex-start, center);
+  gap: 24px;
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

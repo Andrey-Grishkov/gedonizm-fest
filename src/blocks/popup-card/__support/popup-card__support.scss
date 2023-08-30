@@ -1,0 +1,16 @@
+.popup-card__support{
+    margin: 0;
+    width: 100%;
+    height: 36px;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'TT Firs Neue';
+    font-weight: 400;
+    @media screen and (max-width:$tablet){
+        padding: 0 0 0 20px;
+        width: 100%;
+    }
+}

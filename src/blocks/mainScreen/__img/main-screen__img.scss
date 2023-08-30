@@ -1,0 +1,13 @@
+.main-screen__img {
+    @include backgroundImage("../images/logo_size_big.svg");
+    max-width: 1440px;
+    width: 100%;
+    height: 720px;
+    box-sizing: border-box;
+
+    @media screen and (max-width:$tablet) {
+        height: 600px;
+        margin: 0 auto;
+        background-image: url(../images/logo_size_mob.svg);
+    }
+}

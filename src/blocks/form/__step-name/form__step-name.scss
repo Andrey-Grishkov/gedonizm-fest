@@ -1,0 +1,6 @@
+.form__step-name {
+    margin: 0;
+    @extend %secondTitle;
+    letter-spacing: -0.48px;
+    text-transform: lowercase;
+}

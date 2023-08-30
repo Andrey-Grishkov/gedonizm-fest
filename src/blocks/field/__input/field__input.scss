@@ -1,5 +1,5 @@
 .field__input {
-  width: 432px;
+  width: 483px;
   height: 24px;
   outline: none;
   border: 2px solid #96949e;
@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: $desktop) {
   .field__input {
     width: 280px;
     height: 20px;

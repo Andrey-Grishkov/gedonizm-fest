@@ -1,5 +1,5 @@
 .header__actions_hidden_small {
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $desktop) {
     display: none;
   }
 }

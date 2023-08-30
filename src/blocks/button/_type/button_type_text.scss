@@ -6,9 +6,3 @@
     color: #5100b8;
   }
 }
-
-@media all and (max-width: 1024px) {
-  .button_type_text:has(.button__icon_type_checkpoint) {
-    display: none;
-  }
-}

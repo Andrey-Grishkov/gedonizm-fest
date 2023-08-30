@@ -1,0 +1,5 @@
+.gallery__image_mobile_visible {
+  @media screen and (max-width: $tablet) {
+    display: block;   
+  }
+}

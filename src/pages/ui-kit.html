@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>Гедонизм-фест</title>
@@ -9,6 +8,20 @@
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
 <body>
+  <!-- Switcher -->
+  <div class="switch">
+    <input class="switch__checkbox" type="checkbox">
+    <label class="switch__label" for="">
+      <label class="switch__span-content switch__span-content_map">
+        <img class="switch__image switch__image_map" src="../images/icons/tab_map.svg" alt="карта">
+        <span class="switch__span">карта</span>
+      </label>
+      <label class="switch__span-content switch__span-content_list">
+        <img class="switch__image switch__image_list" src="../images/icons/tab_list.svg" alt="список">
+        <span class="switch__span">список</span>
+      </label>
+    </label>
+</div>
   <div class="card">
     <div class="card__like">
       <button class="card__like-icon"></button>
@@ -22,7 +35,7 @@
       <p class="card__description">лектор: Мария Бархатова</p>
       <div class="card__wrapper">
         <p class="card__adress">улица Блохина, 22</p>
-        <p class="card__more">+ ещё 3</p>
+        <button class="card__more">+ ещё 3</button>
       </div>
   </div>
     <!-- поля ввода  -->
@@ -255,6 +268,35 @@
         <span class="button__text">Санкт-Петербург</span></button
       ><!--цвет прозрачный, бордер есть, иконка ЧЕКПОЙНТ слева, при мообильной версии кнопка исчезает  -->
       <!--disabled подкючается добавлением класса button__hiden-button_state-disabled-->
+
+       <!-- фильтр-тэги -->
+      <div class="container-tags">
+      <button class="filter-tag filter-tag_type_off filter-tag_close_no">
+        <span class="filter-tag__text">все</span>
+        <div class="filter-tag__close filter-tag__close_state_invisible"></div>
+      </button>
+      <button class="filter-tag filter-tag_type_off filter-tag_close_yes">
+        <span class="filter-tag__text">фильтр</span>
+        <div class="filter-tag__close filter-tag__close_state_invisible"></div>
+      </button>
+      <button class="filter-tag filter-tag_type_off filter-tag_close_yes">
+        <span class="filter-tag__text">фильтр</span>
+        <div class="filter-tag__close filter-tag__close_state_invisible"></div>
+      </button>
+    </div>
+    <div style="position: relative;">  
+      <div class="popover popover_visible">
+        <ul class="popover__list">
+          <li class="popover__list-item">Москва</li>
+          <li class="popover__list-item">
+            Санкт-Петербург
+            <span class="popover__list-icon"></span>
+          </li>
+          <li class="popover__list-item">Сочи</li>
+          <li class="popover__list-item">Калуга</li>
+          <li class="popover__list-item">Екатеринбург</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

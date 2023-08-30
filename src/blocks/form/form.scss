@@ -1,0 +1,11 @@
+.form {
+    max-width: 1440px;
+    margin: $margin3 $margin3 $margin10;
+    @include flex(column, flex-start, flex-start);
+    @extend %mainText;
+    gap: $margin5;
+
+    @media screen and (max-width: $desktop) {
+        margin: $margin2-5 $margin2-5 0;
+    }
+}
