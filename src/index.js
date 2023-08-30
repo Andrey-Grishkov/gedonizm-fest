@@ -1,4 +1,6 @@
 import './pages/index.scss';
+import { buttonUp } from './scripts/constants';
+import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
 import Section from './scripts/section';
 import Card from './scripts/Card';
@@ -38,6 +40,10 @@ const containerTags = document.querySelector(".container-tags");
 if (containerTags) {
      const filterTagEvent = new FilterTag(".container-tags", ".filter-tag");
      filterTagEvent.setEventListeners();
+}
+
+if(buttonUp) {
+  new ButtonUpManager(buttonUp).addEventListener();
 }
 
 // Слайдер для фото-галереи
