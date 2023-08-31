@@ -1,0 +1,9 @@
+.form__step-comment {
+  padding: 0 $margin3;
+  margin: 0;
+  color: $dark-secondary;
+
+  @media screen and (max-width: 1439px) {
+    padding: 0 $margin2-5;
+  }
+}

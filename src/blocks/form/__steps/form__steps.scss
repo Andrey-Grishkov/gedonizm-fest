@@ -1,0 +1,8 @@
+.form__steps {
+  @include grid(0);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: orderedlist;
+  @extend %thirdTitle;
+}

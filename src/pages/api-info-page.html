@@ -1,78 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <link>
-    <meta charset="UTF-8" />
-    <title>Гедонизм-фест</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Страница с ответом от сервера (спасибо за помощь, спасибо за заявку, страница не найдена)"
-    />
-    <meta
-      name="keywords"
-      content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные"
-    />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=de6ccfa4-cdb5-4899-b61d-65a7d18cfc29&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [55.76, 37.64],
-          zoom: 7,
-        });
-      }
-    </script>
-  </head>
-  <body class="page">
-    <header class="header">
-      <div class="content header__content">
-        <div class="header__logo">
-          <a class="logo logo_size_small" href="#"></a>
-          <button class="button button_type_text header__location">
-            <span
-              class="button__icon button__icon_position_left button__icon_type_checkpoint"
-            ></span>
-            <span class="button__text">Cанкт-Петербург</span>
-          </button>
-        </div>
-        <nav>
-          <ul class="list header__navigation">
-            <li class="list__item">
-              <a href="#" class="button button_type_text">
-                <span class="button__text">куда пойти</span>
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="#" class="button button_type_text">
-                <span class="button__text">стать участником</span>
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="#" class="button button_type_text">
-                <span class="button__text">о фестивале</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__actions">
-          <button class="button button_type_text">
-            <span
-              class="button__icon button__icon_position_left button__icon_type_like"
-            ></span>
-            <span class="button__text">хочу пойти</span>
-          </button>
-          <button
-            class="button button_type_primary header__actions_hidden_small"
-          >
-            <span class="button__text">поддержать</span>
-          </button>
-          <button class="header__menu"></button>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Гедонизм-фест</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Страница с ответом от сервера (спасибо за помощь, спасибо за заявку, страница не найдена)">
+  <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=de6ccfa4-cdb5-4899-b61d-65a7d18cfc29&lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+      var myMap = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 7
+      });
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="content header__content">
+      <div class="header__logo">
+        <a class="logo logo_size_small" href="index.html"></a>
+        <button class="button button_type_text header__location">
+          <span class="button__icon button__icon_position_left button__icon_type_checkpoint"></span>
+          <span class="button__text">Cанкт-Петербург</span>
+        </button>
       </div>
-    </header>
+      <nav>
+        <ul class="list header__navigation">
+          <li class="list__item">
+            <a href="api-info-page.html" class="button button_type_text">
+              <span class="button__text">куда пойти</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="form.html" class="button button_type_text">
+              <span class="button__text">стать участником</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="about.html" class="button button_type_text">
+              <span class="button__text">о фестивале</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="button button_type_text">
+          <span class="button__icon button__icon_position_left button__icon_type_like"></span>
+          <span class="button__text">хочу пойти</span>
+        </button>
+        <button class="button button_type_primary header__actions_hidden_small">
+          <span class="button__text">поддержать</span>
+        </button>
+        <button class="header__menu"></button>
+      </div>
+    </div>
+  </header>
+
     <section class="map-container-grid content">
       <div class="where-to-go">
         <h1 class="where-to-go__header">куда пойти</h1>
@@ -129,11 +115,79 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+    <div class="content footer__content">
+      <div class="footer__illustration"></div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">организатор:</h3>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Ночлежка</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="mailto:info@hedonismfest.ru"
+                class="button button_type_text footer__button footer__button_color_primary">
+                <span class="button__text">info@hedonismfest.ru</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">сделано с любовью:</h3>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Fastsol Digital</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">shishki.collective</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">студентами Яндекс.Практикума</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">мы в соцсетях:</h3>
+        <nav class="footer__nav">
+          <ul class="list footer__social">
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_facebook"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_instagram"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_vk"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
     <template id="filter-tag">
         <button class="filter-tag filter-tag_type_off filter-tag_close_yes">
           <span class="filter-tag__text">фильтр</span>
           <div class="filter-tag__close filter-tag__close_state_invisible"></div>
         </button>
     </template>
+    <div id="location-popover" class="popover">
+    <ul class="popover__list"></ul>
+  </div>
   </body>
 </html>

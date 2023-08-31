@@ -1,0 +1,9 @@
+.form__step-header {
+  @include flex(column, flex-start, flex-start);
+  gap: $margin1-5;
+  max-width: 309px;
+
+  @media screen and (max-width: $desktop) {
+    max-width: 320px;
+  }
+}

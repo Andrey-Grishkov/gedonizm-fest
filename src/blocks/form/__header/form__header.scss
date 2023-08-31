@@ -1,0 +1,6 @@
+.form__header {
+    @extend %mainTitle;
+    margin: 0;
+    letter-spacing: -1.92px;
+    text-transform: lowercase;   
+}

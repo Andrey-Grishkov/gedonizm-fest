@@ -1,0 +1,6 @@
+.popover__list-icon {
+  @include backgroundImage("../images/icons/checkbox.svg");
+  width: 24px;
+  height: 24px;
+  display: none;
+}

@@ -1,0 +1,28 @@
+.team__list-item {
+  height: 170px;
+
+  &:nth-child(3n+1), &:first-child {
+    min-width: 120px;
+    @include backgroundImage("../images/partners/logo1.svg");
+
+    @media screen and (max-width: $tablet) {
+      @include backgroundImage("../images/partners/logo1-dark.svg");
+    }
+  }
+  &:nth-child(3n+2), &:nth-child(2) {
+    min-width: 170px;
+    @include backgroundImage("../images/partners/logo2.svg");
+
+    @media screen and (max-width: $tablet) {
+      @include backgroundImage("../images/partners/logo2-dark.svg");
+    }
+  }
+  &:nth-child(3n+3) {
+    min-width: 170px;
+    @include backgroundImage("../images/partners/logo3.svg");
+
+    @media screen and (max-width: $tablet) {
+      @include backgroundImage("../images/partners/logo3-dark.svg");
+    }
+  }
+}
