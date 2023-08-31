@@ -1,4 +1,16 @@
+import {Form} from './scripts/Form.js';
+
 import './pages/index.scss';
+
+
+const formContainer = document.querySelector('.form');
+
+if(formContainer) {
+  const form = new Form();
+  form.setEventListener();
+}
+// let forms = new Form(['cafe', 'lekture', 'party', 'other']);
+
 import { buttonUp, configPhotoGallery, initialPhotoGalleryImages } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
