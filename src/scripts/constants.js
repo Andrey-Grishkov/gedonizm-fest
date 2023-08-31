@@ -1,6 +1,6 @@
 //const
 export const buttonUp = document.querySelector('.button_type_up');
-
+export const buttonSupport = document.querySelector('#support-Button')
 export const configPhotoGallery = {
   rootSelector: '.gallery',
   imageClass: 'gallery__image',
