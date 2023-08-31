@@ -1,5 +1,11 @@
-import {formRegister} from './components/Form.js';
+import {Form} from './scripts/Form.js';
 
 import './pages/index.scss';
 
-let forms = new formRegister(['cafe', 'lekture', 'party', 'other']);
+const formContainer = document.querySelector('.form');
+
+if(formContainer) {
+  const form = new Form();
+  form.setEventListener();
+}
+// let forms = new Form(['cafe', 'lekture', 'party', 'other']);
