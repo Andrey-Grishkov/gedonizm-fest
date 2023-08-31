@@ -1,6 +1,5 @@
 export class Form {
   constructor() {
-      console.log('createForm');
       this._form = document.querySelector('.form');
 
       this._nameCategory = 'cafe';
@@ -14,12 +13,9 @@ export class Form {
       this._checkboxesTypeEvent = document.querySelectorAll('.form__step-checkbox_type-event');
       this._blocksCategory = document.querySelectorAll('[data-category-id]');
       this._blocksOnline = document.querySelectorAll('[data-type-event]');
-      console.log('end_createForm');
   }
 
   setEventListener() {
-    console.log('Start setEventListener');
-
     this._buttonsNext.forEach((button) => {
       button.addEventListener('click', (event) => {
         this._handleNext(event);
@@ -43,8 +39,6 @@ export class Form {
         this._setVisibleInputs();
       });
     });
-
-    console.log('End setEventListener');
   }
 
   _setVisibleInputs() {
@@ -90,10 +84,14 @@ export class Form {
   _handleSubmitForm(event) {
     event.preventDefault();
 
-    const dataTotal = {};
+    let dataTotal = {};
     dataTotal["мероприятие"] = this._getEventName();
     dataTotal["тип мероприятия"] = this._typeEvent;
-
+    const partyType = document.querySelector('.form__radio_party-type');
+    if (partyType.dataset.categoryId === this._nameCategory) {
+      dataTotal['тип вечеринки'] = this._getTypeParty(partyType);
+    };
+    dataTotal = this._getInputsData(dataTotal);
 
     console.log(dataTotal);
   }
@@ -118,6 +116,32 @@ export class Form {
         return result;
       }
     });
+    return result;
+  }
+
+  _getTypeParty(partyType) {
+    let result = '';
+    const partyTypeItems = partyType.querySelectorAll('.form__step-checkbox');
+    partyTypeItems.forEach((item) => {
+      if (item.checked === true) {
+        if (item.parentNode) {
+          let siblingLabel = item.parentNode.querySelector('.form__step-radiogroup');
+          result = siblingLabel.textContent;
+          return result;
+        }
+      }
+    });
+    return result;
+  }
+
+  _getInputsData(data) {
+    let result = data;
+    let inputs = document.querySelectorAll('.field');
+    inputs.forEach((input) => {
+      let inputName = input.querySelector('.field__title').textContent;
+      let inputValue = input.querySelector('.field__input').value;
+      result[inputName] = inputValue;
+    })
     return result;
   }
 }
