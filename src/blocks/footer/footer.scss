@@ -1,0 +1,11 @@
+.footer {
+  background: $light-grey;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px 40px;
+
+  @media screen and (max-width: $desktop) {
+    padding: 40px 20px;
+    background: $yellow;
+  }
+}

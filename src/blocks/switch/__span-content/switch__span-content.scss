@@ -1,0 +1,18 @@
+.switch__span-content {
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    z-index: 5;
+    color: #96949E; 
+    transition: color .3s linear; 
+    width: 93px;
+    justify-content: center;  
+}
+
+@media screen and (max-width: 360px) {
+    .switch__span-content{
+      padding: 12px 20px;
+      width: 50px;
+    }  
+}

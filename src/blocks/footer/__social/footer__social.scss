@@ -1,0 +1,8 @@
+.footer__social {
+  @include flex(row, flex-start, center);
+  gap: 24px;
+
+  @media screen and (max-width: $desktop) {
+    gap: 16px;
+  }
+}

@@ -1,0 +1,10 @@
+.footer__block {
+  @include flex(column, flex-start, start);
+  gap: 20px;
+  flex: 1;
+
+  @media screen and (max-width: $desktop) {
+    gap: 12px;
+    width: 100%;
+  }
+}

@@ -1,4 +1,4 @@
-.card__like-icon{
+.card__like-icon {
     margin: 12px 12px;
     width: 24px;
     height: 24px;
@@ -6,12 +6,10 @@
     background-color: transparent;
     background-image: url(../images/icons/iconHeart.svg);
     cursor: pointer;
-}
-.card__like-icon:hover{
-    opacity: 0.5;
-}
-@media screen and (max-width:768px){
-    .card__like-icon{
+    &:hover {
+        opacity: 0.5;
+    }
+    @media screen and (max-width:$tablet){
         background-image: url(../images/icons/iconHeartMob.svg);
         width: 20px;
         height: 20px;

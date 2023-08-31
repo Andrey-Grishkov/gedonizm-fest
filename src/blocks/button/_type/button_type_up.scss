@@ -1,0 +1,9 @@
+.button_type_up {
+  min-width: 44px;
+  min-height: 44px;
+  position: fixed;
+  right: $margin3;
+  bottom: $margin3;
+  transform: rotate(270deg);
+  z-index: 1;
+}

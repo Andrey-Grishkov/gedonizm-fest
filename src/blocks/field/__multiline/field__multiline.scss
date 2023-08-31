@@ -2,7 +2,7 @@
   height: 112px;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: $desktop) {
   .field__multiline {
     width: 280px;
     height: 80px;

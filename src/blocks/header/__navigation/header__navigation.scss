@@ -1,0 +1,8 @@
+.header__navigation {
+  @include flex(row, start, center);
+  gap: 8px;
+
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}

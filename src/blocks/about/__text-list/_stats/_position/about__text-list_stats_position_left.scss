@@ -1,0 +1,17 @@
+.about__text-list_stats_position_left {
+  position: absolute;
+  max-width: 303px;
+  margin-left: -40px;
+  left: 0;
+
+  @media screen and (max-width: 970px) {
+    margin: 0;
+    position: unset;
+    margin-top: $margin15;
+    @include flex(column, center, center);
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-top: $margin10;
+  }
+}

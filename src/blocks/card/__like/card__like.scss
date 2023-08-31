@@ -1,4 +1,4 @@
-.card__like{
+.card__like {
     position:absolute;
     width: 48px;
     height: 48px;
@@ -6,11 +6,8 @@
     top: 8px;
     background-color: #FCFAF7;
     border-radius: 50%;
-
-}
-@media all and (max-width:768px) and (min-width:320px){
-    .card__like{  
+    @media all and (max-width:$tablet) {
         width: 44px;
         height: 44px;
-    }
+}
 }

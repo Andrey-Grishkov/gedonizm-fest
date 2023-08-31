@@ -3,7 +3,7 @@
     gap: $margin3;
     padding-left: $margin30;
     border: 0;
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: $desktop) {
         gap:$margin2-5;
         padding-left: 0;
     }

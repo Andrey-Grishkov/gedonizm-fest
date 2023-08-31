@@ -1,0 +1,14 @@
+.footer__content {
+  @include flex(row, flex-start, flex-start);
+  gap: 40px;
+
+  @media screen and (min-width: $tablet) and (max-width: calc($tablet + 50px)) {
+    gap: 18px;
+  }
+
+
+  @media screen and (max-width: $tablet) {
+    @include flex(column, space-between, flex-start);
+  }
+
+}

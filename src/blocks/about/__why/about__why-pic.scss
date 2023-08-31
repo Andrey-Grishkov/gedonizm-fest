@@ -1,0 +1,14 @@
+.about__why-pic {
+  @include backgroundImage('../images/food-illustration.svg');
+  height: 248px;
+  margin-top: 48px;
+  object-fit: scale-down;
+
+  @media screen and (max-width: 970px) {
+    height: 190px;
+    margin-top: 0;
+    background-size: cover;
+    transform: scaleX(-1);
+    margin-top: $margin5;
+  }
+}

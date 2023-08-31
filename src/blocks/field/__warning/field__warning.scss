@@ -11,7 +11,7 @@
   background-position: left 24px center;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: $desktop) {
   .field__warning {
     width: 252px;
     padding: 0 20px 0 48px;

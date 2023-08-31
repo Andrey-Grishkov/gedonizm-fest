@@ -1,0 +1,15 @@
+.footer__button {
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+
+  & .button__text {
+    text-align: start;
+    width: max-content;
+  }
+
+  @media screen and (max-width: $tablet) {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
