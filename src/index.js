@@ -13,12 +13,9 @@ import Section from './scripts/section';
 import Card from './scripts/Card';
 import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
-import { LocationPopover } from './scripts/Popover
+import { LocationPopover } from './scripts/Popover';
 import popupLikesCard from './scripts/popupLikesCards';
 import { buttonCardLikes } from './scripts/constants';
-/* карточки для слайдера */
-const sliderContainerElement = document.querySelector('.slider__elements');
-const cardPopup = new popupCard('#Card-popup');
 const cardlikePopup = new popupLikesCard('#Likescard-popup')
 import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';
