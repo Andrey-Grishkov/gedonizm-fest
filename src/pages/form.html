@@ -88,13 +88,13 @@
     <!-- Шаг 1 -->
     <!-- выбор категории мероприятия -->
     <fieldset class="form__main hidden" id="formCategory">
-      <div class="form__main form__step">
+      <div class="form__step">
         <div class="form__step-header">
           <p class="form__step-number">шаг 1 из 4</p>
           <h2 class="form__step-name">выберите категорию</h2>
         </div>
         <div class="form__step-category">
-          <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="cafe" name="category"  data-category-type-event="offline">
+          <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="cafe" name="category"  data-category-type-event="offline" checked>
           <label class="form__step-radiobutton" for="cafe">
             <p class="form__step-caption">кафе/бар/ресторан</p>
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
@@ -124,7 +124,7 @@
         <button class="button button_direction_back" type="button">
           назад
         </button>
-        <button class="button button_type_primary button_direction_next button__hiden-button_state-disabled" type="button">
+        <button class="button button_type_primary button_direction_next" type="button">
           далее
         </button>
       </div>
@@ -133,7 +133,7 @@
     <!-- Шаг 2 -->
     <!-- начало регистрации (кафе) -->
     <fieldset class="form__main hidden" id="formRegisterCafe">
-    <div class="form__main form__step">
+    <div class="form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 2 из 4</p>
         <h2 class="form__step-name">Заполните форму</h2>
@@ -190,7 +190,7 @@
             <label class="field__title">название заведения</label>
             <input type="text" class="field__input" placeholder="введите название заведения">
           </fieldset>
-          <div class="form__radio" data-category-id="party">
+          <div class="form__radio form__radio_party-type" data-category-id="party">
             <div class="form__step-radiogroup-comment">
               <input class="form__step-checkbox" type="radio" id="partyOpen" name="partyType" checked>
               <label class="form__step-radiogroup" for="partyOpen">открытое мероприятие</label>
@@ -232,7 +232,7 @@
   <!-- Шаг 3 -->
   <!-- контакты (кафе) -->
   <fieldset class="form__main hidden" id="formContactsCafe">
-    <div class="form__main form__step">
+    <div class="form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
         <h2 class="form__step-name">укажите контакты и часы работы</h2>
@@ -301,7 +301,7 @@
 
   <!-- Шаг 4 -->
   <fieldset class="form__main hidden" id="formFoto">
-    <div class="form__main form__step">
+    <div class="form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 4 из 4</p>
         <h2 class="form__step-name">добавьте фото</h2>
@@ -334,7 +334,6 @@
     </div>
   </fieldset>
 </form>
-
 <footer class="footer">
   <div class="content footer__content">
     <div class="footer__illustration"></div>
@@ -400,8 +399,10 @@
     </div>
   </div>
 </footer>
+
 <div id="location-popover" class="popover">
   <ul class="popover__list"></ul>
 </div>
+
 </body>
 </html>

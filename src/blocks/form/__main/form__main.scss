@@ -1,7 +1,7 @@
 .form__main {
     @include flex(column, flex-start, flex-start);
     gap: $margin3;
-    padding-left: $margin30;
+    padding-left: 0 0 0 $margin30;
     border: 0;
     @media screen and (max-width: $desktop) {
         gap:$margin2-5;
