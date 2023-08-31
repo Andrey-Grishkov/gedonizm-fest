@@ -15,7 +15,6 @@ import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
 import { LocationPopover } from './scripts/Popover';
 import popupLikesCard from './scripts/popupLikesCards';
-import { buttonCardLikes } from './scripts/constants';
 
 const cardlikePopup = new popupLikesCard('#Likescard-popup')
 import { PhotoGallery } from './scripts/PhotoGallery';
