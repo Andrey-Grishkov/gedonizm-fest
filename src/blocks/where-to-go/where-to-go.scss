@@ -5,3 +5,8 @@
   grid-row-start: 1;
   grid-row-end: 3;
 }
+@media screen and (max-width: 730px) {
+  .where-to-go {
+    display: none;
+  }
+}

@@ -8,3 +8,8 @@
   grid-row-end: 4;
   padding: 40px;
 }
+@media screen and (max-width: 730px) {
+  .participation-question {
+    display: none;
+  }
+}

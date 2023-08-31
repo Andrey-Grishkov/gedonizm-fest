@@ -13,3 +13,8 @@
   justify-content: center;
   align-items: flex-end;
 }
+@media screen and (max-width: 730px) {
+  .map {
+    height: 100%;
+  }
+}
