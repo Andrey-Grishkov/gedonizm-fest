@@ -1,0 +1,15 @@
+.participation-question {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 40px;
+}
+@media screen and (max-width: 730px) {
+  .participation-question {
+    display: none;
+  }
+}

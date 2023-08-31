@@ -10,7 +10,7 @@
     &:hover {
         opacity: 0.5;
     }
-    @media screen and (max-width:768px){
+    @media screen and (max-width:$tablet){
         background-image: url(../images/icons/iconHeartMob.svg);
         width: 20px;
         height: 20px;

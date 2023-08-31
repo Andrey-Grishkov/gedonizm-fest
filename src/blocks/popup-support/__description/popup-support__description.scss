@@ -1,0 +1,9 @@
+.popup-support__description{
+    width: 532px;
+    margin: 16px 0 0 40px;
+    @extend %additionalText;
+    @media screen and (max-width: $tablet) {
+        margin: 16px auto 0 auto;
+        width: 320px;
+    }
+}

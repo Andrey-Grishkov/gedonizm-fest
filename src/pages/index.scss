@@ -42,10 +42,12 @@
 @import "../blocks/button/__icon/button__icon.scss";
 @import "../blocks/button/__icon/_position/button__icon_position_left.scss";
 @import "../blocks/button/__icon/_position/button__icon_position_right.scss";
+@import "../blocks/button/__icon/_position/button__icon_position_center.scss";
 @import "../blocks/button/__text/button__text.scss";
 @import "../blocks/button/_type/button_type_primary.scss";
 @import "../blocks/button/_type/button_type_secondary.scss";
 @import "../blocks/button/_type/button_type_text.scss";
+@import "../blocks/button/_type/button_type_up.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_like.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_list.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_checkpoint.scss";
@@ -53,6 +55,7 @@
 @import "../blocks/button/__icon/_type/button__icon_type_pointer.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_window.scss";
 @import "../blocks/button/__hiden-button/_state-disabled/button__hiden-button_state-disabled.scss";
+@import "../blocks/button/__hiden-button/_state-hidden/button__hiden-button_state-hidden.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_link";
 
 @import "../blocks/content/content.scss";
@@ -81,16 +84,24 @@
 @import "../blocks/form/__step-checkbox/form__step-checkbox.scss";
 @import "../blocks/form/__step-description/form__step-description.scss";
 @import "../blocks/form/__step-radiobutton/_checked/form__step-radiobutton_checked.scss";
+@import "../blocks/form/__step-inputs/form__step-inputs.scss";
+@import "../blocks/form/__step-radiogroup/form__step-radiogroup.scss";
+@import "../blocks/form/__radio/form__radio.scss";
+@import "../blocks/form/__step-comment/form__step-comment.scss";
+@import "../blocks/form/__foto/form__foto.scss";
+@import "../blocks/form/__foto-label/form__foto-label.scss";
 
-@import "../blocks/hide/hide.scss";
+@import "../blocks/hidden/hidden.scss";
 
 /*mainScreen */
+
 @import '../blocks/mainScreen/main-screen.scss';
 @import'../blocks/mainScreen/__more/main-screen__more.scss';
 @import'../blocks/mainScreen/__more-text/main-screen__more-text.scss';
 @import'../blocks/mainScreen/__more-button/main-screen__more-button.scss';
 @import'../blocks/mainScreen/__more-buttonIcon/main-screen__more-buttonIcon.scss';
 @import'../blocks/mainScreen/__img/main-screen__img.scss';
+
 /* about*/
 @import '../blocks/about/about.scss';
 @import '../blocks/about/__title/about__title.scss';
@@ -135,6 +146,47 @@
 @import "../blocks/footer/__social/footer__social.scss";
 @import "../blocks/footer/footer.scss";
 
+// About
+@import "../blocks/page/page.scss";
+@import "../blocks/about/about.scss";
+@import "../blocks/about/__info/about__info.scss";
+@import "../blocks/about/__title/about__title.scss";
+@import "../blocks/about/__text-list/about__text-list.scss";
+@import "../blocks/about/__text-list/about__text-list-part.scss";
+@import "../blocks/about/__text-list/_stats/about__text-list_stats.scss";
+@import "../blocks/about/__text-list/_stats/_position/about__text-list_stats_position_left.scss";
+@import "../blocks/about/__text-list/_stats/_position/about__text-list_stats_position_right.scss";
+@import "../blocks/about/__text-list/_position/about__text-list_position_left.scss";
+@import "../blocks/about/__text-list/_position/about__text-list_position_right.scss";
+@import "../blocks/about/__circle/about__circle.scss";
+@import "../blocks/about/__circle/_position/about__circle_position_left.scss";
+@import "../blocks/about/__circle/_position/about__circle_position_right.scss";
+@import "../blocks/about/__subtitle/about__subtitle.scss";
+@import "../blocks/about/__subtitle/_margin/about__subtitle_margin_left.scss";
+@import "../blocks/about/__subtitle/_position/about__subtitle_position_left.scss";
+@import "../blocks/about/__subtitle/_position/about__subtitle_position_right.scss";
+@import "../blocks/about/__why/about__why-pic.scss";
+@import "../blocks/about/__help/about__help-pic.scss";
+@import "../blocks/about/__trust/about__trust-pic.scss";
+
+/* map */
+@import "../blocks/map-container-grid/map-container-grid.scss";
+@import "../blocks/where-to-go/where-to-go.scss";
+@import "../blocks/where-to-go/__header/where-to-go__header.scss";
+@import "../blocks/control-panel/control-panel.scss";
+@import "../blocks/control-panel/__text/control-panel__text.scss";
+@import "../blocks/participation-question/participation-question.scss";
+@import "../blocks/participation-question/__header/participation-question__header.scss";
+@import "../blocks/participation-question/__text/participation-question__text.scss";
+@import "../blocks/filter-block/filter-block.scss";
+@import "../blocks/filter-block/__text/filter-block__text.scss";
+@import "../blocks/map/map.scss";
+@import "../blocks/map/__container-icons/map__container-icons.scss";
+@import "../blocks/map/__pointer/map__pointer.scss";
+@import "../blocks/map/__zoom/map__zoom.scss";
+@import "../blocks/button/__icon/_type/button__icon_type_filtrs.scss";
+@import "../blocks/control-panel/__button-filtr/control-panel__button-filtr.scss";
+
 /* slider */
 @import '../blocks/slider/slider.scss';
 @import '../blocks/slider/__title/slider__title.scss';
@@ -148,8 +200,9 @@
 @import '../blocks/popup/_opened/popup_opened.scss';
 @import '../blocks/popup/__dark-overlay/popup__dark-overlay.scss';
 @import '../blocks/popup/__close/popup__close.scss';
+@import '../blocks/popup/__center/popup__center.scss';
 
-/* card content*/ 
+/* card content*/
 @import '../blocks/popup-card/popup-card.scss';
 @import '../blocks/popup-card/__close/popup-card__close.scss';
 @import '../blocks/popup-card/__img/popup-card__img.scss';
@@ -202,6 +255,7 @@
 @import "../blocks/team/__title/team__title.scss";
 @import "../blocks/team/__list/team__list.scss";
 @import "../blocks/team/__list-item/team__list-item.scss";
+
 // popup-likesCard
 @import "../blocks/popup-likesCard/popup-likesCard.scss";
 @import "../blocks/popup-likesCard/__elements/popup-likesCard__elements.scss";
@@ -211,3 +265,13 @@
 @import "../blocks/popup-likesCard/__button-off/popup-likesCard__button-off.scss";
 @import "../blocks/popup-likesCard/__button-on/popup-likesCard__button-on.scss";
 @import "../blocks/popup-likesCard/__close/popup-likesCard__close.scss";
+
+// popupsuport
+@import "../blocks/popup-support/popup-support.scss";
+@import "../blocks/popup-support/__maintext/popup-support__maintext.scss";
+@import "../blocks/popup-support/__text/popup-support__text.scss";
+@import "../blocks/popup-support/__container-price/popup-support__container-price.scss";
+@import "../blocks/popup-support/__input-num/popup-support__input-num.scss";
+@import "../blocks/popup-support/__input-email/popup-support__input-email.scss";
+@import "../blocks/popup-support/__description/popup-support__description.scss";
+@import "../blocks/popup-support/__button/popup-support__button.scss";
