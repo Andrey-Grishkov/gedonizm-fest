@@ -52,13 +52,6 @@ if (sliderContainerElement) {
 const locationPopover = new LocationPopover('#location-popover', '.header__location');
 locationPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург'], 'Санкт-Петербург');
 
-/* фильтр-тэги */
-const containerTags = document.querySelector(".container-tags");
-if (containerTags) {
-     const filterTagEvent = new FilterTag(".container-tags", ".filter-tag");
-     filterTagEvent.setEventListeners();
-}
-
 if (buttonUp) {
      new ButtonUpManager(buttonUp).addEventListener();
 }
@@ -70,11 +63,19 @@ if (galleryContainerElement) {
      const photoGallery = new PhotoGallery(configPhotoGallery);
      photoGallery.setImages(initialPhotoGalleryImages);
 }
-// попус с пожертвованием 
+
+// попап с пожертвованием
 buttonSupport.addEventListener('click', function () {
      supportPopup.open()
      supportPopup.setEventListeners()
 })
+
+/* фильтр-тэги */
+const containerTags = document.querySelector(".container-tags");
+// if (containerTags) {
+//   const filterTagEvent = new FilterTag(".container-tags", ".filter-tag");
+//   filterTagEvent.setEventListeners();
+// }
 
 // добавляем фильтр-теги для секции "тип события"
 if (containerTagsTypeEvt) {
