@@ -24,5 +24,12 @@ export default class popupCard extends Popup{
         }
         this._popup.querySelector('#phone').textContent = data.phone
         this._popup.querySelector('#social').textContent = data.social
+        this._popup.querySelector(".button__icon_type_like").classList.remove('popup-card__button-like-active')
+        var LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
+        for( let i=0;i<=LikedCards.length;i++){
+            if(LikedCards[i]== data.id){
+                this._popup.querySelector(".button__icon_type_like").classList.add('popup-card__button-like-active')
+            }
+        }
     }
 }

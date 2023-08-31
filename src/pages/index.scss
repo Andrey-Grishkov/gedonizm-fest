@@ -223,7 +223,7 @@
 @import '../blocks/popup-card/__adress-more/popup-card__adress-more.scss';
 @import '../blocks/popup-card/__buttons/popup-card__buttons.scss';
 @import '../blocks/popup-card/__button/popup-card__button.scss';
-
+@import '../blocks/popup-card/__button-like-active/popup-card__button-like-active.scss';
 // Popover
 @import "../blocks/popover/popover.scss";
 @import "../blocks/popover/_visible/popover_visible.scss";
@@ -255,6 +255,16 @@
 @import "../blocks/team/__title/team__title.scss";
 @import "../blocks/team/__list/team__list.scss";
 @import "../blocks/team/__list-item/team__list-item.scss";
+
+// popup-likesCard
+@import "../blocks/popup-likesCard/popup-likesCard.scss";
+@import "../blocks/popup-likesCard/__elements/popup-likesCard__elements.scss";
+@import "../blocks/popup-likesCard/__button-back/popup-likesCard__button-back.scss";
+@import "../blocks/popup-likesCard/__text/popup-likesCard__text.scss";
+@import "../blocks/popup-likesCard/__buttons/popup-likesCard__buttons.scss";
+@import "../blocks/popup-likesCard/__button-off/popup-likesCard__button-off.scss";
+@import "../blocks/popup-likesCard/__button-on/popup-likesCard__button-on.scss";
+@import "../blocks/popup-likesCard/__close/popup-likesCard__close.scss";
 
 // popupsuport
 @import "../blocks/popup-support/popup-support.scss";

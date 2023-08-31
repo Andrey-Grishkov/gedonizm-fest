@@ -6,7 +6,9 @@
     top: 8px;
     background-color: #FCFAF7;
     border-radius: 50%;
-    @media all and (max-width:$tablet) {
+
+    z-index: 2;
+    @media all and (max-width:768px) {
         width: 44px;
         height: 44px;
 }

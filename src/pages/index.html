@@ -39,7 +39,7 @@
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="button button_type_text">
+        <button class="button button_type_text" id="button-likeCards">
           <span class="button__icon button__icon_position_left button__icon_type_like"></span>
           <span class="button__text">хочу пойти</span>
         </button>
@@ -187,7 +187,7 @@
       </div>
     </div>
   </footer>
-  <div class="popup">
+  <div class="popup" id="Card-popup">
     <div class=" popup-card">
       <div class="popup-card__close">
         <div class="popup__close"></div>
@@ -264,7 +264,7 @@
       </div>
       <div class="popup-card__buttons">
         <button class="button button_type_secondary popup-card__button">
-          <div class="button__icon button__icon_position_left button__icon_type_like"></div>
+          <div class="button__icon button__icon_position_left button__icon_type_like "></div>
           <span class="button__text">хочу пойти</span>
         </button>
         <button class="button button_type_primary  popup-card__button ">
@@ -272,6 +272,24 @@
       </div>
     </div>
   </div>
+
+  <div class="popup " id="Likescard-popup">
+    <div class="popup-likesCard">
+      <button class="button button_type_text popup-likesCard__button-back ">
+        <span class="button__text">назад</span>
+        <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
+          style="transform: scale(-1, 1)"></div>
+      </button>
+      <div class="popup-card__close popup-likesCard__close">
+        <div class="popup__close"></div>
+      </div>
+      <p class="popup-likesCard__text">все адреса</p>
+      <div class="popup-likesCard__buttons">
+        <button class="popup-likesCard__button-off">карта</button>
+        <button class=" popup-likesCard__button-off popup-likesCard__button-on">список</button>
+      </div>
+      <div class="popup-likesCard__elements"></div>
+
   <div class="  popup__center ">
     <div class="popup-support">
       <div class="popup-card__close" style="background-color: transparent;">
@@ -298,6 +316,7 @@
         политики в отношении обработки и защиты персональных данных и даёте согласие на их обработку</p>
       <button class="button button_type_primary popup-support__button">
         <span class="button__text">перейти к оплате</span></button>
+
     </div>
   </div>
   <template id="card">
@@ -321,6 +340,7 @@
   <div id="location-popover" class="popover">
     <ul class="popover__list"></ul>
   </div>
+
 </body>
 
 </html>

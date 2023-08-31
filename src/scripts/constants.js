@@ -1,4 +1,7 @@
 //const
+
+export const buttonCardLikes = document.querySelector('#button-likeCards');
+
 export {
   dataFilterTagsTypeEvent,
   dataFilterTagsDays,
