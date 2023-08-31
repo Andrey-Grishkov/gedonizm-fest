@@ -182,6 +182,7 @@
 @import '../blocks/popup/_opened/popup_opened.scss';
 @import '../blocks/popup/__dark-overlay/popup__dark-overlay.scss';
 @import '../blocks/popup/__close/popup__close.scss';
+@import '../blocks/popup/__center/popup__center.scss';
 
 /* card content*/
 @import '../blocks/popup-card/popup-card.scss';
@@ -236,3 +237,12 @@
 @import "../blocks/team/__title/team__title.scss";
 @import "../blocks/team/__list/team__list.scss";
 @import "../blocks/team/__list-item/team__list-item.scss";
+// popupsuport
+@import "../blocks/popup-support/popup-support.scss";
+@import "../blocks/popup-support/__maintext/popup-support__maintext.scss";
+@import "../blocks/popup-support/__text/popup-support__text.scss";
+@import "../blocks/popup-support/__container-price/popup-support__container-price.scss";
+@import "../blocks/popup-support/__input-num/popup-support__input-num.scss";
+@import "../blocks/popup-support/__input-email/popup-support__input-email.scss";
+@import "../blocks/popup-support/__description/popup-support__description.scss";
+@import "../blocks/popup-support/__button/popup-support__button.scss";

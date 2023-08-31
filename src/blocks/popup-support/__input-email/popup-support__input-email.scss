@@ -1,0 +1,12 @@
+.popup-support__input-email{
+    margin: 16px 0 0 40px;
+    min-width: 532px;
+    height: 48px;
+    border-radius: 24px;
+    border: 2px solid $dark-secondary;
+    text-align: center;
+    @media screen and (max-width: $tablet) {
+        margin: 16px 0 0 20px;
+        min-width: 320px;
+    }
+}
