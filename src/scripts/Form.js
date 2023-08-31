@@ -1,5 +1,6 @@
 export class Form {
   constructor() {
+      console.log('createForm');
       this._form = document.querySelector('.form');
 
       this._nameCategory = '';
@@ -13,9 +14,12 @@ export class Form {
       this._checkboxesTypeEvent = document.querySelectorAll('.form__step-checkbox_type-event');
       this._blocksCategory = document.querySelectorAll('[data-category-id]');
       this._blocksOnline = document.querySelectorAll('[data-type-event]');
+      console.log('end_createForm');
   }
 
   setEventListener() {
+    console.log('Start setEventListener');
+
     this._buttonsNext.forEach((button) => {
       button.addEventListener('click', (event) => {
         this._handleNext(event);
@@ -39,6 +43,8 @@ export class Form {
         this._setVisibleInputs();
       });
     });
+
+    console.log('End setEventListener');
   }
 
   _setVisibleInputs() {
@@ -86,10 +92,10 @@ export class Form {
 
     const dataTotal = {};
     dataTotal["мероприятие"] = this._getEventName();
+    dataTotal["тип мероприятия"] = this._typeEvent;
 
 
     console.log(dataTotal);
-    // dataTotal["мероприятие"] = document.querySelector('.form__step-radiobutton_checked').querySelector('.form__step-caption')
   }
 
   _handleCategory(event) {

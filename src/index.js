@@ -9,7 +9,6 @@ if(formContainer) {
   const form = new Form();
   form.setEventListener();
 }
-// let forms = new Form(['cafe', 'lekture', 'party', 'other']);
 
 import { buttonUp, configPhotoGallery, initialPhotoGalleryImages } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
