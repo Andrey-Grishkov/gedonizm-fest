@@ -22,12 +22,14 @@ export  default class Card{
     }
     generate(){
         this._element = this._getElement();
-        var LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
+        let LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
+        if(LikedCards){
         for( let i=0;i<=LikedCards.length;i++){
             if(LikedCards[i]== this._id){
                 this._element.querySelector(".card__like-icon").classList.add('card__like-icon_active')
             }
         }
+    }
         this._element.querySelector(".card__img").src =this._img;
         this._element.querySelector(".card__img").alt =this._name;
         this._element.querySelector(".card__type").textContent =this._type;
@@ -41,7 +43,7 @@ export  default class Card{
     }
     likeCard(evt,id){
         if (evt.target.classList.contains('card__like-icon_active')) {
-           var LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
+           let LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
             for( let i=0;i<=LikedCards.length;i++){
                 if(LikedCards[i]==id){
                     LikedCards = LikedCards.filter(card=> card !==id)
@@ -50,7 +52,7 @@ export  default class Card{
             }
             evt.target.classList.remove('card__like-icon_active');
         } else {
-           var LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
+           let LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
             if(LikedCards == null){
                 LikedCards= []
            }

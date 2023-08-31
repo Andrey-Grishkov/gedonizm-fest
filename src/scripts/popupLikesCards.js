@@ -12,7 +12,7 @@ export default class popupLikesCard extends Popup {
         const cardforLikeContainer = new Section({
             items: dataPeterburgCards,
             renderer: (item) => {
-                var LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
+                const LikedCards = JSON.parse(localStorage.getItem("LikedCards"));
                 for (let i = 0; i <= LikedCards.length; i++) {
                     if (LikedCards[i] == item.id) {
                         const card = new Card({
