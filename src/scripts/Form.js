@@ -3,7 +3,7 @@ export class Form {
       console.log('createForm');
       this._form = document.querySelector('.form');
 
-      this._nameCategory = '';
+      this._nameCategory = 'cafe';
       this._typeEvent = 'offline';
 
       this._buttonsNext = document.querySelectorAll('.button_direction_next');
@@ -103,13 +103,6 @@ export class Form {
     if (event.target.dataset.categoryTypeEvent) {
       this._typeEvent = event.target.dataset.categoryTypeEvent;
     };
-    const classes=event.target.closest('fieldset').querySelector('.button_direction_next').classList;
-    console.log()
-    if (this._nameCategory === '') {
-      classes.add('button__hiden-button_state-disabled');
-    } else {
-      classes.remove('button__hiden-button_state-disabled');
-    }
   }
 
   _handleTypeEvent(event) {
