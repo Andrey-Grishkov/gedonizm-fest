@@ -1,0 +1,10 @@
+.popup-support{
+    position: relative;
+    width: 614px;
+    max-height: 632px;
+    background-color: $snowy;
+    border-radius: 10px;
+    @media screen and (max-width: $tablet) {
+        max-width: 360px;
+    }
+}

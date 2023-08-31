@@ -1,7 +1,9 @@
 export class Popover {
   constructor(popoverSelector, elementSelector, onSelect = () => {}) {
     this.onSelect = onSelect;
+    console.log('popoverSelector - '+popoverSelector)
     this.popover = document.querySelector(popoverSelector);
+    console.log('this.popover - '+this.popover);
     this.popoverList = this.popover.querySelector('.popover__list');
     this.button = document.querySelector(elementSelector);
     this.button.addEventListener('click', () => this._open());

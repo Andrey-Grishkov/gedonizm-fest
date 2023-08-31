@@ -1,0 +1,12 @@
+.popup-likesCard__buttons {
+    overflow: hidden;
+    min-width: 660px;
+    margin: 20px auto;
+    height: 44px;
+    border-radius: 22px;
+    background-color: $light-grey;
+    display: flex;
+    @media screen and (max-width:768px){
+        min-width: 320px;
+    }
+}

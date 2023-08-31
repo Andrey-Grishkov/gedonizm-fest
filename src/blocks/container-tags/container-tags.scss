@@ -1,7 +1,6 @@
 .container-tags {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 12px 8px;
 }

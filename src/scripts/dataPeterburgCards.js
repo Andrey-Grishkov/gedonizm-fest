@@ -1,4 +1,5 @@
 export const dataPeterburgCards = [{
+    id: '0',
     name: 'идентичность: почему нам сложно меняться?',
     type: 'лекция',
     shortDescription: 'лектор: Мария Бархатова',
@@ -13,6 +14,7 @@ export const dataPeterburgCards = [{
     social: 'instagram.com/psihologi_v_bare',
     img: 'https://img.audiomania.ru/images/content/article_2_2021.09.24.jpg'
 }, {
+    id: '1',
     name: 'xачапури и вино',
     type: 'еда и напитки',
     shortDescription: 'капучино, эспрессо и американо в пользу Ночлежки',
@@ -27,6 +29,7 @@ export const dataPeterburgCards = [{
     social: 'instagram.com/psihologi_v_bare',
     img: 'https://static.wixstatic.com/media/d0256a_017b879b16b447929fb5e40bbc8d747c~mv2_d_5436_3624_s_4_2.jpg/v1/fill/w_2500,h_1666,al_c/d0256a_017b879b16b447929fb5e40bbc8d747c~mv2_d_5436_3624_s_4_2.jpg'
 }, {
+    id: '2',
     name: 'coffee therapy',
     type: 'еда и напитки',
     shortDescription: 'кофе и угощения в пользу Ночлежки',
@@ -41,6 +44,7 @@ export const dataPeterburgCards = [{
     social: 'instagram.com/psihologi_v_bare',
     img: 'https://avatars.dzeninfra.ru/get-zen_doc/2945823/pub_5f3d053c8b7f123568dff35a_5f3d086c7527a446e744c5be/scale_1200'
 }, {
+    id: '3',
     name: 'апрельский хэллоуин у Ники',
     type: 'посиделки',
     shortDescription: 'закрытое событие',
@@ -55,6 +59,7 @@ export const dataPeterburgCards = [{
     social: 'instagram.com/psihologi_v_bare',
     img: 'https://espress-help.ru/upload/iblock/25c/25c883787ca0a929aa2083d7e3dde35e.jpg'
 }, {
+    id: '4',
     name: 'идентичность: почему нам сложно меняться?',
     type: 'лекция',
     shortDescription: 'лектор: Мария Бархатова',
