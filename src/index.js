@@ -13,9 +13,10 @@ import Section from './scripts/section';
 import Card from './scripts/Card';
 import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
-import { LocationPopover } from './scripts/Popover'
+import { LocationPopover } from './scripts/Popover';
 import popupLikesCard from './scripts/popupLikesCards';
-/* карточки для слайдера */
+import { buttonCardLikes } from './scripts/constants';
+
 const cardlikePopup = new popupLikesCard('#Likescard-popup')
 import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';

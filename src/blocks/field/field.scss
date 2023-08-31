@@ -1,7 +1,6 @@
 .field {
-  display: flex;
+  @include flex();
   gap: 8px;
-  flex-direction: column;
   border: none;
   margin: 0;
   padding: 0;

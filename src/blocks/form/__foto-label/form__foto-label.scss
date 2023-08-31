@@ -6,7 +6,7 @@
     content: "";
   }
 
-  @media  (max-width: 1439px) {
+  @media  (max-width: $desktop) {
     &::after {
       content: "загрузить с устройства";
     }
