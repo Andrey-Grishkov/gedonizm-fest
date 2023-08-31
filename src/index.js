@@ -1,16 +1,11 @@
 import { Form } from './scripts/Form.js';
-
 import './pages/index.scss';
-
-
-const formContainer = document.querySelector('.form');
-
-if (formContainer) {
-     const form = new Form();
-     form.setEventListener();
-}
-// let forms = new Form(['cafe', 'lekture', 'party', 'other']);
-
+import {
+  dataFilterTagsTypeEvent,
+  dataFilterTagsDays,
+  containerTagsTypeDays,
+  containerTagsTypeEvt,
+} from "./scripts/constants";
 import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
@@ -21,6 +16,15 @@ import popupCard from './scripts/PopupCard';
 import { LocationPopover } from './scripts/Popover';
 import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';
+
+const formContainer = document.querySelector('.form');
+
+if (formContainer) {
+     const form = new Form();
+     form.setEventListener();
+}
+// let forms = new Form(['cafe', 'lekture', 'party', 'other']);
+
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');
 const cardPopup = new popupCard('.popup');
@@ -71,3 +75,45 @@ buttonSupport.addEventListener('click', function () {
      supportPopup.open()
      supportPopup.setEventListeners()
 })
+
+// добавляем фильтр-теги для секции "тип события"
+if (containerTagsTypeEvt) {
+  const tagForContainer = new Section(
+    {
+      items: dataFilterTagsTypeEvent,
+      renderer: (item) => {
+        const filterTag = new FilterTag(
+          ".container-tags_type_evt",
+          ".filter-tag",
+          item,
+          "#filter-tag"
+        );
+        const tagElement = filterTag.generate();
+        tagForContainer.addItem(tagElement);
+      },
+    },
+    ".container-tags_type_evt"
+  );
+  tagForContainer.renderItems();
+}
+
+// добавляем фильтр-теги для секции "дни"
+if (containerTagsTypeDays) {
+  const tagForContainer = new Section(
+    {
+      items: dataFilterTagsDays,
+      renderer: (item) => {
+        const filterTag = new FilterTag(
+          ".container-tags_type_days",
+          ".filter-tag",
+          item,
+          "#filter-tag"
+        );
+        const tagElement = filterTag.generate();
+        tagForContainer.addItem(tagElement);
+      },
+    },
+    ".container-tags_type_days"
+  );
+  tagForContainer.renderItems();
+}

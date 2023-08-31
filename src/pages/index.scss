@@ -91,17 +91,17 @@
 @import "../blocks/form/__foto/form__foto.scss";
 @import "../blocks/form/__foto-label/form__foto-label.scss";
 
-
 @import "../blocks/hidden/hidden.scss";
 
-
 /*mainScreen */
+
 @import '../blocks/mainScreen/main-screen.scss';
 @import'../blocks/mainScreen/__more/main-screen__more.scss';
 @import'../blocks/mainScreen/__more-text/main-screen__more-text.scss';
 @import'../blocks/mainScreen/__more-button/main-screen__more-button.scss';
 @import'../blocks/mainScreen/__more-buttonIcon/main-screen__more-buttonIcon.scss';
 @import'../blocks/mainScreen/__img/main-screen__img.scss';
+
 /* about*/
 @import '../blocks/about/about.scss';
 @import '../blocks/about/__title/about__title.scss';
@@ -168,6 +168,24 @@
 @import "../blocks/about/__why/about__why-pic.scss";
 @import "../blocks/about/__help/about__help-pic.scss";
 @import "../blocks/about/__trust/about__trust-pic.scss";
+
+/* map */
+@import "../blocks/map-container-grid/map-container-grid.scss";
+@import "../blocks/where-to-go/where-to-go.scss";
+@import "../blocks/where-to-go/__header/where-to-go__header.scss";
+@import "../blocks/control-panel/control-panel.scss";
+@import "../blocks/control-panel/__text/control-panel__text.scss";
+@import "../blocks/participation-question/participation-question.scss";
+@import "../blocks/participation-question/__header/participation-question__header.scss";
+@import "../blocks/participation-question/__text/participation-question__text.scss";
+@import "../blocks/filter-block/filter-block.scss";
+@import "../blocks/filter-block/__text/filter-block__text.scss";
+@import "../blocks/map/map.scss";
+@import "../blocks/map/__container-icons/map__container-icons.scss";
+@import "../blocks/map/__pointer/map__pointer.scss";
+@import "../blocks/map/__zoom/map__zoom.scss";
+@import "../blocks/button/__icon/_type/button__icon_type_filtrs.scss";
+@import "../blocks/control-panel/__button-filtr/control-panel__button-filtr.scss";
 
 /* slider */
 @import '../blocks/slider/slider.scss';
@@ -237,6 +255,7 @@
 @import "../blocks/team/__title/team__title.scss";
 @import "../blocks/team/__list/team__list.scss";
 @import "../blocks/team/__list-item/team__list-item.scss";
+
 // popupsuport
 @import "../blocks/popup-support/popup-support.scss";
 @import "../blocks/popup-support/__maintext/popup-support__maintext.scss";

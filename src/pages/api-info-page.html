@@ -59,9 +59,63 @@
     </div>
   </header>
 
-  <div id="map" style="width: 600px; height: 400px"></div>
+    <section class="map-container-grid content">
+      <div class="where-to-go">
+        <h1 class="where-to-go__header">куда пойти</h1>
+        <div class="filter-block">
+          <h2 class="filter-block__text">тип события</h2>
+          <div class="container-tags container-tags_type_evt">
 
-  <footer class="footer">
+          </div>
+        </div>
+        <div class="filter-block">
+          <h2 class="filter-block__text">дни</h2>
+          <div class="container-tags container-tags_type_days">
+          </div>
+        </div>
+        <div class="">
+
+        </div>
+      </div>
+      <div class="control-panel">
+        <div class="switch">
+          <input class="switch__checkbox" type="checkbox">
+          <label class="switch__label" for="">
+            <label class="switch__span-content switch__span-content_map">
+              <img class="switch__image switch__image_map" src="../images/icons/tab_map.svg" alt="карта">
+              <span class="switch__span">карта</span>
+            </label>
+            <label class="switch__span-content switch__span-content_list">
+              <img class="switch__image switch__image_list" src="../images/icons/tab_list.svg" alt="список">
+              <span class="switch__span">список</span>
+            </label>
+          </label>
+      </div>
+        <h3 class="control-panel__text">показано 1-12 из 128</h3>
+        <button class="button button_type_secondary control-panel__button-filtr">
+          <div
+            class="button__icon button__icon_position_left button__icon_type_filtrs"
+          ></div>
+          <span class="button__text">фильтры</span></button
+        >
+      </div>
+      <div class="participation-question">
+        <h2 class="participation-question__header">хотите принять участие в акции?</h2>
+        <P class="participation-question__text">заполните заявку, и мы с вами обязательно свяжемся.</P>
+        <button class="button button_type_secondary">
+          <span class="button__text">узнать подробности</span>
+          <div
+            class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
+          ></div></button>
+      </div>
+      <div class="map" id="map">
+        <div class="map__container-icons">
+          <img class="map__zoom" src="../images/icons/icon-map-zoom.svg">
+          <img class="map__pointer" src="../images/icons/icon-map-pointer.svg">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
     <div class="content footer__content">
       <div class="footer__illustration"></div>
       <div class="footer__block">
@@ -126,8 +180,14 @@
       </div>
     </div>
   </footer>
-  <div id="location-popover" class="popover">
+    <template id="filter-tag">
+        <button class="filter-tag filter-tag_type_off filter-tag_close_yes">
+          <span class="filter-tag__text">фильтр</span>
+          <div class="filter-tag__close filter-tag__close_state_invisible"></div>
+        </button>
+    </template>
+    <div id="location-popover" class="popover">
     <ul class="popover__list"></ul>
   </div>
-</body>
+  </body>
 </html>
