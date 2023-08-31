@@ -1,17 +1,17 @@
-import {Form} from './scripts/Form.js';
+import { Form } from './scripts/Form.js';
 
 import './pages/index.scss';
 
 
 const formContainer = document.querySelector('.form');
 
-if(formContainer) {
-  const form = new Form();
-  form.setEventListener();
+if (formContainer) {
+     const form = new Form();
+     form.setEventListener();
 }
 // let forms = new Form(['cafe', 'lekture', 'party', 'other']);
 
-import { buttonUp, configPhotoGallery, initialPhotoGalleryImages } from './scripts/constants';
+import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
 import Section from './scripts/section';
@@ -20,10 +20,11 @@ import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
 import { LocationPopover } from './scripts/Popover';
 import { PhotoGallery } from './scripts/PhotoGallery';
-
+import Popup from './scripts/popup.js';
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');
 const cardPopup = new popupCard('.popup');
+const supportPopup = new Popup('.popup__center');
 if (sliderContainerElement) {
      const CardforSlider = new Section({
           items: dataPeterburgCards,
@@ -65,3 +66,8 @@ if (galleryContainerElement) {
      const photoGallery = new PhotoGallery(configPhotoGallery);
      photoGallery.setImages(initialPhotoGalleryImages);
 }
+// попус с пожертвованием 
+buttonSupport.addEventListener('click', function () {
+     supportPopup.open()
+     supportPopup.setEventListeners()
+})
