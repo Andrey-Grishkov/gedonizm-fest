@@ -1,6 +1,6 @@
 //const
 
-export const buttonCardLikes = document.querySelector('#button-likeCards');
+export const buttonCardLikes = document.querySelector('.button-likeCards');
 
 export {
   dataFilterTagsTypeEvent,
@@ -38,7 +38,7 @@ const containerTagsTypeDays = document.querySelector(
 const containerTagsTypeEvt = document.querySelector(".container-tags_type_evt");
 
 export const buttonUp = document.querySelector('.button_type_up');
-export const buttonSupport = document.querySelector('#support-Button')
+export const buttonSupport = document.querySelector('.header__actions_hidden_small')
 export const configPhotoGallery = {
   rootSelector: '.gallery',
   imageClass: 'gallery__image',
