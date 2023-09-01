@@ -7,6 +7,7 @@
   border-radius: 22px;
   gap: $margin1-5;
   cursor: pointer;
+  position: relative;
 
   @media screen and (max-width: $desktop) {
     width: 320px;
