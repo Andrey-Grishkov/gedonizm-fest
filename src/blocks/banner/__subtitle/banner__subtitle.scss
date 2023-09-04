@@ -1,0 +1,7 @@
+.banner__subtitle {
+  @extend %fourthTitle;
+}
+
+.banner_color_primary .banner__subtitle {
+  color: $white;
+}
