@@ -1,0 +1,18 @@
+.popup-buy__plus{
+background-color: $purple;
+color: white;
+width: 48px;
+height: 48px;
+border-top-right-radius: 24px;
+border-bottom-right-radius: 24px;
+line-height: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+@media screen and (max-width: $tablet) {
+    width: 44px;
+    height: 44px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+}

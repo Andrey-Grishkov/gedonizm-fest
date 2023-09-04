@@ -1,0 +1,8 @@
+.popup-buy__container{
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0 40px;
+    @media screen and (max-width: $tablet) {
+        margin: 16px  0 0 20px;
+      }
+}

@@ -6,7 +6,7 @@ import {
   containerTagsTypeDays,
   containerTagsTypeEvt,
 } from "./scripts/constants";
-import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport ,buttonCardLikes} from './scripts/constants';
+import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport, buttonCardLikes,buyButton } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
 import Section from './scripts/section';
@@ -23,8 +23,8 @@ import Popup from './scripts/popup.js';
 const formContainer = document.querySelector('.form');
 
 if (formContainer) {
-     const form = new Form();
-     form.setEventListener();
+  const form = new Form();
+  form.setEventListener();
 }
 // let forms = new Form(['cafe', 'lekture', 'party', 'other']);
 
@@ -32,28 +32,28 @@ if (formContainer) {
 const sliderContainerElement = document.querySelector('.slider__elements');
 const cardPopup = new popupCard('.popup');
 const supportPopup = new Popup('.popup__center');
-
+const buyPopup = new Popup('.popup-buy');
 if (sliderContainerElement) {
-     const CardforSlider = new Section({
-          items: dataPeterburgCards,
-          renderer: (item) => {
-               const card = new Card({
-                    item: item, handleLikeClick: (evt) => {
-                         card.likeCard(evt, item.id)
-                    }, handleCardClick: () => {
-                         cardPopup.open(item)
-                         cardPopup.setEventListeners()
-                    }
-               }, '#card')
-               const cardElement = card.generate()
-               CardforSlider.addItem(cardElement)
-          }
-     }, '.slider__elements')
-     CardforSlider.renderItems()
+  const CardforSlider = new Section({
+    items: dataPeterburgCards,
+    renderer: (item) => {
+      const card = new Card({
+        item: item, handleLikeClick: (evt) => {
+          card.likeCard(evt, item.id)
+        }, handleCardClick: () => {
+          cardPopup.open(item)
+          cardPopup.setEventListeners()
+        }
+      }, '#card')
+      const cardElement = card.generate()
+      CardforSlider.addItem(cardElement)
+    }
+  }, '.slider__elements')
+  CardforSlider.renderItems()
 }
-buttonCardLikes.addEventListener('click',function(){
-     cardlikePopup.open()
-     cardlikePopup.setEventListeners()
+buttonCardLikes.addEventListener('click', function () {
+  cardlikePopup.open()
+  cardlikePopup.setEventListeners()
 })
 
 // Выбор локации
@@ -61,23 +61,23 @@ const locationPopover = new LocationPopover('#location-popover', '.header__locat
 locationPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург'], 'Санкт-Петербург');
 
 if (buttonUp) {
-     new ButtonUpManager(buttonUp).addEventListener();
+  new ButtonUpManager(buttonUp).addEventListener();
 }
 
 // Слайдер для фото-галереи
 
 const galleryContainerElement = document.querySelector(configPhotoGallery.rootSelector);
 if (galleryContainerElement) {
-     const photoGallery = new PhotoGallery(configPhotoGallery);
-     photoGallery.setImages(initialPhotoGalleryImages);
+  const photoGallery = new PhotoGallery(configPhotoGallery);
+  photoGallery.setImages(initialPhotoGalleryImages);
 }
 
 // попап с пожертвованием
-if(buttonSupport){
-buttonSupport.addEventListener('click', function () {
-     supportPopup.open()
-     supportPopup.setEventListeners()
-})
+if (buttonSupport) {
+  buttonSupport.addEventListener('click', function () {
+    supportPopup.open()
+    supportPopup.setEventListeners()
+  })
 }
 /* фильтр-тэги */
 const containerTags = document.querySelector(".container-tags");
@@ -127,4 +127,11 @@ if (containerTagsTypeDays) {
     ".container-tags_type_days"
   );
   tagForContainer.renderItems();
+}
+/* popup покупки билета */
+if(buyButton){
+  buyButton.addEventListener('click',function(){
+    buyPopup.open()
+    buyPopup.setEventListeners()
+  })
 }

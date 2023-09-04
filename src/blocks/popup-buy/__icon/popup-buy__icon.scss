@@ -1,0 +1,7 @@
+.popup-buy__icon{
+  cursor: pointer;
+    @media screen and (max-width: $tablet) {
+        width: 12px;
+        height: 12px;
+      }
+}

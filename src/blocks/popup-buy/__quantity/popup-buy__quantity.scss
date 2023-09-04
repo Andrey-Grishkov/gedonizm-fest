@@ -1,0 +1,13 @@
+.popup-buy__quantity {
+    width: 96px;
+    height: 44px;
+    padding: 0;
+    border: 2px solid $purple;
+    &::placeholder {
+        text-align: center;
+    }
+    @media screen and (max-width: $tablet) {
+        width: 48px;
+        height: 40px;
+      }
+}
