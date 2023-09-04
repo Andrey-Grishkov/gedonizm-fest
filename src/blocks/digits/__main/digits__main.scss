@@ -1,0 +1,17 @@
+.digits__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "dinners line ."
+  ". lines cookies";
+  gap: 20px;
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "cookies"
+    "dinners";
+  }
+}

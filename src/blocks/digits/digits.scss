@@ -1,0 +1,7 @@
+.digits {
+  margin: $margin10 $margin5;
+
+  @media screen and (max-width: 640px) {
+    margin: $margin5 $margin2-5;
+  }
+}
