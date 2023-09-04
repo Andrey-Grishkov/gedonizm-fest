@@ -275,3 +275,33 @@
 @import "../blocks/popup-support/__input-email/popup-support__input-email.scss";
 @import "../blocks/popup-support/__description/popup-support__description.scss";
 @import "../blocks/popup-support/__button/popup-support__button.scss";
+
+
+// part-in
+@import "../blocks/part-in/part-in.scss";
+@import "../blocks/part-in/__subtitle/part-in__subtitle.scss";
+@import "../blocks/part-in/__subtitle/_position/part-in__subtitle_position_left.scss";
+@import "../blocks/part-in/__text-list/part-in__text-list.scss";
+@import "../blocks/part-in/__text-list/part-in__text-list-part.scss";
+@import "../blocks/part-in/__text-list/_position/part-in__text-list_position_right.scss";
+@import "../blocks/part-in/__button/part-in__button.scss";
+
+// digits
+@import "../blocks/digits/digits.scss";
+@import "../blocks/digits/digits_dinner.scss";
+@import "../blocks/digits/digits_cookies.scss";
+@import "../blocks/digits/__subtitle/digits__subtitle.scss";
+@import "../blocks/digits/__circle/digits__circle.scss";
+@import "../blocks/digits/__circle/_position/digits__circle_position_left.scss";
+@import "../blocks/digits/__circle/_position/digits__circle_position_right.scss";
+@import "../blocks/digits/__circle/_size/digits__circle_size_big.scss";
+@import "../blocks/digits/__circle/_size/digits__circle_size_small.scss";
+@import "../blocks/digits/__main/digits__main.scss";
+@import "../blocks/digits/__pic/digits__pic_cookies.scss";
+@import "../blocks/digits/__pic/digits__pic_dinner.scss";
+@import "../blocks/digits/__pic/digits__pic_line.scss";
+@import "../blocks/digits/__pic/digits__pic_lines.scss";
+@import "../blocks/digits/__text-list/digits__text-list.scss";
+@import "../blocks/digits/__text-list/_stats/digits__text-list_stats.scss";
+@import "../blocks/digits/__text-list/_stats/_position/digits__text-list_stats_position_left.scss";
+@import "../blocks/digits/__text-list/_stats/_position/digits__text-list_stats_position_right.scss/";
