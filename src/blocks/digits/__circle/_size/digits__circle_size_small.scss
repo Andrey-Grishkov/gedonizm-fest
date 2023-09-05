@@ -1,0 +1,16 @@
+.digits__circle_size_small {
+  grid-area: line;
+  height: 149px;
+  width: 149px;
+  justify-self: end;
+  margin-right: $margin10;
+
+  @media screen and (max-width: 1300px) {
+    grid-area: line-small;
+    justify-self: center;
+  }
+
+  @media screen and (max-width: 970px) {
+    display: none;
+  }
+}

@@ -8,11 +8,12 @@
   <meta name="description" content="Главная страница проекта Гедонизм-фест">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
+
 <body class="page">
   <header class="header">
     <div class="content header__content">
       <div class="header__logo">
-        <a class="logo logo_size_small" href="index.html"></a>
+        <a class="logo logo_size_small" href="#"></a>
         <button class="button button_type_text header__location">
           <span class="button__icon button__icon_position_left button__icon_type_checkpoint"></span>
           <span class="button__text">Cанкт-Петербург</span>
@@ -21,24 +22,24 @@
       <nav>
         <ul class="list header__navigation">
           <li class="list__item">
-            <a href="api-info-page.html" class="button button_type_text">
+            <a href="#" class="button button_type_text">
               <span class="button__text">куда пойти</span>
             </a>
           </li>
           <li class="list__item">
-            <a href="form.html" class="button button_type_text">
+            <a href="#" class="button button_type_text">
               <span class="button__text">стать участником</span>
             </a>
           </li>
           <li class="list__item">
-            <a href="about.html" class="button button_type_text">
+            <a href="#" class="button button_type_text">
               <span class="button__text">о фестивале</span>
             </a>
           </li>
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="button button_type_text button-likeCards" >
+        <button class="button button_type_text">
           <span class="button__icon button__icon_position_left button__icon_type_like"></span>
           <span class="button__text">хочу пойти</span>
         </button>
@@ -64,10 +65,9 @@
         <p class="about__paragraph">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
           домашние посиделки с друзьями — и помогайте бездомным! </p>
         <p class="about__paragraph">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
-        <button class="about__button" onclick="document.location='about.html'">узнать подробнее </button>
+        <button class="about__button">узнать подробнее </button>
       </div>
     </section>
-
     <div class="slider">
       <div class=" content slider__content">
         <h2 class="slider__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
@@ -94,16 +94,69 @@
         </div>
         <div class="slider__elements"></div>
         <div class="slider__button-container">
-          <button class="button button_type_primary" onclick="document.location='api-info-page.html'" style="width: 100%;">
+          <button class="button button_type_primary" style="width: 100%;">
             <span class="button__text">смотреть все события </span></button>
         </div>
       </div>
     </div>
+    <section class="digits">
+      <h2 class="digits__subtitle">цифры дня</h2>
+      <div class="digits__main">
+        <div class="digits_dinner digits__circle digits__circle_size_big">
+          <div class="digits__pic_dinner"></div>
+          <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_right">
+              <h2 class="digits__subtitle">2 500</h2>
+              <p class="digits__text-list-part">
+                cтолько обедов приготовили для нуждающихся
+              </p>
+          </div>
+        </div>
+        <div class="digits__pic_line"></div>
+        <div class="digits__circle digits__circle_size_small"></div>
+        <div class="digits_cookies digits__circle digits__circle_size_big">
+          <div class="digits__pic_cookies"></div>
+          <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_left">
+            <h2 class="digits__subtitle">15 000</h2>
+            <p class="digits__text-list-part">
+              cтолько печенья продали в поддержку акции
+            </p>
+          </div>
+        </div>
+        <div class="digits__pic_lines"></div>
+      </div>
+    </section>
+    <section class="part-in">
+      <h2 class="part-in__subtitle part-in__subtitle_position_left">примите акцию у себя</h2>
+      <ul class="part-in__text-list part-in__text-list_position_right">
+        <li class="part-in__text-list-part">
+          Кто может принять участие в акции?
+        </li>
+        <li class="part-in__text-list-part">
+          Абсолютно все. Продавайте кофе в своем кафе, устройте мастер-класс 
+          по вязанию или соберите друзей у себя дома. Помогать просто, 
+          узнайте подробности и заполните форму
+        </li>
+        <a class="button button_type_secondary part-in__button" href="form.html">
+          <span class="button__text">стать участником</span>
+        </a>
+      </ul>
+    </section>
     <section class="photo-block content">
       <h2 class="photo-block__title">#hedonismfest</h2>
       <p class="photo-block__subtitle">Ставь хештег и попади в ленту на сайте</p>
       <div class="gallery">
+        <img class="gallery__image gallery__image1 gallery__image_mobile_visible"
+          src="<%=require('../images/gallery/image-park.svg')%>" alt="Парк">
+        <img class="gallery__image gallery__image2" src="<%=require('../images/gallery/image-girl.svg')%>" alt="Девушка">
+        <img class="gallery__image gallery__image3" src="<%=require('../images/gallery/image-coctails.svg')%>" alt="Коктели">
+        <img class="gallery__image gallery__image4" src="<%=require('../images/gallery/image-exhibition.svg')%>" alt="Выставка">
+        <img class="gallery__image gallery__image5" src="<%=require('../images/gallery/image-party.svg')%>" alt="Вечеринка">
         <div class="gallery__slider">
+          <div class="gallery__slider-item gallery__slider-item_active"></div>
+          <div class="gallery__slider-item"></div>
+          <div class="gallery__slider-item"></div>
+          <div class="gallery__slider-item"></div>
+          <div class="gallery__slider-item"></div>
         </div>
       </div>
     </section>
@@ -186,7 +239,7 @@
       </div>
     </div>
   </footer>
-  <div class="popup" id="Card-popup">
+  <div class="popup">
     <div class=" popup-card">
       <div class="popup-card__close">
         <div class="popup__close"></div>
@@ -263,60 +316,12 @@
       </div>
       <div class="popup-card__buttons">
         <button class="button button_type_secondary popup-card__button">
-          <div class="button__icon button__icon_position_left button__icon_type_like "></div>
+          <div class="button__icon button__icon_position_left button__icon_type_like"></div>
           <span class="button__text">хочу пойти</span>
         </button>
         <button class="button button_type_primary  popup-card__button ">
           <span class="button__text">купить билет</span></button>
       </div>
-    </div>
-  </div>
-
-  <div class="popup " id="Likescard-popup">
-    <div class="popup-likesCard">
-      <button class="button button_type_text popup-likesCard__button-back ">
-        <span class="button__text">назад</span>
-        <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
-          style="transform: scale(-1, 1)"></div>
-      </button>
-      <div class="popup-card__close popup-likesCard__close">
-        <div class="popup__close"></div>
-      </div>
-      <p class="popup-likesCard__text">все адреса</p>
-      <div class="popup-likesCard__buttons">
-        <button class="popup-likesCard__button-off">карта</button>
-        <button class=" popup-likesCard__button-off popup-likesCard__button-on">список</button>
-      </div>
-      <div class="popup-likesCard__elements"></div>
-    </div>
-    </div>
-  <div class="  popup__center ">
-    <div class="popup-support">
-      <div class="popup-card__close" style="background-color: transparent;">
-        <div class="popup__close"></div>
-      </div>
-      <h2 class="popup-support__maintext">пожертвовать</h2>
-      <p class="popup-support__text">сумма</p>
-      <div class="popup-support__container-price">
-        <button class="button button_type_primary">
-          <span class="button__text">100₽</span></button>
-        <button class="button button_type_secondary">
-          <span class="button__text">300₽</span></button>
-        <button class="button button_type_secondary">
-          <span class="button__text">500₽</span></button>
-        <button class="button button_type_secondary">
-          <span class="button__text">1000₽</span></button>
-        <button class="button button_type_secondary">
-          <span class="button__text">3000₽</span></button>
-        <input type="text" class="popup-support__input-num" placeholder="другая сумма">
-      </div>
-      <p class="popup-support__text">email</p>
-      <input type="email" class="popup-support__input-email" placeholder="укажите почту для отправки чека">
-      <p class="popup-support__description">Нажимая кнопку «перейти к оплате» вы соглашаетесь с условиями оферты,
-        политики в отношении обработки и защиты персональных данных и даёте согласие на их обработку</p>
-      <button class="button button_type_primary popup-support__button">
-        <span class="button__text">перейти к оплате</span></button>
-
     </div>
   </div>
   <template id="card">
@@ -340,7 +345,6 @@
   <div id="location-popover" class="popover">
     <ul class="popover__list"></ul>
   </div>
-
 </body>
 
 </html>
