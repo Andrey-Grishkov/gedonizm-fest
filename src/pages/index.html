@@ -7,7 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Главная страница проекта Гедонизм-фест">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=de6ccfa4-cdb5-4899-b61d-65a7d18cfc29&lang=ru_RU"
+    type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map("popup-map", {
+        center: [55.76, 37.64],
+        zoom: 7
+      });
+    }
+  </script>
 </head>
+
 <body class="page">
   <header class="header">
     <div class="content header__content">
@@ -38,7 +50,7 @@
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="button button_type_text button-likeCards" >
+        <button class="button button_type_text button-likeCards">
           <span class="button__icon button__icon_position_left button__icon_type_like"></span>
           <span class="button__text">хочу пойти</span>
         </button>
@@ -94,7 +106,8 @@
         </div>
         <div class="slider__elements"></div>
         <div class="slider__button-container">
-          <button class="button button_type_primary" onclick="document.location='api-info-page.html'" style="width: 100%;">
+          <button class="button button_type_primary" onclick="document.location='api-info-page.html'"
+            style="width: 100%;">
             <span class="button__text">смотреть все события </span></button>
         </div>
       </div>
@@ -272,7 +285,7 @@
     </div>
   </div>
 
-  <div class="popup " id="Likescard-popup">
+  <div class="popup" id="Likescard-popup">
     <div class="popup-likesCard">
       <button class="button button_type_text popup-likesCard__button-back ">
         <span class="button__text">назад</span>
@@ -284,12 +297,20 @@
       </div>
       <p class="popup-likesCard__text">все адреса</p>
       <div class="popup-likesCard__buttons">
-        <button class="popup-likesCard__button-off">карта</button>
-        <button class=" popup-likesCard__button-off popup-likesCard__button-on">список</button>
+        <button class="popup-likesCard__button-off popup-likesCard__map">карта</button>
+        <button class=" popup-likesCard__button-off popup-likesCard__button-on popup-likesCard__list">список</button>
       </div>
-      <div class="popup-likesCard__elements"></div>
+      <div class="popup-likesCard__elements popup-likesCard__elements_opened"></div>
+      <div class="popup-map">
+        <div class="map" id="popup-map" style="height: 100%;">
+          <div class="map__container-icons">
+            <img class="map__zoom" src="../images/icons/icon-map-zoom.svg">
+            <img class="map__pointer" src="../images/icons/icon-map-pointer.svg">
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
+  </div>
   <div class="  popup__center ">
     <div class="popup-support">
       <div class="popup-card__close" style="background-color: transparent;">

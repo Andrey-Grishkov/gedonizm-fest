@@ -21,7 +21,6 @@ import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';
 
 const formContainer = document.querySelector('.form');
-
 if (formContainer) {
      const form = new Form();
      form.setEventListener();
