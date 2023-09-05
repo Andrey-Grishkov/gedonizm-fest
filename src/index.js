@@ -26,7 +26,6 @@ if (formContainer) {
      const form = new Form();
      form.setEventListener();
 }
-// let forms = new Form(['cafe', 'lekture', 'party', 'other']);
 
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');

@@ -1,3 +1,5 @@
+import {LocationPopover} from './Popover.js';
+
 export class Form {
   constructor() {
       this._form = document.querySelector('.form');
@@ -14,7 +16,7 @@ export class Form {
       this._blocksCategory = document.querySelectorAll('[data-category-id]');
       this._blocksOnline = document.querySelectorAll('[data-type-event]');
 
-      this._partyType = document.querySelector('.form__radio_party-type');
+      this._partyType = document.querySelector('.form__radio_party-type');https://www.youtube.com/watch?v=-Y42ihl5Kyc
       this._stepFirstData = document.querySelector('.form__step-radiobutton_checked').querySelectorAll('.form__step-caption');
 
       this._dropZone = document.querySelector('.form__foto');
@@ -23,40 +25,11 @@ export class Form {
       this._fotoClose = document.querySelector('.form__foto-close');
       this._fotoLabel = document.querySelector('.form__foto-label');
       this._fotoInput = document.querySelector('.form__input-file');
-  }
 
-  setEventListener() {
-    this._buttonsNext.forEach((button) => {
-      button.addEventListener('click', (event) => {
-        this._handleNext(event);
-        this._setVisibleInputs();
-      });
-    });
-
-    this._buttonsBack.forEach((button) => {
-      button.addEventListener('click', this._handleBack)
-    });
-
-    this._form.addEventListener('submit', (event) => this._handleSubmitForm.call(this, event));
-
-    this._checkboxesCategory.forEach((checkbox) => {
-      checkbox.addEventListener('click', (event) => {this._handleCategory(event)});
-    });
-
-    this._checkboxesTypeEvent.forEach((checkbox) => {
-      checkbox.addEventListener('click', (event) => {
-        this._handleTypeEvent(event);
-        this._setVisibleInputs();
-      });
-    });
-
-    this._dropZone.addEventListener('dragover', (event) => this._handleDragover(event));
-
-    this._dropZone.addEventListener('drop', (event) => this._handleDrop.call(this, event));
-
-    this._dropZone.addEventListener('click', (event) => this._handleImageClick.call(this, event));
-
-    this._fotoClose.addEventListener('click', (event) => this._handleCloseFoto.call(this, event));
+      console.log(document.querySelector('.field__input_city'));
+      this._cityEventPopover = new LocationPopover('#location-popover', '.field__input_city');
+      console.log(this._cityEventPopover);
+      // this._cityEventPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург'], 'Санкт-Петербург');
 
   }
 
@@ -143,6 +116,7 @@ export class Form {
         this._loadImage(file);
       }
    }
+   this._fotoInput.value = '';
   }
 
   _loadImage(file) {
@@ -167,6 +141,7 @@ export class Form {
     this._fotoLabel.classList.remove('hidden');
     this._fotoIcon.classList.remove('hidden');
     this._fotoClose.classList.add('hidden');
+    event.stopPropagation();
   }
 
   _getEventName() {
@@ -205,4 +180,40 @@ export class Form {
     })
     return result;
   }
+
+  setEventListener() {
+    this._buttonsNext.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        this._handleNext(event);
+        this._setVisibleInputs();
+      });
+    });
+
+    this._buttonsBack.forEach((button) => {
+      button.addEventListener('click', this._handleBack)
+    });
+
+    this._form.addEventListener('submit', (event) => this._handleSubmitForm(event));
+
+    this._checkboxesCategory.forEach((checkbox) => {
+      checkbox.addEventListener('click', (event) => {this._handleCategory(event)});
+    });
+
+    this._checkboxesTypeEvent.forEach((checkbox) => {
+      checkbox.addEventListener('click', (event) => {
+        this._handleTypeEvent(event);
+        this._setVisibleInputs();
+      });
+    });
+
+    this._dropZone.addEventListener('dragover', (event) => this._handleDragover(event));
+
+    this._dropZone.addEventListener('drop', (event) => this._handleDrop.call(this, event));
+
+    this._dropZone.addEventListener('click', (event) => this._handleImageClick.call(this, event));
+
+    this._fotoClose.addEventListener('click', (event) => this._handleCloseFoto.call(this, event));
+
+  }
+
 }

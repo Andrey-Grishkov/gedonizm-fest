@@ -1,7 +1,8 @@
 .field {
-  @include flex();
+  @include flex(column, flex-start, stretch);
   gap: 8px;
   border: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }

@@ -1,9 +1,14 @@
 .form__main {
-    @include flex(column, flex-start, flex-start);
+    @include flex(column, stretch, flex-start);
     gap: $margin3;
-    padding-left: 0 0 0 $margin30;
+    margin: 0;
+    padding: 0;
     border: 0;
+    width: calc(100vw - 480px);
     @media screen and (max-width: $desktop) {
+      width: calc(100vw - 40px);
+    }
+    @media screen and (max-width: $tablet) {
         gap:$margin2-5;
         padding-left: 0;
     }

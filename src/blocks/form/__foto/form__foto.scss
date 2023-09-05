@@ -9,7 +9,7 @@
   cursor: pointer;
   position: relative;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $tablet) {
     width: 320px;
     height: 220px;
   }

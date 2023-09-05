@@ -4,20 +4,12 @@
   gap: 0;
   content: "";
   border: 2px solid #3B3748;
-  height: 24px;
-  width: 483px;
+  width: 100%;
   border-radius: 26px;
-  padding: $margin1-5 $margin3;
   cursor: pointer;
   z-index: 2;
 
-  @media screen and (max-width: $desktop) {
-    height: 20px;
-    width: 280px;
-    padding: $margin1-5 $margin2-5;
-  }
-
-  .form__step-checkbox:checked + & {
+ .form__step-checkbox:checked + & {
     background-color: $purple;
     border-color: $purple;
     color: $light-grey;
