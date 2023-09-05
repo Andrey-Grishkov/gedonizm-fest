@@ -292,8 +292,6 @@
 @import "../blocks/digits/digits_cookies.scss";
 @import "../blocks/digits/__subtitle/digits__subtitle.scss";
 @import "../blocks/digits/__circle/digits__circle.scss";
-@import "../blocks/digits/__circle/_position/digits__circle_position_left.scss";
-@import "../blocks/digits/__circle/_position/digits__circle_position_right.scss";
 @import "../blocks/digits/__circle/_size/digits__circle_size_big.scss";
 @import "../blocks/digits/__circle/_size/digits__circle_size_small.scss";
 @import "../blocks/digits/__main/digits__main.scss";
@@ -302,6 +300,7 @@
 @import "../blocks/digits/__pic/digits__pic_line.scss";
 @import "../blocks/digits/__pic/digits__pic_lines.scss";
 @import "../blocks/digits/__text-list/digits__text-list.scss";
+@import "../blocks/digits/__text-list/digits__text-list_part.scss";
 @import "../blocks/digits/__text-list/_stats/digits__text-list_stats.scss";
 @import "../blocks/digits/__text-list/_stats/_position/digits__text-list_stats_position_left.scss";
 @import "../blocks/digits/__text-list/_stats/_position/digits__text-list_stats_position_right.scss/";
