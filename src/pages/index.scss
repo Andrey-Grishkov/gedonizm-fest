@@ -259,6 +259,7 @@
 // popup-likesCard
 @import "../blocks/popup-likesCard/popup-likesCard.scss";
 @import "../blocks/popup-likesCard/__elements/popup-likesCard__elements.scss";
+@import "../blocks/popup-likesCard/__elements/_opened/popup-likesCard__elements_opened.scss";
 @import "../blocks/popup-likesCard/__button-back/popup-likesCard__button-back.scss";
 @import "../blocks/popup-likesCard/__text/popup-likesCard__text.scss";
 @import "../blocks/popup-likesCard/__buttons/popup-likesCard__buttons.scss";
@@ -275,6 +276,10 @@
 @import "../blocks/popup-support/__input-email/popup-support__input-email.scss";
 @import "../blocks/popup-support/__description/popup-support__description.scss";
 @import "../blocks/popup-support/__button/popup-support__button.scss";
+
+// popup-map
+@import "../blocks/popup-map/popup-map.scss";
+@import "../blocks/popup-map/_opened/popup-map_opened.scss";
 
 @import "../blocks/popup-support/__description-link/popup-support__description-link.scss";
 //popup-buy

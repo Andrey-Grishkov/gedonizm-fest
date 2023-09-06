@@ -22,7 +22,6 @@ import popupBuy from './scripts/popupBuy.js';
 import { Banner } from './scripts/Banner.js';
 
 const formContainer = document.querySelector('.form');
-
 if (formContainer) {
   const form = new Form();
   form.setEventListener();
