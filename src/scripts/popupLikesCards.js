@@ -3,8 +3,9 @@ import Popup from "./popup";
 import Section from "./section";
 import Card from "./Card";
 export default class popupLikesCard extends Popup {
-    constructor(selector) {
+    constructor(selector,cardPopup) {
         super(selector)
+        this._cardPopup = cardPopup;
     }
     open() {
         super.open()
@@ -19,8 +20,9 @@ export default class popupLikesCard extends Popup {
                             item: item, handleLikeClick: (evt) => {
                                 card.likeCard(evt, item.id)
                             }, handleCardClick: () => {
-                                cardPopup.open(item)
-                                cardPopup.setEventListeners()
+                                this._cardPopup.open(item)
+                                this.close()
+                                this._cardPopup.setEventListeners()
                             }
                         }, '#card')
                         const cardElement = card.generate()

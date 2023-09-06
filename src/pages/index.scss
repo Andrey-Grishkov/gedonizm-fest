@@ -200,8 +200,8 @@
 @import '../blocks/popup/_opened/popup_opened.scss';
 @import '../blocks/popup/__dark-overlay/popup__dark-overlay.scss';
 @import '../blocks/popup/__close/popup__close.scss';
-@import '../blocks/popup/__center/popup__center.scss';
-
+@import '../blocks/popup/_position/_center/popup_position_center.scss';
+@import '../blocks/popup/__close-back/popup__close-back.scss';
 /* card content*/
 @import '../blocks/popup-card/popup-card.scss';
 @import '../blocks/popup-card/__close/popup-card__close.scss';
@@ -275,6 +275,19 @@
 @import "../blocks/popup-support/__input-email/popup-support__input-email.scss";
 @import "../blocks/popup-support/__description/popup-support__description.scss";
 @import "../blocks/popup-support/__button/popup-support__button.scss";
+
+@import "../blocks/popup-support/__description-link/popup-support__description-link.scss";
+//popup-buy
+@import "../blocks/popup-buy/__container/popup-buy__container.scss";
+@import "../blocks/popup-buy/__cost/popup-buy__cost.scss";
+@import "../blocks/popup-buy/__minus/popup-buy__minus.scss";
+@import "../blocks/popup-buy/__icon/popup-buy__icon.scss";
+@import "../blocks/popup-buy/__plus/popup-buy__plus.scss";
+@import "../blocks/popup-buy/__quantity/popup-buy__quantity.scss";
+@import "../blocks/popup-buy/__container-type-of-payment/popup-buy__container-type-of-payment.scss";
+@import "../blocks/popup-buy/__radio/popup-buy__radio.scss";
+@import "../blocks/popup-buy/__radio/_fake/popup-buy__radio_fake.scss";
+@import "../blocks/popup-buy/__radio/_text/popup-buy__radio_text.scss"
 
 // part-in
 @import "../blocks/part-in/part-in.scss";

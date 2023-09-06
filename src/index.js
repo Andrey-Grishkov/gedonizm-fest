@@ -6,7 +6,7 @@ import {
   containerTagsTypeDays,
   containerTagsTypeEvt,
 } from "./scripts/constants";
-import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport ,buttonCardLikes} from './scripts/constants';
+import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport, buttonCardLikes,buyButton } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
 import Section from './scripts/section';
@@ -15,43 +15,44 @@ import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
 import { LocationPopover } from './scripts/Popover';
 import popupLikesCard from './scripts/popupLikesCards';
-
-const cardlikePopup = new popupLikesCard('#Likescard-popup')
+import popupSupport from './scripts/popupSupport.js';
 import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';
+import popupBuy from './scripts/popupBuy.js';
 import { Banner } from './scripts/Banner.js';
 
 const formContainer = document.querySelector('.form');
 
 if (formContainer) {
-     const form = new Form();
-     form.setEventListener();
+  const form = new Form();
+  form.setEventListener();
 }
 // let forms = new Form(['cafe', 'lekture', 'party', 'other']);
 
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');
-const cardPopup = new popupCard('.popup');
-const supportPopup = new Popup('.popup__center');
-
+const cardPopup = new popupCard('.Card-popup');
+const supportPopup = new popupSupport('.popup_type_support');
+const buyPopup = new popupBuy('.popup_type_buy');
+const cardlikePopup = new popupLikesCard('.Likescard-popup',cardPopup)
 if (sliderContainerElement) {
-     const CardforSlider = new Section({
-          items: dataPeterburgCards,
-          renderer: (item) => {
-               const card = new Card({
-                    item: item, handleLikeClick: (evt) => {
-                         card.likeCard(evt, item.id)
-                    }, handleCardClick: () => {
-                         cardPopup.open(item)
-                         cardPopup.setEventListeners()
-                    }
-               }, '#card')
-               const cardElement = card.generate()
-               CardforSlider.addItem(cardElement)
-          }
-     }, '.slider__elements')
-     CardforSlider.renderItems()
 
+  const CardforSlider = new Section({
+    items: dataPeterburgCards,
+    renderer: (item) => {
+      const card = new Card({
+        item: item, handleLikeClick: (evt) => {
+          card.likeCard(evt, item.id)
+        }, handleCardClick: () => {
+          cardPopup.open(item)
+          cardPopup.setEventListeners()
+        }
+      }, '#card')
+      const cardElement = card.generate()
+      CardforSlider.addItem(cardElement)
+    }
+  }, '.slider__elements')
+  CardforSlider.renderItems()
 }
 
 if(buttonCardLikes) {
@@ -61,29 +62,28 @@ if(buttonCardLikes) {
   })
 }
 
-
 // Выбор локации
 const locationPopover = new LocationPopover('#location-popover', '.header__location');
 locationPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург'], 'Санкт-Петербург');
 
 if (buttonUp) {
-     new ButtonUpManager(buttonUp).addEventListener();
+  new ButtonUpManager(buttonUp).addEventListener();
 }
 
 // Слайдер для фото-галереи
 
 const galleryContainerElement = document.querySelector(configPhotoGallery.rootSelector);
 if (galleryContainerElement) {
-     const photoGallery = new PhotoGallery(configPhotoGallery);
-     photoGallery.setImages(initialPhotoGalleryImages);
+  const photoGallery = new PhotoGallery(configPhotoGallery);
+  photoGallery.setImages(initialPhotoGalleryImages);
 }
 
 // попап с пожертвованием
-if(buttonSupport){
-buttonSupport.addEventListener('click', function () {
-     supportPopup.open()
-     supportPopup.setEventListeners()
-})
+if (buttonSupport) {
+  buttonSupport.addEventListener('click', function () {
+    supportPopup.open()
+    supportPopup.setEventListeners()
+  })
 }
 /* фильтр-тэги */
 const containerTags = document.querySelector(".container-tags");
@@ -133,6 +133,15 @@ if (containerTagsTypeDays) {
     ".container-tags_type_days"
   );
   tagForContainer.renderItems();
+}
+
+/* popup покупки билета */
+if(buyButton){
+  buyButton.addEventListener('click',function(){
+    cardPopup.close()
+    buyPopup.open()
+    buyPopup.setEventListeners()
+  })
 }
 
 // Установка слушателей на кнопку банера

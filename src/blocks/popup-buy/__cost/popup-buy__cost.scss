@@ -1,0 +1,10 @@
+.popup-buy__cost {
+    @include text(48px, 52px, 500);
+    color: $purple;
+  width: 336px;
+  @media screen and (max-width: $tablet) {
+    width: 160px;
+    color: $purple !important;
+    @include text(32px, 36px,500);
+  }
+}
