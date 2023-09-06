@@ -19,6 +19,8 @@ import popupSupport from './scripts/popupSupport.js';
 import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';
 import popupBuy from './scripts/popupBuy.js';
+import { Banner } from './scripts/Banner.js';
+
 const formContainer = document.querySelector('.form');
 
 if (formContainer) {
@@ -34,6 +36,7 @@ const supportPopup = new popupSupport('.popup_type_support');
 const buyPopup = new popupBuy('.popup_type_buy');
 const cardlikePopup = new popupLikesCard('.Likescard-popup',cardPopup)
 if (sliderContainerElement) {
+
   const CardforSlider = new Section({
     items: dataPeterburgCards,
     renderer: (item) => {
@@ -51,10 +54,13 @@ if (sliderContainerElement) {
   }, '.slider__elements')
   CardforSlider.renderItems()
 }
-buttonCardLikes.addEventListener('click', function () {
-  cardlikePopup.open()
-  cardlikePopup.setEventListeners()
-})
+
+if(buttonCardLikes) {
+  buttonCardLikes.addEventListener('click',function(){
+    cardlikePopup.open()
+    cardlikePopup.setEventListeners()
+  })
+}
 
 // Выбор локации
 const locationPopover = new LocationPopover('#location-popover', '.header__location');
@@ -128,6 +134,7 @@ if (containerTagsTypeDays) {
   );
   tagForContainer.renderItems();
 }
+
 /* popup покупки билета */
 if(buyButton){
   buyButton.addEventListener('click',function(){
@@ -136,3 +143,10 @@ if(buyButton){
     buyPopup.setEventListeners()
   })
 }
+
+// Установка слушателей на кнопку банера
+const bannerElements = document.querySelectorAll('.banner');
+bannerElements.forEach(element => {
+  const banner = new Banner({ selector: `#${element.id}`, buttonSelector: '.banner__button' });
+  banner.setEventListeners();
+});

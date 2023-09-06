@@ -1,0 +1,12 @@
+.digits {
+  max-width: 1440px;
+  margin: $margin10 auto;
+
+  @media screen and (max-width: 1440px) {
+    margin: $margin10 $margin5;
+  }
+
+  @media screen and (max-width: 960px) {
+    margin: $margin5 $margin2-5;
+  }
+}

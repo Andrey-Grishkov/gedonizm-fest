@@ -1,0 +1,7 @@
+.part-in__text-list_position_right {
+  margin-right: 280px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: $margin5;
+  }
+}
