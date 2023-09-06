@@ -1,0 +1,21 @@
+.popup-buy__radio_fake{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid $black;
+    position: relative;
+    border-radius: 50%;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: 2px solid black;
+        transition: .2s;
+    }
+}

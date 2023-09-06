@@ -15,11 +15,10 @@ import { dataPeterburgCards } from './scripts/dataPeterburgCards';
 import popupCard from './scripts/PopupCard';
 import { LocationPopover } from './scripts/Popover';
 import popupLikesCard from './scripts/popupLikesCards';
-
-const cardlikePopup = new popupLikesCard('#Likescard-popup')
+import popupSupport from './scripts/popupSupport.js';
 import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';
-
+import popupBuy from './scripts/popupBuy.js';
 const formContainer = document.querySelector('.form');
 
 if (formContainer) {
@@ -30,9 +29,10 @@ if (formContainer) {
 
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');
-const cardPopup = new popupCard('.popup');
-const supportPopup = new Popup('.popup__center');
-const buyPopup = new Popup('.popup-buy');
+const cardPopup = new popupCard('.Card-popup');
+const supportPopup = new popupSupport('.popup_type_support');
+const buyPopup = new popupBuy('.popup_type_buy');
+const cardlikePopup = new popupLikesCard('.Likescard-popup',cardPopup)
 if (sliderContainerElement) {
   const CardforSlider = new Section({
     items: dataPeterburgCards,
@@ -131,6 +131,7 @@ if (containerTagsTypeDays) {
 /* popup покупки билета */
 if(buyButton){
   buyButton.addEventListener('click',function(){
+    cardPopup.close()
     buyPopup.open()
     buyPopup.setEventListeners()
   })

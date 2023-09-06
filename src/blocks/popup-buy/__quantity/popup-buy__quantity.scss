@@ -3,8 +3,13 @@
     height: 44px;
     padding: 0;
     border: 2px solid $purple;
-    &::placeholder {
-        text-align: center;
+    text-align: center;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;    
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
     }
     @media screen and (max-width: $tablet) {
         width: 48px;
