@@ -50,11 +50,16 @@ if (sliderContainerElement) {
           }
      }, '.slider__elements')
      CardforSlider.renderItems()
+
 }
-buttonCardLikes.addEventListener('click',function(){
-     cardlikePopup.open()
-     cardlikePopup.setEventListeners()
-})
+
+if(buttonCardLikes) {
+  buttonCardLikes.addEventListener('click',function(){
+    cardlikePopup.open()
+    cardlikePopup.setEventListeners()
+  })
+}
+
 
 // Выбор локации
 const locationPopover = new LocationPopover('#location-popover', '.header__location');
