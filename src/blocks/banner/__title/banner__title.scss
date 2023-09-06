@@ -1,0 +1,7 @@
+.banner__title {
+  @extend %secondTitle
+}
+
+.banner_color_primary .banner__title {
+  color: $white;
+}

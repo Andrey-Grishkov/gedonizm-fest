@@ -1,0 +1,17 @@
+.digits__pic_lines {
+  grid-area: lines;
+  @include backgroundImage('../images/lines-group.svg');
+  height: 144px;
+  width: 88px;
+  justify-self: center;
+  align-self: self-end;
+  margin-top: -$margin10;
+
+  @media screen and (max-width: 1300px) {
+    grid-area: lines-small;
+  }
+
+  @media screen and (max-width: 970px) {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+.digits__circle_size_big {
+  height: 480px;
+  width: 480px;
+
+  @media screen and (max-width: 970px) {
+    height: $margin40;
+    width: $margin40;
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 280px;
+    width: 280px;
+  }
+}

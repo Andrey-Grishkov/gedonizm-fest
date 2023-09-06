@@ -1,0 +1,8 @@
+.banner__text-content {
+  @include flex(column, flex-start, flex-start);
+  gap: 16px;
+
+  @media all and (max-width: $tablet) {
+    gap: 12px;
+  }
+}

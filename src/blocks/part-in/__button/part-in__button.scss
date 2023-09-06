@@ -1,0 +1,6 @@
+.part-in__button {
+  @media screen and (max-width: 640px) {
+    border-color: $white;
+    color: white;
+  }
+}
