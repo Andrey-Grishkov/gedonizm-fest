@@ -102,12 +102,6 @@
 @import'../blocks/mainScreen/__more-buttonIcon/main-screen__more-buttonIcon.scss';
 @import'../blocks/mainScreen/__img/main-screen__img.scss';
 
-/* about*/
-@import '../blocks/about/about.scss';
-@import '../blocks/about/__title/about__title.scss';
-@import '../blocks/about/__maintext/about__maintext.scss';
-@import '../blocks/about/__paragraph/about__paragraph.scss';
-@import '../blocks/about/__button/about__button.scss';
 
 @import "../blocks/switch/switch.scss";
 @import "../blocks/switch/__checkbox/switch__checkbox.scss";
@@ -146,9 +140,19 @@
 @import "../blocks/footer/__social/footer__social.scss";
 @import "../blocks/footer/footer.scss";
 
+// Main page -> about section
+@import "../blocks/main-about/__button/main-about__button.scss";
+@import "../blocks/main-about/__paragraph/main-about__paragraph.scss";
+@import "../blocks/main-about/__text-block/main-about__text-block.scss";
+@import "../blocks/main-about/__title/main-about__title.scss";
+@import "../blocks/main-about/main-about.scss";
+
 // About
-@import "../blocks/page/page.scss";
 @import "../blocks/about/about.scss";
+@import "../blocks/about/__title/about__title.scss";
+@import "../blocks/about/__maintext/about__maintext.scss";
+@import "../blocks/about/__paragraph/about__paragraph.scss";
+@import "../blocks/about/__button/about__button.scss";
 @import "../blocks/about/__info/about__info.scss";
 @import "../blocks/about/__title/about__title.scss";
 @import "../blocks/about/__text-list/about__text-list.scss";
@@ -240,11 +244,6 @@
 //gallery
 @import "../blocks/gallery/gallery.scss";
 @import "../blocks/gallery/__image/gallery__image.scss";
-@import "../blocks/gallery/__image1/gallery__image1.scss";
-@import "../blocks/gallery/__image2/gallery__image2.scss";
-@import "../blocks/gallery/__image3/gallery__image3.scss";
-@import "../blocks/gallery/__image4/gallery__image4.scss";
-@import "../blocks/gallery/__image5/gallery__image5.scss";
 @import "../blocks/gallery/__image/_mobile_visible/gallery__image_mobile_visible.scss";
 @import "../blocks/gallery/__slider/gallery__slider.scss";
 @import "../blocks/gallery/__slider-item/gallery__slider-item.scss";

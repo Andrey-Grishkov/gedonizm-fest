@@ -51,21 +51,28 @@
     </div>
   </header>
   <main>
-    <section class="main-screen">
+    <div class="main-screen">
       <div class="main-screen__img"></div>
       <div class="main-screen__more">
         <p class="main-screen__more-text">Узнать больше </p>
-        <a href="#about" class="main-screen__more-button"><img class="main-screen__more-buttonIcon"
-            src="../images/icons/downPointer.svg"></a>
+        <a href="#about" class="main-screen__more-button">
+          <img class="main-screen__more-buttonIcon" src="../images/icons/downPointer.svg">
+        </a>
       </div>
-    </section>
-    <section id="about" class="about content">
-      <h2 class="about__title">просто приятно помогать</h2>
-      <div class="about__maintext">
-        <p class="about__paragraph">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
-          домашние посиделки с друзьями — и помогайте бездомным! </p>
-        <p class="about__paragraph">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
-        <button class="about__button" onclick="document.location='about.html'">узнать подробнее </button>
+    </div>
+    <section class="main-about content">
+      <h1 class="main-about__title">просто приятно помогать</h1>
+      <div class="main-about__text-block">
+        <p class="main-about__paragraph">
+          Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
+          домашние посиделки с друзьями — и помогайте бездомным!
+        </p>
+        <p class="main-about__paragraph">
+          Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.
+        </p>
+        <button class="button button_type_secondary main-about__button" onclick="document.location='about.html'">
+          <span class="button__text">узнать подробнее</span>
+        </button>
       </div>
     </section>
     <div class="slider">
@@ -74,27 +81,28 @@
         <div class="slider__buttons">
           <button class="button button_type_secondary">
             <span class="button__text">посетить мастер класс</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
           <button class="button button_type_secondary">
             <span class="button__text">выпить кофе</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
           <button class="button button_type_secondary">
             <span class="button__text">не выходить из дома</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
           <button class="button button_type_secondary">
             <span class="button__text">сходить на экскурсию</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button><button class="button button_type_secondary">
             <span class="button__text">побывать в музее</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
         </div>
         <div class="slider__elements"></div>
         <div class="slider__button-container">
-          <button class="button button_type_primary" onclick="document.location='api-info-page.html'" style="width: 100%;">
+          <button class="button button_type_primary" onclick="document.location='api-info-page.html'"
+            style="width: 100%;">
             <span class="button__text">смотреть все события </span></button>
         </div>
       </div>
@@ -105,10 +113,10 @@
         <div class="digits_dinner digits__circle digits__circle_size_big">
           <div class="digits__pic_dinner"></div>
           <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_right">
-              <h2 class="digits__subtitle">2 500</h2>
-              <p class="digits__text-list-part">
-                cтолько обедов приготовили для нуждающихся
-              </p>
+            <h2 class="digits__subtitle">2 500</h2>
+            <p class="digits__text-list-part">
+              cтолько обедов приготовили для нуждающихся
+            </p>
           </div>
         </div>
         <div class="digits__pic_line"></div>
@@ -145,18 +153,7 @@
       <h2 class="photo-block__title">#hedonismfest</h2>
       <p class="photo-block__subtitle">Ставь хештег и попади в ленту на сайте</p>
       <div class="gallery">
-        <img class="gallery__image gallery__image1 gallery__image_mobile_visible"
-          src="<%=require('../images/gallery/image-park.svg')%>" alt="Парк">
-        <img class="gallery__image gallery__image2" src="<%=require('../images/gallery/image-girl.svg')%>" alt="Девушка">
-        <img class="gallery__image gallery__image3" src="<%=require('../images/gallery/image-coctails.svg')%>" alt="Коктели">
-        <img class="gallery__image gallery__image4" src="<%=require('../images/gallery/image-exhibition.svg')%>" alt="Выставка">
-        <img class="gallery__image gallery__image5" src="<%=require('../images/gallery/image-party.svg')%>" alt="Вечеринка">
         <div class="gallery__slider">
-          <div class="gallery__slider-item gallery__slider-item_active"></div>
-          <div class="gallery__slider-item"></div>
-          <div class="gallery__slider-item"></div>
-          <div class="gallery__slider-item"></div>
-          <div class="gallery__slider-item"></div>
         </div>
       </div>
     </section>
@@ -310,17 +307,19 @@
             </nav>
           </div>
           <button class="button button_type_text popup-card__share-text">
-            <div class="button__icon button__icon_position_left button__icon_type_window "></div>скопировать ссылку
+            <span class="button__icon button__icon_position_left button__icon_type_window "></span>
+            <span class="button__text">скопировать ссылку</span>
           </button>
         </div>
       </div>
       <div class="popup-card__buttons">
         <button class="button button_type_secondary popup-card__button">
-          <div class="button__icon button__icon_position_left button__icon_type_like"></div>
+          <span class="button__icon button__icon_position_left button__icon_type_like"></span>
           <span class="button__text">хочу пойти</span>
         </button>
-        <button class="button button_type_primary  popup-card__button ">
-          <span class="button__text">купить билет</span></button>
+        <button class="button button_type_primary popup-card__button ">
+          <span class="button__text">купить билет</span>
+        </button>
       </div>
     </div>
   </div>
@@ -328,8 +327,8 @@
     <div class="popup-likesCard">
       <button class="button button_type_text popup-likesCard__button-back ">
         <span class="button__text">назад</span>
-        <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
-             style="transform: scale(-1, 1)"></div>
+        <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
+          style="transform: scale(-1, 1)"></span>
       </button>
       <div class="popup-card__close popup-likesCard__close">
         <div class="popup__close"></div>
@@ -337,7 +336,7 @@
       <p class="popup-likesCard__text">все адреса</p>
       <div class="popup-likesCard__buttons">
         <button class="popup-likesCard__button-off">карта</button>
-        <button class=" popup-likesCard__button-off popup-likesCard__button-on">список</button>
+        <button class="popup-likesCard__button-off popup-likesCard__button-on">список</button>
       </div>
       <div class="popup-likesCard__elements"></div>
     </div>

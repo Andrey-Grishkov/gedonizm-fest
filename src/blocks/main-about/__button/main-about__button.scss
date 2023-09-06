@@ -1,0 +1,7 @@
+.main-about__button {
+  margin-top: 8px;
+
+  @media screen and (max-width: $desktop) {
+    margin-top: 0;
+  }
+}
