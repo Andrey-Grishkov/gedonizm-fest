@@ -184,7 +184,7 @@
 
           <fieldset class="field field__input_city" data-type-event="offline">
             <label class="field__title">город</label>
-            <span class="field__input field_type_icon button__text" placeholder="выберите из списка"></span>
+            <span class="field__input field_type_icon" placeholder="выберите из списка">выберите из списка</span>
           </fieldset>
           <fieldset class="field" data-type-event="offline">
             <label class="field__title">название заведения</label>
@@ -470,6 +470,10 @@
 </template>
 
 <div id="location-popover" class="popover">
+  <ul class="popover__list"></ul>
+</div>
+
+<div id="action-location" class="popover">
   <ul class="popover__list"></ul>
 </div>
 

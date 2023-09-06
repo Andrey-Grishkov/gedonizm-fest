@@ -1,4 +1,4 @@
-import {LocationPopover} from './Popover.js';
+import {Popover} from './Popover.js';
 
 export class Form {
   constructor() {
@@ -26,11 +26,8 @@ export class Form {
       this._fotoLabel = document.querySelector('.form__foto-label');
       this._fotoInput = document.querySelector('.form__input-file');
 
-      console.log(document.querySelector('.field__input_city'));
-      this._cityEventPopover = new LocationPopover('#location-popover', '.field__input_city');
-      console.log(this._cityEventPopover);
-      // this._cityEventPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург'], 'Санкт-Петербург');
-
+      this._cityEventPopover = new Popover('#action-location', '.field__input_city', this._handleLocationSelect);
+      this._cityEventPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург']);
   }
 
   _setVisibleInputs() {
@@ -176,9 +173,19 @@ export class Form {
     inputs.forEach((input) => {
       let inputName = input.querySelector('.field__title').textContent;
       let inputValue = input.querySelector('.field__input').value;
+      if (!inputValue) {
+        inputValue = input.querySelector('.field__input').textContent;
+      }
       result[inputName] = inputValue;
     })
     return result;
+  }
+
+  _handleLocationSelect(name) {
+    let actionLocation = document.querySelector('.field_type_icon');
+    actionLocation.textContent = name;
+    actionLocation.classList.add('field_type_icon_defined');
+    console.log(actionLocation.color);
   }
 
   setEventListener() {
