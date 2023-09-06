@@ -204,8 +204,8 @@
 @import '../blocks/popup/_opened/popup_opened.scss';
 @import '../blocks/popup/__dark-overlay/popup__dark-overlay.scss';
 @import '../blocks/popup/__close/popup__close.scss';
-@import '../blocks/popup/__center/popup__center.scss';
-
+@import '../blocks/popup/_position/_center/popup_position_center.scss';
+@import '../blocks/popup/__close-back/popup__close-back.scss';
 /* card content*/
 @import '../blocks/popup-card/popup-card.scss';
 @import '../blocks/popup-card/__close/popup-card__close.scss';
@@ -258,6 +258,7 @@
 // popup-likesCard
 @import "../blocks/popup-likesCard/popup-likesCard.scss";
 @import "../blocks/popup-likesCard/__elements/popup-likesCard__elements.scss";
+@import "../blocks/popup-likesCard/__elements/_opened/popup-likesCard__elements_opened.scss";
 @import "../blocks/popup-likesCard/__button-back/popup-likesCard__button-back.scss";
 @import "../blocks/popup-likesCard/__text/popup-likesCard__text.scss";
 @import "../blocks/popup-likesCard/__buttons/popup-likesCard__buttons.scss";
@@ -275,6 +276,22 @@
 @import "../blocks/popup-support/__description/popup-support__description.scss";
 @import "../blocks/popup-support/__button/popup-support__button.scss";
 
+// popup-map
+@import "../blocks/popup-map/popup-map.scss";
+@import "../blocks/popup-map/_opened/popup-map_opened.scss";
+
+@import "../blocks/popup-support/__description-link/popup-support__description-link.scss";
+//popup-buy
+@import "../blocks/popup-buy/__container/popup-buy__container.scss";
+@import "../blocks/popup-buy/__cost/popup-buy__cost.scss";
+@import "../blocks/popup-buy/__minus/popup-buy__minus.scss";
+@import "../blocks/popup-buy/__icon/popup-buy__icon.scss";
+@import "../blocks/popup-buy/__plus/popup-buy__plus.scss";
+@import "../blocks/popup-buy/__quantity/popup-buy__quantity.scss";
+@import "../blocks/popup-buy/__container-type-of-payment/popup-buy__container-type-of-payment.scss";
+@import "../blocks/popup-buy/__radio/popup-buy__radio.scss";
+@import "../blocks/popup-buy/__radio/_fake/popup-buy__radio_fake.scss";
+@import "../blocks/popup-buy/__radio/_text/popup-buy__radio_text.scss";
 
 // part-in
 @import "../blocks/part-in/part-in.scss";
@@ -302,4 +319,14 @@
 @import "../blocks/digits/__text-list/digits__text-list_part.scss";
 @import "../blocks/digits/__text-list/_stats/digits__text-list_stats.scss";
 @import "../blocks/digits/__text-list/_stats/_position/digits__text-list_stats_position_left.scss";
-@import "../blocks/digits/__text-list/_stats/_position/digits__text-list_stats_position_right.scss/";
+@import "../blocks/digits/__text-list/_stats/_position/digits__text-list_stats_position_right.scss";
+
+// Banner
+@import "../blocks/banner/banner.scss";
+@import "../blocks/banner/__button/banner__button.scss";
+@import "../blocks/banner/__content/banner__content.scss";
+@import "../blocks/banner/__illustration/banner__illustration.scss";
+@import "../blocks/banner/__subtitle/banner__subtitle.scss";
+@import "../blocks/banner/__text-content/banner__text-content.scss";
+@import "../blocks/banner/__title/banner__title.scss";
+@import "../blocks/banner/_color_primary/banner_color_primary.scss";

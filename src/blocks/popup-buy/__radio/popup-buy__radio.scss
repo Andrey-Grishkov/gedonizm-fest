@@ -1,0 +1,13 @@
+.popup-buy__radio{
+  display: none;
+}
+.popup-buy__radio:checked + .popup-buy__radio_fake::before{   
+    width: 10px;
+    height: 10px;
+    background-color: $purple;
+    border: none;
+    border-radius: 5px;
+}
+.popup-buy__radio:checked + .popup-buy__radio_fake{
+    border: 2px solid $purple;
+}

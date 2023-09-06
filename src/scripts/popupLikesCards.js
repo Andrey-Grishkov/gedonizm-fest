@@ -3,8 +3,12 @@ import Popup from "./popup";
 import Section from "./section";
 import Card from "./Card";
 export default class popupLikesCard extends Popup {
-    constructor(selector) {
+    constructor(selector,cardPopup) {
         super(selector)
+        this._buttonMap = this._popup.querySelector('.popup-likesCard__map')
+        this._buttonlist = this._popup.querySelector('.popup-likesCard__list')
+        this._cardPopup = cardPopup;
+
     }
     open() {
         super.open()
@@ -19,8 +23,9 @@ export default class popupLikesCard extends Popup {
                             item: item, handleLikeClick: (evt) => {
                                 card.likeCard(evt, item.id)
                             }, handleCardClick: () => {
-                                cardPopup.open(item)
-                                cardPopup.setEventListeners()
+                                this._cardPopup.open(item)
+                                this.close()
+                                this._cardPopup.setEventListeners()
                             }
                         }, '#card')
                         const cardElement = card.generate()
@@ -35,6 +40,18 @@ export default class popupLikesCard extends Popup {
         super.setEventListeners()
         this._popup.querySelector('.popup-likesCard__button-back').addEventListener('click', () => {
             this.close();
+        })
+        this._buttonMap.addEventListener('click',()=>{
+            this._buttonMap.classList.add('popup-likesCard__button-on');
+            this._buttonlist.classList.remove('popup-likesCard__button-on');
+            this._popup.querySelector('.popup-likesCard__elements').classList.remove('popup-likesCard__elements_opened')
+            this._popup.querySelector('.popup-map').classList.add('popup-map_opened')
+        })
+        this._buttonlist.addEventListener('click',()=>{
+            this._buttonMap.classList.remove('popup-likesCard__button-on');
+            this._buttonlist.classList.add('popup-likesCard__button-on');
+            this._popup.querySelector('.popup-likesCard__elements').classList.add('popup-likesCard__elements_opened')
+            this._popup.querySelector('.popup-map').classList.remove('popup-map_opened')
         })
     }
 } 
