@@ -1,0 +1,16 @@
+.part-in__subtitle {
+  padding: 0;
+  margin: 0;
+  @extend %secondTitle;
+  text-transform: lowercase;
+  align-self: start;
+
+  @media screen and (max-width: 1199px) {
+    align-self:auto;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: 100%;
+    color: $white;
+  }
+}

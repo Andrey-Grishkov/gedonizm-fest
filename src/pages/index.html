@@ -105,7 +105,6 @@
         <button class="about__button" onclick="document.location='about.html'">узнать подробнее </button>
       </div>
     </section>
-
     <section class="slider">
       <div class=" content slider__content">
         <h2 class="slider__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
@@ -142,7 +141,18 @@
       <h2 class="photo-block__title">#hedonismfest</h2>
       <p class="photo-block__subtitle">Ставь хештег и попади в ленту на сайте</p>
       <div class="gallery">
+        <img class="gallery__image gallery__image1 gallery__image_mobile_visible"
+          src="<%=require('../images/gallery/image-park.svg')%>" alt="Парк">
+        <img class="gallery__image gallery__image2" src="<%=require('../images/gallery/image-girl.svg')%>" alt="Девушка">
+        <img class="gallery__image gallery__image3" src="<%=require('../images/gallery/image-coctails.svg')%>" alt="Коктели">
+        <img class="gallery__image gallery__image4" src="<%=require('../images/gallery/image-exhibition.svg')%>" alt="Выставка">
+        <img class="gallery__image gallery__image5" src="<%=require('../images/gallery/image-party.svg')%>" alt="Вечеринка">
         <div class="gallery__slider">
+          <div class="gallery__slider-item gallery__slider-item_active"></div>
+          <div class="gallery__slider-item"></div>
+          <div class="gallery__slider-item"></div>
+          <div class="gallery__slider-item"></div>
+          <div class="gallery__slider-item"></div>
         </div>
       </div>
     </section>
@@ -302,7 +312,7 @@
       </div>
       <div class="popup-card__buttons">
         <button class="button button_type_secondary popup-card__button">
-          <div class="button__icon button__icon_position_left button__icon_type_like "></div>
+          <div class="button__icon button__icon_position_left button__icon_type_like"></div>
           <span class="button__text">хочу пойти</span>
         </button>
         <button class="button button_type_primary  popup-card__button ">
@@ -310,13 +320,12 @@
       </div>
     </div>
   </div>
-
   <div class="popup " id="Likescard-popup">
     <div class="popup-likesCard">
       <button class="button button_type_text popup-likesCard__button-back ">
         <span class="button__text">назад</span>
         <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
-          style="transform: scale(-1, 1)"></div>
+             style="transform: scale(-1, 1)"></div>
       </button>
       <div class="popup-card__close popup-likesCard__close">
         <div class="popup__close"></div>
