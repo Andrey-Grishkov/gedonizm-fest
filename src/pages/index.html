@@ -8,6 +8,7 @@
   <meta name="description" content="Главная страница проекта Гедонизм-фест">
   <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
 </head>
+
 <body class="page">
   <header class="header">
     <div class="content header__content">
@@ -38,7 +39,7 @@
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="button button_type_text button-likeCards" >
+        <button class="button button_type_text button-likeCards">
           <span class="button__icon button__icon_position_left button__icon_type_like"></span>
           <span class="button__text">хочу пойти</span>
         </button>
@@ -50,6 +51,43 @@
     </div>
   </header>
   <main>
+    <section id="banner_type_error" class="banner hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">ошибка 404</h2>
+          <h4 class="banner__subtitle">похоже, такой страницы не существует</h4>
+          <a href="/" class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </a>
+        </div>
+        <img src="<%=require('../images/banners/illustration-404.svg')%>" alt="ошибка 404" class="banner__illustration">
+      </div>
+    </section>
+    <section id="banner_type_thanks" class="banner banner_color_primary hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">спасибо!</h2>
+          <h4 class="banner__subtitle">благодаря вам мы сможем помочь людям начать жить снова</h4>
+          <a href="/" class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </a>
+        </div>
+        <img src="<%=require('../images/banners/illustration-thanks.svg')%>" alt="спасибо" class="banner__illustration">
+      </div>
+    </section>
+    <section id="banner_type_success" class="banner banner_color_primary hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">спасибо за заявку!</h2>
+          <h4 class="banner__subtitle">с вами свяжутся в ближайшее время</h4>
+          <a href="/" class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </a>
+        </div>
+        <img src="<%=require('../images/banners/illustration-thanks-application.svg')%>" alt="спасибо за заявку"
+          class="banner__illustration">
+      </div>
+    </section>
     <section class="main-screen">
       <div class="main-screen__img"></div>
       <div class="main-screen__more">
@@ -68,7 +106,7 @@
       </div>
     </section>
 
-    <div class="slider">
+    <section class="slider">
       <div class=" content slider__content">
         <h2 class="slider__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
         <div class="slider__buttons">
@@ -94,11 +132,12 @@
         </div>
         <div class="slider__elements"></div>
         <div class="slider__button-container">
-          <button class="button button_type_primary" onclick="document.location='api-info-page.html'" style="width: 100%;">
+          <button class="button button_type_primary" onclick="document.location='api-info-page.html'"
+            style="width: 100%;">
             <span class="button__text">смотреть все события </span></button>
         </div>
       </div>
-    </div>
+    </section>
     <section class="photo-block content">
       <h2 class="photo-block__title">#hedonismfest</h2>
       <p class="photo-block__subtitle">Ставь хештег и попади в ленту на сайте</p>
@@ -191,7 +230,7 @@
       <div class="popup-card__close">
         <div class="popup__close"></div>
       </div>
-      <img class="popup-card__img" src="../images/img.png" alt="">
+      <img class="popup-card__img" src="<%=require('../images/img.png')%>" alt="Человек">
       <div class="popup-card__support">
         <div class="popup-card__support-icon"></div>
         <p class="popup-card__support-text"> перечисляем в
@@ -289,7 +328,7 @@
       </div>
       <div class="popup-likesCard__elements"></div>
     </div>
-    </div>
+  </div>
   <div class="  popup__center ">
     <div class="popup-support">
       <div class="popup-card__close" style="background-color: transparent;">
@@ -324,7 +363,7 @@
       <div class="card__like">
         <button class="card__like-icon"></button>
       </div>
-      <img class="card__img" src="../images/img.png" alt="">
+      <img class="card__img" src="<%=require('../images/img.png')%>" alt="Человек">
       <div class="card__wrapper">
         <p class="card__type"></p>
         <p class="card__time"></p>
@@ -339,42 +378,6 @@
   </template>
   <div id="location-popover" class="popover">
     <ul class="popover__list"></ul>
-  </div>
-  <div class="banner">
-    <div class="banner__content">
-      <div class="banner__text-content">
-        <h2 class="banner__title">ошибка 404</h2>
-        <h4 class="banner__subtitle">похоже, такой страницы не существует</h4>
-        <a href="/" class="button button_type_secondary banner__button">
-          <span class="button__text">на главную</span>
-        </a>
-      </div>
-      <img src="<%=require('../images/banners/illustration-404.svg')%>" alt="Illustration" class="banner__illustration">
-    </div>
-  </div>
-  <div class="banner banner_color_primary">
-    <div class="banner__content">
-      <div class="banner__text-content">
-        <h2 class="banner__title">спасибо!</h2>
-        <h4 class="banner__subtitle">благодаря вам мы сможем помочь людям начать жить снова</h4>
-        <a href="/" class="button button_type_secondary banner__button">
-          <span class="button__text">на главную</span>
-        </a>
-      </div>
-      <img src="<%=require('../images/banners/illustration-thanks.svg')%>" alt="Illustration" class="banner__illustration">
-    </div>
-  </div>
-  <div class="banner banner_color_primary">
-    <div class="banner__content">
-      <div class="banner__text-content">
-        <h2 class="banner__title">спасибо за заявку!</h2>
-        <h4 class="banner__subtitle">с вами свяжутся в ближайшее время</h4>
-        <a href="/" class="button button_type_secondary banner__button">
-          <span class="button__text">на главную</span>
-        </a>
-      </div>
-      <img src="<%=require('../images/banners/illustration-thanks-application.svg')%>" alt="Illustration" class="banner__illustration">
-    </div>
   </div>
 </body>
 
