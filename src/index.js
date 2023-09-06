@@ -19,6 +19,7 @@ import popupLikesCard from './scripts/popupLikesCards';
 const cardlikePopup = new popupLikesCard('#Likescard-popup')
 import { PhotoGallery } from './scripts/PhotoGallery';
 import Popup from './scripts/popup.js';
+import { Banner } from './scripts/Banner.js';
 
 const formContainer = document.querySelector('.form');
 
@@ -133,3 +134,10 @@ if (containerTagsTypeDays) {
   );
   tagForContainer.renderItems();
 }
+
+// Установка слушателей на кнопку банера
+const bannerElements = document.querySelectorAll('.banner');
+bannerElements.forEach(element => {
+  const banner = new Banner({ selector: `#${element.id}`, buttonSelector: '.banner__button' });
+  banner.setEventListeners();
+});

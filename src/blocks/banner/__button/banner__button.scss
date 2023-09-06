@@ -1,0 +1,14 @@
+.banner__button {
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.banner_color_primary .banner__button {
+  color: $white;
+  border-color: $white;
+
+  &:hover {
+    color: $dark-secondary;
+    border-color: $dark-secondary;
+  }
+}

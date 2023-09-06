@@ -1,0 +1,13 @@
+.banner__content {
+  @include flex(row, center, center);
+  padding: 160px 20px;
+  margin: 0 auto;
+  gap: 40px;
+  max-width: 880px;
+  box-sizing: border-box;
+
+  @media all and (max-width: $tablet) {
+    @include flex(column-reverse, center, center);
+    padding: 40px 20px;
+  }
+}

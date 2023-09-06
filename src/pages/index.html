@@ -51,6 +51,43 @@
     </div>
   </header>
   <main>
+    <section id="banner_type_error" class="banner hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">ошибка 404</h2>
+          <h4 class="banner__subtitle">похоже, такой страницы не существует</h4>
+          <button class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </button>
+        </div>
+        <img src="<%=require('../images/banners/illustration-404.svg')%>" alt="ошибка 404" class="banner__illustration">
+      </div>
+    </section>
+    <section id="banner_type_thanks" class="banner banner_color_primary hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">спасибо!</h2>
+          <h4 class="banner__subtitle">благодаря вам мы сможем помочь людям начать жить снова</h4>
+          <button class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </button>
+        </div>
+        <img src="<%=require('../images/banners/illustration-thanks.svg')%>" alt="спасибо" class="banner__illustration">
+      </div>
+    </section>
+    <section id="banner_type_success" class="banner banner_color_primary hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">спасибо за заявку!</h2>
+          <h4 class="banner__subtitle">с вами свяжутся в ближайшее время</h4>
+          <button class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </button>
+        </div>
+        <img src="<%=require('../images/banners/illustration-thanks-application.svg')%>" alt="спасибо за заявку"
+          class="banner__illustration">
+      </div>
+    </section>
     <section class="main-screen">
       <div class="main-screen__img"></div>
       <div class="main-screen__more">
@@ -68,7 +105,7 @@
         <button class="about__button" onclick="document.location='about.html'">узнать подробнее </button>
       </div>
     </section>
-    <div class="slider">
+    <section class="slider">
       <div class=" content slider__content">
         <h2 class="slider__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
         <div class="slider__buttons">
@@ -94,21 +131,22 @@
         </div>
         <div class="slider__elements"></div>
         <div class="slider__button-container">
-          <button class="button button_type_primary" onclick="document.location='api-info-page.html'" style="width: 100%;">
+          <button class="button button_type_primary" onclick="document.location='api-info-page.html'"
+            style="width: 100%;">
             <span class="button__text">смотреть все события </span></button>
         </div>
       </div>
-    </div>
+    </section>
     <section class="digits">
       <h2 class="digits__subtitle">цифры дня</h2>
       <div class="digits__main">
         <div class="digits_dinner digits__circle digits__circle_size_big">
           <div class="digits__pic_dinner"></div>
           <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_right">
-              <h2 class="digits__subtitle">2 500</h2>
-              <p class="digits__text-list-part">
-                cтолько обедов приготовили для нуждающихся
-              </p>
+            <h2 class="digits__subtitle">2 500</h2>
+            <p class="digits__text-list-part">
+              cтолько обедов приготовили для нуждающихся
+            </p>
           </div>
         </div>
         <div class="digits__pic_line"></div>
@@ -145,18 +183,7 @@
       <h2 class="photo-block__title">#hedonismfest</h2>
       <p class="photo-block__subtitle">Ставь хештег и попади в ленту на сайте</p>
       <div class="gallery">
-        <img class="gallery__image gallery__image1 gallery__image_mobile_visible"
-          src="<%=require('../images/gallery/image-park.svg')%>" alt="Парк">
-        <img class="gallery__image gallery__image2" src="<%=require('../images/gallery/image-girl.svg')%>" alt="Девушка">
-        <img class="gallery__image gallery__image3" src="<%=require('../images/gallery/image-coctails.svg')%>" alt="Коктели">
-        <img class="gallery__image gallery__image4" src="<%=require('../images/gallery/image-exhibition.svg')%>" alt="Выставка">
-        <img class="gallery__image gallery__image5" src="<%=require('../images/gallery/image-party.svg')%>" alt="Вечеринка">
         <div class="gallery__slider">
-          <div class="gallery__slider-item gallery__slider-item_active"></div>
-          <div class="gallery__slider-item"></div>
-          <div class="gallery__slider-item"></div>
-          <div class="gallery__slider-item"></div>
-          <div class="gallery__slider-item"></div>
         </div>
       </div>
     </section>
@@ -244,7 +271,7 @@
       <div class="popup-card__close">
         <div class="popup__close"></div>
       </div>
-      <img class="popup-card__img" src="../images/img.png" alt="">
+      <img class="popup-card__img" src="<%=require('../images/img.png')%>" alt="Человек">
       <div class="popup-card__support">
         <div class="popup-card__support-icon"></div>
         <p class="popup-card__support-text"> перечисляем в
@@ -329,7 +356,7 @@
       <button class="button button_type_text popup-likesCard__button-back ">
         <span class="button__text">назад</span>
         <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
-             style="transform: scale(-1, 1)"></div>
+          style="transform: scale(-1, 1)"></div>
       </button>
       <div class="popup-card__close popup-likesCard__close">
         <div class="popup__close"></div>
@@ -376,7 +403,7 @@
       <div class="card__like">
         <button class="card__like-icon"></button>
       </div>
-      <img class="card__img" src="../images/img.png" alt="">
+      <img class="card__img" src="<%=require('../images/img.png')%>" alt="Человек">
       <div class="card__wrapper">
         <p class="card__type"></p>
         <p class="card__time"></p>
