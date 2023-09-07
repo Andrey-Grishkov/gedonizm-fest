@@ -8,6 +8,10 @@
   height: 20px;
   cursor: pointer;
 
+  &:hover {
+    @include backgroundImage('../images/icons/menu-hover.svg');
+  }
+
   @media screen and (max-width: $desktop) {
     display: block;
   }

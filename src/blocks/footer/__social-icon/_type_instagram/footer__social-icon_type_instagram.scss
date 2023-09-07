@@ -1,3 +1,7 @@
 .footer__social-icon_type_instagram {
   @include backgroundImage('../images/icons/instagram.svg'); 
+
+  &:hover {
+    @include backgroundImage('../images/icons/instagram-hover.svg'); 
+  }
 }

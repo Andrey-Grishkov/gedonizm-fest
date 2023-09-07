@@ -54,7 +54,7 @@
           <span class="button__icon button__icon_position_left button__icon_type_like"></span>
           <span class="button__text">хочу пойти</span>
         </button>
-        <button class="button button_type_primary header__actions_hidden_small">
+        <button class="button button_type_primary button_hidden_small">
           <span class="button__text">поддержать</span>
         </button>
         <button class="header__menu"></button>
@@ -99,21 +99,28 @@
           class="banner__illustration">
       </div>
     </section>
-    <section class="main-screen">
+    <div class="main-screen">
       <div class="main-screen__img"></div>
       <div class="main-screen__more">
         <p class="main-screen__more-text">Узнать больше </p>
-        <a href="#about" class="main-screen__more-button"><img class="main-screen__more-buttonIcon"
-            src="../images/icons/downPointer.svg"></a>
+        <a href="#about" class="main-screen__more-button">
+          <img class="main-screen__more-buttonIcon" src="../images/icons/downPointer.svg" alt="Узнать больше">
+        </a>
       </div>
-    </section>
-    <section id="about" class="about content">
-      <h2 class="about__title">просто приятно помогать</h2>
-      <div class="about__maintext">
-        <p class="about__paragraph">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
-          домашние посиделки с друзьями — и помогайте бездомным! </p>
-        <p class="about__paragraph">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
-        <button class="about__button" onclick="document.location='about.html'">узнать подробнее </button>
+    </div>
+    <section class="main-about content">
+      <h1 class="main-about__title">просто приятно помогать</h1>
+      <div class="main-about__text-block">
+        <p class="main-about__paragraph">
+          Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
+          домашние посиделки с друзьями — и помогайте бездомным!
+        </p>
+        <p class="main-about__paragraph">
+          Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.
+        </p>
+        <button class="button button_type_secondary main-about__button" onclick="document.location='about.html'">
+          <span class="button__text">узнать подробнее</span>
+        </button>
       </div>
     </section>
     <section class="slider">
@@ -122,22 +129,22 @@
         <div class="slider__buttons">
           <button class="button button_type_secondary">
             <span class="button__text">посетить мастер класс</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
           <button class="button button_type_secondary">
             <span class="button__text">выпить кофе</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
           <button class="button button_type_secondary">
             <span class="button__text">не выходить из дома</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
           <button class="button button_type_secondary">
             <span class="button__text">сходить на экскурсию</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button><button class="button button_type_secondary">
             <span class="button__text">побывать в музее</span>
-            <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></div>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
           </button>
         </div>
         <div class="slider__elements"></div>
@@ -151,8 +158,8 @@
     <section class="digits">
       <h2 class="digits__subtitle">цифры дня</h2>
       <div class="digits__main">
-        <div class="digits_dinner digits__circle digits__circle_size_big">
-          <div class="digits__pic_dinner"></div>
+        <div class="digits__circle digits__circle_area-type_dinner digits__circle_size_big">
+          <div class="digits__pic digits__pic_area-type_dinner"></div>
           <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_right">
             <h2 class="digits__subtitle">2 500</h2>
             <p class="digits__text-list-part">
@@ -160,10 +167,10 @@
             </p>
           </div>
         </div>
-        <div class="digits__pic_line"></div>
+        <div class="digits__pic digits__pic_area-type_line"></div>
         <div class="digits__circle digits__circle_size_small"></div>
-        <div class="digits_cookies digits__circle digits__circle_size_big">
-          <div class="digits__pic_cookies"></div>
+        <div class="digits__circle digits__circle_area-type_cookies digits__circle_size_big">
+          <div class="digits__pic digits__pic_area-type_cookies"></div>
           <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_left">
             <h2 class="digits__subtitle">15 000</h2>
             <p class="digits__text-list-part">
@@ -171,7 +178,7 @@
             </p>
           </div>
         </div>
-        <div class="digits__pic_lines"></div>
+        <div class="digits__pic digits__pic_area-type_lines"></div>
       </div>
     </section>
     <section class="part-in">
@@ -348,17 +355,21 @@
             </nav>
           </div>
           <button class="button button_type_text popup-card__share-text">
-            <div class="button__icon button__icon_position_left button__icon_type_window "></div>скопировать ссылку
+            <span class="button__icon button__icon_position_left button__icon_type_window "></span>
+            <span class="button__text">скопировать ссылку</span>
           </button>
         </div>
       </div>
       <div class="popup-card__buttons">
+
         <button class="button button_type_secondary popup-card__button popup-card__button-like">
           <div class="button__icon button__icon_position_left button__icon_type_like"></div>
+
           <span class="button__text">хочу пойти</span>
         </button>
         <button class="button button_type_primary  popup-card__button popup-card__button-buy ">
-          <span class="button__text ">купить билет</span></button>
+          <span class="button__text ">купить билет</span>
+        </button>
       </div>
     </div>
   </div>
@@ -367,8 +378,8 @@
     <div class="popup-likesCard">
       <button class="button button_type_text popup-likesCard__button-back ">
         <span class="button__text">назад</span>
-        <div class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
-          style="transform: scale(-1, 1)"></div>
+        <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
+          style="transform: scale(-1, 1)"></span>
       </button>
       <div class="popup-card__close popup-likesCard__close">
         <div class="popup__close"></div>
@@ -382,15 +393,15 @@
       <div class="popup-map">
         <div class="map" id="popup-map" style="height: 100%;">
           <div class="map__container-icons">
-            <img class="map__zoom" src="../images/icons/icon-map-zoom.svg">
-            <img class="map__pointer" src="../images/icons/icon-map-pointer.svg">
+            <img class="map__zoom" src="<%=require('../images/icons/icon-map-zoom.svg')%>" alt="Изменение масштаба">
+            <img class="map__pointer" src="<%=require('../images/icons/icon-map-pointer.svg')%>"
+              alt="Текущее положение">
           </div>
         </div>
       </div>
       <div class="popup-likesCard__elements"></div>
     </div>
   </div>
-
   <div class=" popup popup_position_center popup_type_support ">
     <div class="popup-support">
       <div class="popup-card__close popup__close-back">
@@ -415,15 +426,16 @@
       <input type="email" class="popup-support__input-email" placeholder="укажите почту для отправки чека">
       <p class="popup-support__text">способ оплаты </p>
       <label class="popup-buy__container-type-of-payment">
-        <input type="radio" name="type-of-payment" class="popup-buy__radio" checked >
+        <input type="radio" name="type-of-payment" class="popup-buy__radio" checked>
         <span class="popup-buy__radio_fake"></span>
         <span class="popup-buy__radio_text">баноковской картой</span>
       </label>
       <label class="popup-buy__container-type-of-payment">
         <input type="radio" name="type-of-payment" class="popup-buy__radio">
-        <span class="popup-buy__radio_fake" ></span>
+        <span class="popup-buy__radio_fake"></span>
         <span class="popup-buy__radio_text">PayPal</span>
       </label>
+
       <p class="popup-support__description">Нажимая кнопку «перейти к оплате» вы соглашаетесь с условиями <a href="#" class="popup-support__description-link">оферты,
         политики</a> в отношении обработки и защиты персональных данных и даёте <a href="#" class="popup-support__description-link">согласие</a> на их обработку </p>     
       <button class="button button_type_primary popup-support__button">
@@ -464,27 +476,30 @@
         <span class="button__text">перейти к оплате</span></button>
     </div>
   </div>
-    <template id="card">
-      <div class="card">
-        <div class="card__like">
-          <button class="card__like-icon"></button>
-        </div>
-        <img class="card__img" src="../images/img.png" alt="">
-        <div class="card__wrapper">
-          <p class="card__type"></p>
-          <p class="card__time"></p>
-        </div>
-        <p class="card__title"> </p>
-        <p class="card__description"></p>
-        <div class="card__wrapper">
-          <p class="card__adress"></p>
-          <button class="card__more"></button>
-        </div>
+  <template id="card">
+    <div class="card">
+      <div class="card__like">
+        <button class="card__like-icon"></button>
       </div>
-    </template>
-    <div id="location-popover" class="popover">
-      <ul class="popover__list"></ul>
+      <img class="card__img" src="../images/img.png" alt="">
+      <div class="card__wrapper">
+        <p class="card__type"></p>
+        <p class="card__time"></p>
+      </div>
+      <p class="card__title"> </p>
+      <p class="card__description"></p>
+      <div class="card__wrapper">
+        <p class="card__adress"></p>
+        <button class="card__more"></button>
+      </div>
     </div>
+
+  </template>
+  <div id="location-popover" class="popover">
+    <ul class="popover__list"></ul>
+  </div>
+  </div>
+
 </body>
 
 </html>
