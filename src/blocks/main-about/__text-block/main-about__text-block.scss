@@ -1,5 +1,5 @@
 .main-about__text-block {
-  width: 420px;
+  max-width: 420px;
   margin-top: 8px;
   @include flex(column, flex-start, flex-start);
   gap: 24px;
