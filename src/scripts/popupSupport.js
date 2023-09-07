@@ -5,6 +5,9 @@ export default class popupSupport extends Popup{
     }
     _clear(buttons){
         buttons.forEach((element) => {
+            if(element.classList.contains('popup-support__button')){
+                return;
+            }
             element.classList.remove('button_type_primary')
             element.classList.add('button_type_secondary')
         })
@@ -28,6 +31,7 @@ export default class popupSupport extends Popup{
         })
         this._popup.querySelector('.popup-support__button').addEventListener('click',()=>{
             this.close()
+            localStorage.setItem("buy",true)
             document.location='index.html'
             buttons.forEach((element) => {
                 if(element.classList.contains('button_type_primary')){

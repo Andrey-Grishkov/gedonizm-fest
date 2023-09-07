@@ -6,7 +6,7 @@ import {
   containerTagsTypeDays,
   containerTagsTypeEvt,
 } from "./scripts/constants";
-import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport, buttonCardLikes,buyButton } from './scripts/constants';
+import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport, buttonCardLikes,buyButton, likeButton,thanksMessage } from './scripts/constants';
 import ButtonUpManager from './components/ButtonUpManager';
 import FilterTag from "./scripts/filter-tags";
 import Section from './scripts/section';
@@ -27,6 +27,14 @@ if (formContainer) {
   form.setEventListener();
 }
 // let forms = new Form(['cafe', 'lekture', 'party', 'other']);
+if(localStorage.getItem('buy') === 'true'){
+  thanksMessage.classList.remove('hidden')
+  localStorage.setItem("buy",false)
+  function hidemessege(){
+    thanksMessage.classList.add('hidden')
+  }
+  setTimeout(hidemessege,10000)
+}
 
 /* карточки для слайдера */
 const sliderContainerElement = document.querySelector('.slider__elements');
@@ -142,7 +150,14 @@ if(buyButton){
     buyPopup.setEventListeners()
   })
 }
-
+/* попуп с лайкнутыми карточками  из попупа карточки */ 
+if(likeButton){
+  likeButton.addEventListener('click',function(){
+    cardPopup.close()
+    cardlikePopup.open()
+    cardlikePopup.setEventListeners()
+  })
+}
 // Установка слушателей на кнопку банера
 const bannerElements = document.querySelectorAll('.banner');
 bannerElements.forEach(element => {
