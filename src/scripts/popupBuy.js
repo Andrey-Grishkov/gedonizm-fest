@@ -21,8 +21,9 @@ export default class popupBuy extends Popup{
             this._popup.querySelector('.popup-buy__cost').textContent = `${this._popup.querySelector('.popup-buy__quantity').value *500}₽`;  
         })
         this._popup.querySelector('.popup-support__button').addEventListener('click',()=>{
-            this.close()
-            document.location='index.html'         
+            this.close() 
+            localStorage.setItem("buy",true)
+            document.location='index.html'
         })
     }
 }

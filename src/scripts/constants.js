@@ -2,6 +2,8 @@
 
 export const buttonCardLikes = document.querySelector('.button-likeCards');
 export const buyButton = document.querySelector('.popup-card__button-buy');
+export const likeButton =  document.querySelector('.popup-card__button-like');
+export const thanksMessage =document.querySelector('#banner_type_thanks')
 export {
   dataFilterTagsTypeEvent,
   dataFilterTagsDays,
