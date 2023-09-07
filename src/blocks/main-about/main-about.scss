@@ -1,0 +1,11 @@
+.main-about {
+  @include flex(row, center, flex-start);
+  gap: 40px;
+  padding: 30px 0 80px;
+ 
+  @media screen and (max-width: $desktop) {
+    @include flex(column, flex-start, flex-start);
+    gap: 12px;
+    padding: 40px 20px;
+  } 
+}
