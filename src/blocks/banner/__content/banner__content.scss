@@ -4,7 +4,6 @@
   margin: 0 auto;
   gap: 40px;
   max-width: 880px;
-  box-sizing: border-box;
 
   @media all and (max-width: $tablet) {
     @include flex(column-reverse, center, center);

@@ -1,0 +1,10 @@
+.part-in__title {
+  @extend %secondTitle;
+  text-transform: lowercase;
+  width: 420px;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    color: $white;
+  }
+}
