@@ -1,12 +1,10 @@
 .form {
-    width: calc(100vw - 480px);
-    margin: $margin3 auto $margin10;
+    margin: $margin3 240px $margin10;
     @include flex(column, flex-start, flex-start);
     @extend %mainText;
     gap: $margin5;
 
     @media screen and (max-width: $desktop) {
-        width: calc(100vw - 40px);
-        margin: $margin2-5 $margin2-5 0 $margin2-5
+        margin: $margin2-5 max($margin2-5, 240px - ($desktop - 100vw)) 0
     }
 }
