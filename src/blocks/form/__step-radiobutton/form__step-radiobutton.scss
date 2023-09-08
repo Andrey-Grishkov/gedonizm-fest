@@ -4,10 +4,12 @@
   gap: 0;
   content: "";
   border: 2px solid #3B3748;
-  width: 100%;
+  width: calc(100% - 24px);
   border-radius: 26px;
   cursor: pointer;
   z-index: 2;
+  padding-left: $margin3;
+  align-items: center;
 
  .form__step-checkbox:checked + & {
     background-color: $purple;

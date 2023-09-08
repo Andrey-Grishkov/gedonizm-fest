@@ -16,7 +16,7 @@ export class Form {
       this._blocksCategory = document.querySelectorAll('[data-category-id]');
       this._blocksOnline = document.querySelectorAll('[data-type-event]');
 
-      this._partyType = document.querySelector('.form__radio_party-type');https://www.youtube.com/watch?v=-Y42ihl5Kyc
+      this._partyType = document.querySelector('.form__radio_party-type');
       this._stepFirstData = document.querySelector('.form__step-radiobutton_checked').querySelectorAll('.form__step-caption');
 
       this._dropZone = document.querySelector('.form__foto');
@@ -26,7 +26,7 @@ export class Form {
       this._fotoLabel = document.querySelector('.form__foto-label');
       this._fotoInput = document.querySelector('.form__input-file');
 
-      this._cityEventPopover = new Popover('#action-location', '.field__input_city', this._handleLocationSelect);
+      this._cityEventPopover = new Popover('#action-location', '.field_city', this._handleLocationSelect);
       this._cityEventPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург']);
   }
 
@@ -81,7 +81,6 @@ export class Form {
       dataTotal['тип вечеринки'] = this._getTypeParty(this._partyType);
     };
     dataTotal = this._getInputsData(dataTotal);
-    console.log(dataTotal);
   }
 
   _handleCategory(event) {
@@ -182,10 +181,9 @@ export class Form {
   }
 
   _handleLocationSelect(name) {
-    let actionLocation = document.querySelector('.field_type_icon');
+    let actionLocation = document.querySelector('.field__icon');
     actionLocation.textContent = name;
-    actionLocation.classList.add('field_type_icon_defined');
-    console.log(actionLocation.color);
+    actionLocation.classList.add('field__icon_defined');
   }
 
   setEventListener() {

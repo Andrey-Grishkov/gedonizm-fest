@@ -1,4 +1,4 @@
-.field_type_icon {
+.field__icon {
   background: url('../images/icons/field_icon.svg') no-repeat;
   background-position: right 24px center;
   background-size: 24px 24px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: $desktop) {
-  .field_type_icon {
+  .field__icon {
     background-position: right 20px center;
     background-size: 20px 20px;
   }

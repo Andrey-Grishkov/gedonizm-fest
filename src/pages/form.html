@@ -49,7 +49,7 @@
     </div>
   </header>
 
-  <form action="" class="form">
+  <form class="form">
     <h1 class="form__header">Стать участником</h1>
     <!-- начальная форма -->
     <fieldset class="form__main" id="formMain">
@@ -95,26 +95,22 @@
         </div>
         <div class="form__step-category">
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="cafe" name="category"  data-category-type-event="offline" checked>
-          <label class="form__step-radiobutton" for="cafe">
-            <p class="form__step-caption">кафе/бар/ресторан</p>
+          <label class="form__step-radiobutton" for="cafe">кафе/бар/ресторан
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
 
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="lekture" name="category" data-category-type-event="online">
-          <label class="form__step-radiobutton" for="lekture">
-            <p class="form__step-caption">мастер-класс/лекция</p>
+          <label class="form__step-radiobutton" for="lekture">мастер-класс/лекция
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
 
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="party" name="category" data-category-type-event="offline">
-          <label class="form__step-radiobutton" for="party">
-            <p class="form__step-caption">посиделки/вечеринка</p>
+          <label class="form__step-radiobutton" for="party">посиделки/вечеринка
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
 
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="other" name="category" data-category-type-event="online">
-          <label class="form__step-radiobutton" for="other">
-            <p class="form__step-caption">другое</p>
+          <label class="form__step-radiobutton" for="other">другое
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
         </div>
@@ -165,13 +161,13 @@
       <div class="form__step-category">
 
         <input class="form__step-checkbox" type="checkbox" checked>
-        <label class="form__step-radiobutton form__step-radiobutton_checked">
+        <span class="form__step-radiobutton form__step-radiobutton_checked">
           <p class="form__step-caption" data-category-id="cafe">кафе/бар/ресторан</p>
           <p class="form__step-caption" data-category-id="lekture">мастер-класс/лекция</p>
           <p class="form__step-caption" data-category-id="party">посиделки/вечеринка</p>
           <p class="form__step-caption" data-category-id="other">другое</p>
           <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="выбрано">
-        </label>
+        </span>
 
         <div class="form__step-inputs">
           <div class="form__radio form__radio_online" data-category-id="lekture,other">
@@ -182,9 +178,9 @@
             <label class="form__step-radiogroup" for="offline">оффлайн</label>
           </div>
 
-          <fieldset class="field field__input_city" data-type-event="offline">
+          <fieldset class="field field_city" data-type-event="offline">
             <label class="field__title">город</label>
-            <span class="field__input field_type_icon" placeholder="выберите из списка">выберите из списка</span>
+            <span class="field__input field__icon" placeholder="выберите из списка">выберите из списка</span>
           </fieldset>
           <fieldset class="field" data-type-event="offline">
             <label class="field__title">название заведения</label>
@@ -213,7 +209,7 @@
           </fieldset>
           <fieldset class="field" data-category-id="cafe">
             <label class="field__title">описание</label>
-            <textarea type="text" class="field__input field__multiline" placeholder="Укажите, что из меню будет принимать участие в акции"></textarea>
+            <textarea class="field__input field__multiline" placeholder="Укажите, что из меню будет принимать участие в акции"></textarea>
           </fieldset>
         </div>
       </div>
@@ -278,11 +274,11 @@
 
           <fieldset class="field">
             <label class="field__title">описание</label>
-            <textarea type="text" class="field__input field__multiline"  data-category-id="cafe,other"
+            <textarea class="field__input field__multiline"  data-category-id="cafe,other"
                       placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
-            <textarea type="text" class="field__input field__multiline"  data-category-id="lekture"
+            <textarea class="field__input field__multiline"  data-category-id="lekture"
                       placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"></textarea>
-            <textarea type="text" class="field__input field__multiline" data-category-id="party"
+            <textarea class="field__input field__multiline" data-category-id="party"
                       placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"></textarea>
           </fieldset>
 
