@@ -29,6 +29,8 @@ export default class popupLikesCard extends Popup {
                             }
                         }, '#card')
                         const cardElement = card.generate()
+                        cardElement.classList.add('card_type-popup')
+                        cardElement.classList.add('card__no-margin')
                         cardforLikeContainer.addItem(cardElement)
                     }
                 }

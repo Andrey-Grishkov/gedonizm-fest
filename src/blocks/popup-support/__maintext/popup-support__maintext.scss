@@ -1,10 +1,10 @@
 .popup-support__maintext{
    width: 532px;
-    margin: 40px auto 0 auto !important;
     @include text(48px, 52px,500);
+    margin: 40px auto 0 auto;
   @media screen and (max-width: $tablet) {
     width: 320px;
-    margin: 16px auto 0 auto !important;
     @include text(32px, 36px);
+    margin: 16px auto 0 auto;
   }
 }

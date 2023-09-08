@@ -2,13 +2,11 @@
   width: 483px;
   height: 24px;
   outline: none;
+  @extend  %mainText;
   border: 2px solid #96949e;
   border-radius: 24px;
   padding: 12px 24px;
   border-style: solid;
-  font-family: 'TT Firs Neue';
-  font-size: 18px;
-  font-weight: normal;
   color: #3b3748;
   line-height: 24px;
   &:focus {
@@ -24,8 +22,6 @@
     width: 280px;
     height: 20px;
     border-radius: 22px;
-    font-size: 16px;
-    line-height: 20px;
     padding: 12px 20px;
     background-size: 20px 20px;
   }

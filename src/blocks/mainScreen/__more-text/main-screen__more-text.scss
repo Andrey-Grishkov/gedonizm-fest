@@ -1,7 +1,4 @@
 .main-screen__more-text {
+    @extend %mainText;
     margin: 0 0 8px 0;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'TT Firs Neue';
-    line-height: 24px;
 }
