@@ -8,5 +8,14 @@
 
   @media screen and (max-width: 960px) {
     margin: $margin5 $margin2-5;
+    @include flex(column, center, center);
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    min-height: 960px;
+    display: block;
   }
 }

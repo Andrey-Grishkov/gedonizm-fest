@@ -120,6 +120,7 @@
 @import "../blocks/header/__logo/header__logo.scss";
 @import "../blocks/header/__menu/header__menu.scss";
 @import "../blocks/header/__navigation/header__navigation.scss";
+@import "../blocks/header/__navigation-button/header__navigation-button.scss";
 @import "../blocks/header/header.scss";
 
 // Footer
@@ -295,11 +296,9 @@
 
 // part-in
 @import "../blocks/part-in/part-in.scss";
-@import "../blocks/part-in/__subtitle/part-in__subtitle.scss";
-@import "../blocks/part-in/__subtitle/_position/part-in__subtitle_position_left.scss";
+@import "../blocks/part-in/__title/part-in__title.scss";
 @import "../blocks/part-in/__text-list/part-in__text-list.scss";
-@import "../blocks/part-in/__text-list/part-in__text-list-part.scss";
-@import "../blocks/part-in/__text-list/_position/part-in__text-list_position_right.scss";
+@import "../blocks/part-in/__text-list-item/part-in__text-list-item.scss";
 @import "../blocks/part-in/__button/part-in__button.scss";
 
 // digits

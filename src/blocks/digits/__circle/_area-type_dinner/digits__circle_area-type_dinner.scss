@@ -1,3 +1,15 @@
 .digits__circle_area-type_dinner {
+  position: absolute;
   grid-area: dinners;
+  left: 0px;
+  top: 20px;
+
+  @media screen and (max-width: 970px) {
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 360px) {
+    top: 120px;
+  }
 }

@@ -3,10 +3,12 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     width: 100%;
 
     @media screen and (max-width:$tablet) {
         bottom: 0;
+        position: relative;
+        margin-top: 20px;
     }
 }

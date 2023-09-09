@@ -1,15 +1,15 @@
 .part-in__text-list {
-  position: relative;
-  @extend %mainText;
-  max-width: 1fr;
-  align-self: start;
+  width: 420px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  @include flex(column, flex-start, flex-start);
+  gap: 18px;
 
-  @media screen and (max-width: 1199px) {
-    margin: 0;
-  }
-
-  @media screen and (max-width: 640px) {
-    max-width: 100%;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
     color: $white;
+    margin: 0;
+    gap: 16px;
   }
 }
