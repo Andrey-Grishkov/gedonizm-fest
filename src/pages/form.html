@@ -117,10 +117,10 @@
       </div>
 
       <div class="form__actions">
-        <button class="button button_direction_back" type="button">
-          назад
+        <button class="button form__button_twice button_direction_back" type="button">
+          отмена
         </button>
-        <button class="button button_type_primary button_direction_next" type="button">
+        <button class="button form__button_twice button_type_primary button_direction_next" type="button">
           далее
         </button>
       </div>
@@ -136,7 +136,7 @@
 
         <div class="form__step-header" data-category-id="cafe">
           <p class="form__step-description">Для участия вы можете выбрать:</p>
-          <ul class="form__step-description">
+          <ul class="form__step-list">
             <li>определенную позицию из меню</li>
             <li>группу позиций</li>
             <li><span>процент от продаж определенных позиций или всего меню</span></li>
@@ -158,7 +158,7 @@
         </div>
       </div>
 
-      <div class="form__step-category">
+      <div class="form__step-registry">
 
         <input class="form__step-checkbox" type="checkbox" checked>
         <span class="form__step-radiobutton form__step-radiobutton_checked">
@@ -182,9 +182,13 @@
             <label class="field__title">город</label>
             <span class="field__input field__icon" placeholder="выберите из списка">выберите из списка</span>
           </fieldset>
-          <fieldset class="field" data-type-event="offline">
+          <fieldset class="field" data-category-id="cafe">
             <label class="field__title">название заведения</label>
             <input type="text" class="field__input" placeholder="введите название заведения">
+          </fieldset>
+          <fieldset class="field" data-category-id="lekture,party,other">
+            <label class="field__title">название мероприятия</label>
+            <input type="text" class="field__input" placeholder="введите название мероприятия">
           </fieldset>
           <div class="form__radio form__radio_party-type" data-category-id="party">
             <div class="form__step-radiogroup-comment">
@@ -199,6 +203,10 @@
               <p class="form__step-comment">адрес увидят только, те кому вы оправите ссылку на событие</p>
             </div>
           </div>
+          <fieldset class="field" data-category-id="lekture,party,other">
+            <label class="field__title">дата проведения</label>
+            <input type="text" class="field__input" placeholder="укажите дату в формате дд.мм.гггг">
+          </fieldset>
           <fieldset class="field">
             <label class="field__title">контактное лицо</label>
             <input type="text" class="field__input" placeholder="введите ФИО">
@@ -216,10 +224,10 @@
     </div>
 
     <div class="form__actions">
-      <button class="button button_direction_back" type="button">
+      <button class="button form__button_twice button_direction_back" type="button">
         назад
       </button>
-      <button class="button button_type_primary button_direction_next" type="button">
+      <button class="button form__button_twice button_type_primary button_direction_next" type="button">
         далее
       </button>
     </div>
@@ -234,7 +242,7 @@
         <h2 class="form__step-name">укажите контакты и часы работы</h2>
         <p class="form__step-description">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий.</p>
       </div>
-      <div class="form__step-category">
+      <div class="form__step-category form__step-category_contacts">
         <div class="form__step-inputs">
           <fieldset class="field" data-category-id="cafe">
             <label class="field__title">часы работы заведения</label>
@@ -257,12 +265,12 @@
             <input type="text" class="field__input" placeholder="+7(" value="+7(">
           </fieldset>
 
-          <fieldset class="field" data-type-event="online">
+          <fieldset class="field" data-category-id="cafe,party">
             <label class="field__title">ссылка на сайт</label>
             <input type="text" class="field__input" placeholder="https://" value="https://">
           </fieldset>
 
-          <fieldset class="field" data-category-id="cafe">
+          <fieldset class="field" data-category-id="cafe,party">
             <label class="field__title">ссылки на соцсети</label>
             <input type="text" class="field__input" placeholder="каждую ссылку с новой строки">
           </fieldset>
@@ -274,11 +282,11 @@
 
           <fieldset class="field">
             <label class="field__title">описание</label>
-            <textarea class="field__input field__multiline"  data-category-id="cafe,other"
+            <textarea class="field__input field__multiline field__multiline_contacts"  data-category-id="cafe,other"
                       placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
-            <textarea class="field__input field__multiline"  data-category-id="lekture"
+            <textarea class="field__input field__multiline field__multiline_contacts"  data-category-id="lekture"
                       placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"></textarea>
-            <textarea class="field__input field__multiline" data-category-id="party"
+            <textarea class="field__input field__multiline field__multiline_contacts" data-category-id="party"
                       placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"></textarea>
           </fieldset>
 
@@ -286,10 +294,10 @@
       </div>
     </div>
     <div class="form__actions">
-      <button class="button button_direction_back" type="button">
+      <button class="button form__button_twice button_direction_back" type="button">
         назад
       </button>
-      <button class="button button_type_primary button_direction_next" type="button">
+      <button class="button form__button_twice button_type_primary button_direction_next" type="button">
         далее
       </button>
     </div>
@@ -302,10 +310,8 @@
         <p class="form__step-number">шаг 4 из 4</p>
         <h2 class="form__step-name">добавьте фото</h2>
         <p class="form__step-description">Как правило, профессиональные фото выглядят более привлекательно.</p>
-        <p class="form__step-description"></p>
         <p class="form__step-description">Технические требования:</p>
-        <p class="form__step-description"></p>
-        <ul class="form__step-description">
+        <ul class="form__step-list">
           <li>формат: jpeg, png</li>
           <li>вес: не более 5 МБ</li>
           <li>альбомная ориентация</li>
@@ -324,10 +330,10 @@
       </div>
     </div>
     <div class="form__actions">
-      <button class="button button_direction_back" type="button">
+      <button class="button form__button_twice button_direction_back" type="button">
         назад
       </button>
-      <button class="button button_type_primary" type="submit">
+      <button class="button form__button_twice button_type_primary" type="submit">
         завершить
       </button>
     </div>

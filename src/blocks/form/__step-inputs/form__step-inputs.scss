@@ -1,5 +1,5 @@
 .form__step-inputs {
-  margin: $margin2-5 0 0;
+  margin: $margin2-5 0 $margin1;
   @include flex(column, flex-start, flex-start);
   gap: $margin4;
   width: 100%;

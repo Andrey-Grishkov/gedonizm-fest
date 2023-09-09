@@ -5,7 +5,7 @@
     gap: $margin5;
 
     @media screen and (min-width: 1441px) {
-      margin: $margin5 max($margin5, 40px + ((100vw - 1440px) / 2) $margin10  
+      margin: $margin5 max($margin5, 40px + calc((100vw - 1440px) / 2)) $margin10
     }
 
     @media screen and (max-width: $desktop) {

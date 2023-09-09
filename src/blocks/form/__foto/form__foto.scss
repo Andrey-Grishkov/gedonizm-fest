@@ -1,8 +1,8 @@
 .form__foto {
   @include flex(column, center, center);
   @extend %mainText;
-  width: 531px;
-  height: 298px;
+  width: 527px;
+  height: 294px;
   border: 2px solid $dark-secondary;
   border-radius: 22px;
   gap: $margin1-5;
