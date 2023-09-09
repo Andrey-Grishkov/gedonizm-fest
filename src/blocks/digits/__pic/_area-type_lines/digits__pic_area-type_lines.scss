@@ -3,12 +3,19 @@
   @include backgroundImage('../images/lines-group.svg');
   height: 144px;
   width: 88px;
-  justify-self: center;
-  align-self: self-end;
-  margin-top: -$margin10;
+  margin-top: 227px;
+  margin-left: 180px;
+
+  @media screen and (max-width: 1439px) {
+    margin-left: 12.50vw;
+  }
 
   @media screen and (max-width: 1300px) {
-    grid-area: lines-small;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-left: -3vw;
   }
 
   @media screen and (max-width: 970px) {
