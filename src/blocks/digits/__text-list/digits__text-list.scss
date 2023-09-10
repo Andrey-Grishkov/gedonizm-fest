@@ -1,7 +1,6 @@
 .digits__text-list {
   position: relative;
   @extend %mainText;
-  max-width: 1fr;
   align-self: center;
 
   @media screen and (max-width: 1199px) {

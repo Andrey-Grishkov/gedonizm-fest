@@ -4,9 +4,11 @@
   grid-auto-rows: 1fr;
   gap: 20px;
   margin-top: 40px; 
+  padding-right: 20px;
 
   @media screen and (max-width: $tablet) {
     display: block; 
-    margin-top: 20px;  
+    margin-top: 20px;
+    padding-right: 0; 
   }
 }

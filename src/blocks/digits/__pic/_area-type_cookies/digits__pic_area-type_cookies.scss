@@ -1,0 +1,19 @@
+.digits__pic_area-type_cookies {
+  @include backgroundImage('../images/cookies-illustration.svg');
+  height: 283px;
+  margin-left: -55px;
+  margin-top: $margin4;
+
+  @media screen and (max-width: 970px) {
+    height: 190px;
+    background-size: cover;
+    //transform: scaleX(-1);
+    margin-top: $margin5;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-top: 65px;
+    margin-left: -75px;
+    transform: scale(0.9);
+  }
+}

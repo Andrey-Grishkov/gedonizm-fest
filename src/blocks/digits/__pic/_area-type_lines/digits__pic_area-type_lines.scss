@@ -1,0 +1,24 @@
+.digits__pic_area-type_lines {
+  grid-area: lines;
+  @include backgroundImage('../images/lines-group.svg');
+  height: 144px;
+  width: 88px;
+  margin-top: 227px;
+  margin-left: 180px;
+
+  @media screen and (max-width: 1439px) {
+    margin-left: 12.50vw;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-left: -3vw;
+  }
+
+  @media screen and (max-width: 970px) {
+    display: none;
+  }
+}

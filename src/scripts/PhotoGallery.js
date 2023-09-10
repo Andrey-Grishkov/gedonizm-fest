@@ -14,7 +14,7 @@ export class PhotoGallery {
   }
 
   setImages(images) {
-    this.images = images;
+    this.images = images.reverse();
     this.activeImage = 0;
     images.forEach(({ src, alt }, index) => {
       this._addImageElement(src, alt, index);
@@ -25,7 +25,6 @@ export class PhotoGallery {
   _addImageElement(src, alt, index) {
     const image = document.createElement('img');
     image.classList.add(this._classes.imageClass);
-    image.classList.add(`${this._classes.imageClass}${index + 1}`);
     if (index === this.activeImage) {
       image.classList.add(this._classes.activeImageClass);
     }
@@ -53,7 +52,7 @@ export class PhotoGallery {
       if (currentActiveImage) {
         currentActiveImage.classList.remove(this._classes.activeImageClass);
       }
-      const newActiveImage = this._rootElement.querySelector(`.${this._classes.imageClass}${index + 1}`);
+      const newActiveImage = this._rootElement.children[index];
       if (newActiveImage) {
         newActiveImage.classList.add(this._classes.activeImageClass);
       }

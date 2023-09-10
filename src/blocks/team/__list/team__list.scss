@@ -13,4 +13,8 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media screen and (max-width: $tablet) {
+    gap: 20px;
+  }
 }

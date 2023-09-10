@@ -1,8 +1,11 @@
-.digits__text-list_part {
+.digits__text-list-part {
   padding: 0;
-  margin: 0;
-  margin-bottom: $margin2-5;
+  margin: 10px 0 20px;
   list-style-type: none;
+
+  @media screen and (max-width: 360px) {
+    margin: 5px 0 20px;
+  }
 }
 
 .about__text-list-part:last-child {

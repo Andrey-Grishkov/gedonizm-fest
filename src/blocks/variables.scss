@@ -42,22 +42,28 @@ $fontFamily: 'TT Firs Neue', 'Arial', sans-serif;
 
 %mainTitle {
   @include text(96px, 96px);
+  letter-spacing: -0.01em;
   @media screen and (max-width: $desktop) {
     @include text(44px, 44px);
+    letter-spacing: 0;
   }
 }
 
 %secondTitle {
   @include text(48px, 52px);
+  letter-spacing: -0.01em;
   @media screen and (max-width: $desktop) {
     @include text(32px, 36px);
+    letter-spacing: 0;
   }
 }
 
 %thirdTitle {
   @include text(32px, 36px);
+  letter-spacing: -0.01em;
   @media screen and (max-width: $desktop) {
     @include text(24px, 28px);
+    letter-spacing: 0;
   }
 }
 
@@ -96,6 +102,7 @@ $snowy: #FCFAF7;
 $white: #FFFFFF;
 $violet: #5100B8;
 $dark-secondary: #96949E;
+$dark-primary: #3B3748;
 
 @mixin button($max-width, $max-height, $background-color, $border-color){
   max-width: $max-width;

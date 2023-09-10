@@ -1,0 +1,19 @@
+.digits__pic_area-type_line {
+  grid-area: line;
+  @include backgroundImage('../images/circle-vector.svg');
+  height: 69px;
+  width: 230px;
+  justify-self: end;
+  margin-right: 8px;
+  margin-top: 2px;
+
+
+  @media screen and (max-width: 1300px) {
+    margin-top: -135px;
+    margin-right: -178px;
+  }
+
+  @media screen and (max-width: 970px) {
+    display: none;
+  }
+}

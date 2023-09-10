@@ -1,8 +1,8 @@
 .digits__text-list_stats_position_right {
   position: absolute;
   max-width: 303px;
-  margin-right: -40px;
   right: 0;
+  margin-right: -64px;
 
   @media screen and (max-width: 970px) {
     margin: 0;
@@ -11,7 +11,8 @@
     @include flex(column, center, center);
   }
 
-  @media screen and (max-width: 640px) {
-    margin-top: $margin10;
+  @media screen and (max-width: 360px) {
+    margin-top: 87px;
+    margin-left: 6px;
   }
 }

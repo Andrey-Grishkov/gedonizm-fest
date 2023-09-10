@@ -2,21 +2,14 @@
   margin: 0 auto;
   padding-top: $margin10;
   padding-bottom: $margin10;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-  justify-items: center;
+  @include flex(row, center, flex-start);
+  gap: 40px;
   background-color: $yellow;
 
-  @media screen and (max-width: 1199px) {
-    max-width: 100%;
-    justify-items: center;
-    row-gap: 12px;
-  }
-
-  @media screen and (max-width: 640px) {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: $tablet) {
+    @include flex(column, flex-start, flex-start);
     background-color: $red;
     padding: $margin5 $margin2-5;
+    gap: 12px;
   }
 }
