@@ -57,6 +57,9 @@
 @import "../blocks/button/__hiden-button/_state-disabled/button__hiden-button_state-disabled.scss";
 @import "../blocks/button/__hiden-button/_state-hidden/button__hiden-button_state-hidden.scss";
 @import "../blocks/button/__icon/_type/button__icon_type_link";
+@import "../blocks/button/_size/button_size_big.scss";
+@import "../blocks/button/_state/button_state_hidden.scss";
+
 
 @import "../blocks/content/content.scss";
 @import "../blocks/logo/logo.scss";
@@ -158,6 +161,8 @@
 @import "../blocks/about/__text-list/_stats/_position/about__text-list_stats_position_right.scss";
 @import "../blocks/about/__text-list/_position/about__text-list_position_left.scss";
 @import "../blocks/about/__text-list/_position/about__text-list_position_right.scss";
+@import "../blocks/about/__text-list/_position/about__text-list_position_right-large.scss";
+@import "../blocks/about/__text-list/_position/about__text-list_position_left-down.scss";
 @import "../blocks/about/__circle/about__circle.scss";
 @import "../blocks/about/__circle/_position/about__circle_position_left.scss";
 @import "../blocks/about/__circle/_position/about__circle_position_right.scss";

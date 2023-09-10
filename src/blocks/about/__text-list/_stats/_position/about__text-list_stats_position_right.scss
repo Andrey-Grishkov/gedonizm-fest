@@ -1,7 +1,7 @@
 .about__text-list_stats_position_right {
   position: absolute;
   max-width: 303px;
-  margin-right: -40px;
+  margin-right: -65px;
   right: 0;
 
   @media screen and (max-width: 970px) {
@@ -12,6 +12,6 @@
   }
 
   @media screen and (max-width: 640px) {
-    margin-top: $margin10;
+    margin-top: $margin15;
   }
 }

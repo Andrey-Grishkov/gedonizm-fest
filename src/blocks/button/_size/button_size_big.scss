@@ -1,0 +1,9 @@
+.button_size_big {
+  min-width: 240px;
+  max-height: 48px;
+
+  @media screen and (max-width: 1199px) {
+    min-width: 130px;
+    max-height: 0;
+  }
+}

@@ -5,6 +5,7 @@
   text-transform: lowercase;
   align-self: start;
   margin-bottom: $margin3;
+  letter-spacing: -.5px;
 
   @media screen and (max-width: 1199px) {
     margin: 0;
@@ -14,5 +15,6 @@
 
   @media screen and (max-width: 640px) {
     max-width: 100%;
+    letter-spacing: -.05px;
   }
 }

@@ -4,11 +4,11 @@ export default class ButtonUpManager {
   }
 
   show() {
-    this.buttonSelector.classList.remove('button__hiden-button_state-hidden');
+    this.buttonSelector.classList.remove('button_state_hidden');
   }
 
   hide() {
-    this.buttonSelector.classList.add('button__hiden-button_state-hidden');
+    this.buttonSelector.classList.add('button_state_hidden');
   }
 
   addEventListener() {
