@@ -1,7 +1,7 @@
 .about__text-list {
   position: relative;
   @extend %mainText;
-  max-width: 1fr;
+  min-width: 1fr;
   align-self: start;
 
   @media screen and (max-width: 1199px) {
@@ -9,6 +9,6 @@
   }
 
   @media screen and (max-width: 640px) {
-    max-width: 100%;
+    min-width: 100%;
   }
 }

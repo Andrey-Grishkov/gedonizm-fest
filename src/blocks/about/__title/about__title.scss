@@ -2,13 +2,15 @@
   @extend %mainTitle;
   margin: $margin5;
   margin-bottom: 0;
+  letter-spacing: -2px;
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1439px) {
     margin: $margin2-5;
     max-width: 640px;
   }
 
   @media screen and (max-width: 640px) {
     max-width: 280px;
+    letter-spacing: normal;
   }
 }
