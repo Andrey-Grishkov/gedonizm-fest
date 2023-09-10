@@ -1,12 +1,9 @@
 .popup-likesCard__text {
+    @include text(48px, 52px,500);
     margin: 0 0 0 40px;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 52px;
     @media screen and (max-width:768px){
-        margin: 20px 0 0 20px;
         max-width: 320px;
-        font-size: 32px;
-        line-height: 36px;
+        @include text(32px, 36px);
+        margin: 20px 0 0 20px;
     }
 }

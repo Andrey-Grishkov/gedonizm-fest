@@ -4,5 +4,8 @@
     position: relative;
     background-color: $snowy;
     height: 100vh;
-    width: 100vh;
+    width: 700px;
+    @media screen and (max-width:$tablet){
+        width: 100vw;
+    }
 }

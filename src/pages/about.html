@@ -216,13 +216,13 @@
       <div class="popup-card__close">
         <div class="popup__close"></div>
       </div>
+      <div class="popup-card__content">
       <img class="popup-card__img" src="<%=require('../images/img.png')%>" alt="Человек">
       <div class="popup-card__support">
         <div class="popup-card__support-icon"></div>
         <p class="popup-card__support-text"> перечисляем в
           пользу Ночлежки 10% от выручки</p>
       </div>
-      <div class="popup-card__content">
         <div class="popup-card__wrapper">
           <p class="popup-card__type">тип</p>
           <p class="popup-card__time">время</p>
@@ -231,7 +231,7 @@
         <p class="popup-card__description">Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь
           состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а
           какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно
-          обратить на это внимание и переписать их, сделав подлинно своими.<br>
+          обратить на это внимание и переписать их, сделав подлинно своими.
           апра
         </p>
         <div class="popup-card__wrapper popup-card__wrapper-grey">
@@ -282,7 +282,8 @@
             </nav>
           </div>
           <button class="button button_type_text popup-card__share-text">
-            <div class="button__icon button__icon_position_left button__icon_type_window "></div>скопировать ссылку
+            <span class="button__icon button__icon_position_left button__icon_type_window "></span>
+            <span class="button__text">скопировать ссылку</span>
           </button>
         </div>
       </div>
@@ -292,7 +293,8 @@
           <span class="button__text">хочу пойти</span>
         </button>
         <button class="button button_type_primary  popup-card__button popup-card__button-buy ">
-          <span class="button__text ">купить билет</span></button>
+          <span class="button__text ">купить билет</span>
+        </button>
       </div>
     </div>
   </div>
@@ -316,15 +318,15 @@
       <div class="popup-map">
         <div class="map" id="popup-map" style="height: 100%;">
           <div class="map__container-icons">
-            <img class="map__zoom" src="../images/icons/icon-map-zoom.svg">
-            <img class="map__pointer" src="../images/icons/icon-map-pointer.svg">
+            <img class="map__zoom" src="<%=require('../images/icons/icon-map-zoom.svg')%>" alt="Изменение масштаба">
+            <img class="map__pointer" src="<%=require('../images/icons/icon-map-pointer.svg')%>"
+              alt="Текущее положение">
           </div>
         </div>
       </div>
       <div class="popup-likesCard__elements"></div>
     </div>
   </div>
-
   <div class=" popup popup_position_center popup_type_support ">
     <div class="popup-support">
       <div class="popup-card__close popup__close-back">
@@ -345,9 +347,9 @@
           <span class="button__text">3000₽</span></button>
         <input type="text" class="popup-support__input-num" placeholder="другая сумма">
       </div>
-      <p class="popup-support__text">email</p>
+      <p class="popup-support__text popup-support__text-big-top-margin" >email</p>
       <input type="email" class="popup-support__input-email" placeholder="укажите почту для отправки чека">
-      <p class="popup-support__text">способ оплаты </p>
+      <p class="popup-support__text popup-support__text-big-top-margin">способ оплаты </p>
       <label class="popup-buy__container-type-of-payment">
         <input type="radio" name="type-of-payment" class="popup-buy__radio" checked >
         <span class="popup-buy__radio_fake"></span>
@@ -370,18 +372,18 @@
         <div class="popup__close"></div>
       </div>
       <h2 class="popup-support__maintext">купить билет</h2>
-      <p class="popup-support__text">сумма и колчество</p>
+      <p class="popup-support__text">сумма и количество</p>
       <div class="popup-buy__container">
-        <p class="popup-buy__cost">500₽</p>
+        <p class="popup-buy__cost">500 ₽</p>
         <button class="popup-buy__minus"><img src="../images/icons/minus.svg" alt="minus"
             class="popup-buy__icon"></button>
         <input type="number" class="popup-buy__quantity" value="1">
-        <button class="popup-buy__plus"><img src="../images/icons/plus.svg" alt="minus"
+        <button class="popup-buy__plus"><img src="../images/icons/plus.svg" alt="plus"
             class="popup-buy__icon"></button>
       </div>
-      <p class="popup-support__text">email</p>
+      <p class="popup-support__text popup-support__text-big-top-margin">email</p>
       <input type="email" class="popup-support__input-email" placeholder="укажите почту для отправки чека">
-      <p class="popup-support__text">способ оплаты </p>
+      <p class="popup-support__text popup-support__text-big-top-margin">способ оплаты </p>
       <label class="popup-buy__container-type-of-payment">
         <input type="radio" name="type-of-payment" class="popup-buy__radio" checked>
         <span class="popup-buy__radio_fake"></span>
@@ -398,24 +400,24 @@
         <span class="button__text">перейти к оплате</span></button>
     </div>
   </div>
-    <template id="card">
-      <div class="card">
-        <div class="card__like">
-          <button class="card__like-icon"></button>
-        </div>
-        <img class="card__img" src="../images/img.png" alt="">
-        <div class="card__wrapper">
-          <p class="card__type"></p>
-          <p class="card__time"></p>
-        </div>
-        <p class="card__title"> </p>
-        <p class="card__description"></p>
-        <div class="card__wrapper">
-          <p class="card__adress"></p>
-          <button class="card__more"></button>
-        </div>
+  <template id="card">
+    <div class="card">
+      <div class="card__like">
+        <button class="card__like-icon"></button>
       </div>
-    </template>
+      <img class="card__img" src="../images/img.png" alt="empty">
+      <div class="card__wrapper">
+        <p class="card__type"></p>
+        <p class="card__time"></p>
+      </div>
+      <p class="card__title"> </p>
+      <p class="card__description"></p>
+      <div class="card__wrapper">
+        <p class="card__adress"></p>
+        <button class="card__more"></button>
+      </div>
+    </div>
+  </template>
   <div id="location-popover" class="popover">
     <div class="popover__list"></div>
   </div>

@@ -1,9 +1,6 @@
 .card__title {
+    @include text(24px, 24px, 500);
     margin:16px 20px 0 20px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 24px;
-    font-family: 'TT Firs Neue';
     cursor: pointer;
     &:hover{
         opacity: 0.4;

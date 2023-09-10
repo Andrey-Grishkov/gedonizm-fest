@@ -6,4 +6,8 @@
     top: 20px;
     background-color: $light-grey;
     border-radius: 50%;
+    @media screen and (max-width:$tablet){
+        width: 44px;
+        height: 44px;
+    }
 }

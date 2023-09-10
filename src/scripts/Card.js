@@ -60,6 +60,11 @@ export  default class Card{
             localStorage.setItem("LikedCards",JSON.stringify(LikedCards))
             evt.target.classList.add('card__like-icon_active');
         }
+        if(JSON.parse(localStorage.getItem("LikedCards")).length>0){
+            document.querySelector('.button__icon_type_like').classList.add('card__like-icon_active')
+          }else if(JSON.parse(localStorage.getItem("LikedCards")).length<=0){
+            document.querySelector('.button__icon_type_like').classList.remove('card__like-icon_active')
+          }
     }
     _setEventListeners() {
    this._element.querySelector('.card__like-icon').addEventListener('click', (evt) => {

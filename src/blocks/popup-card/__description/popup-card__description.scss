@@ -1,8 +1,8 @@
 .popup-card__description{
-    margin: 16px 40px 0 40px;
     max-width: 620px;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: 'TT Firs Neue';
-    font-weight: 400;
+    @include text(18px, 24px,400);
+    margin: 16px auto 0 auto;
+    @media screen and (max-width:$tablet){
+        width: 320px;
+    }
 }

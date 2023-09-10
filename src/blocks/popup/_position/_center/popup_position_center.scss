@@ -1,5 +1,5 @@
 .popup_position_center{
-display: flex;
+display: none;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -13,7 +13,5 @@ bottom: 0;
 background: rgba(0, 0, 0, 0.5);
 z-index: 2;
 object-fit: fill;
-visibility: hidden;
-opacity: 0;
 transition: visibility 0.25s, opacity 0.25s linear;
 }

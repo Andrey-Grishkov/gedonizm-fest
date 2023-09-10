@@ -10,9 +10,19 @@
   overflow: hidden;
   margin-bottom: 24px;
 
-  @media screen and (max-width:$tablet) {
-    max-width: 360px;
-    min-height: 398px;
-    margin-bottom: 19px;
+.card{
+    min-width: 322px;
+    min-height: 388px;
+    border-radius: 24px;
+    background-color: #FCFAF7;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-bottom: 24px;
+    @media screen and (max-width:$tablet){
+        max-width: 360px;
+        border-radius: 0;
   }
 }
