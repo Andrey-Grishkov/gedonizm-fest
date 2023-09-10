@@ -1,4 +1,14 @@
 .form__step-description {
   @extend %mainText;
   margin: 0 0 6px 0;
+  width: 309px;
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 4px;
+    width: 320px;
+  }
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
 }

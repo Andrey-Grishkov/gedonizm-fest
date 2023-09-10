@@ -81,7 +81,7 @@
 @import "../blocks/form/__step-header/form__step-header.scss";
 @import "../blocks/form/__step-number/form__step-number.scss";
 @import "../blocks/form/__step-category/form__step-category.scss";
-@import "../blocks/form/__step-category/_contacts/form__step-category_contacts.scss";
+@import "../blocks/form/__step-contacts/form__step-contacts.scss";
 @import "../blocks/form/__step-image/form__step-image.scss";
 @import "../blocks/form/__step-radiobutton/form__step-radiobutton.scss";
 @import "../blocks/form/__step-checkbox/form__step-checkbox.scss";
@@ -99,6 +99,8 @@
 @import "../blocks/form/__step-registry/form__step-registry.scss";
 @import "../blocks/form/__step-list/form__step-list.scss";
 @import "../blocks//form/__radio/_party-type/form__radio_party-type.scss";
+@import "../blocks/form/__step-text/form__step-text.scss";
+@import "../blocks/form/__main/_last-step/form__main_last-step.scss";
 
 @import "../blocks/hidden/hidden.scss";
 

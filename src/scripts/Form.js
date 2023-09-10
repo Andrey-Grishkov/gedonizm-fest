@@ -25,12 +25,13 @@ export class Form {
       this._fotoClose = document.querySelector('.form__foto-close');
       this._fotoLabel = document.querySelector('.form__foto-label');
       this._fotoInput = document.querySelector('.form__input-file');
+      this._header = document.querySelector('.form__header');
 
       this._cityEventPopover = new Popover('#action-location', '.field_city', this._handleLocationSelect);
       this._cityEventPopover.setListItems(['Москва', 'Санкт-Петербург', 'Сочи', 'Калуга', 'Екатеринбург']);
   }
 
-  _setVisibleInputs() {
+  _setVisibleInputs(idForm) {
     this._blocksCategory.forEach((element) => {
       const categoryAttr = element.dataset.categoryId.split(',');
       if (categoryAttr.includes(this._nameCategory)){
@@ -53,7 +54,13 @@ export class Form {
         checkbox.checked = true;
         return;
       }
-    })
+    });
+
+    if ((document.documentElement.clientWidth <= 360) && (idForm !== 'formMain')) {
+      this._header.classList.add('hidden');
+    } else {
+      this._header.classList.remove('hidden');
+    }
 }
 
   _handleNext(event) {
@@ -61,6 +68,7 @@ export class Form {
     const nextFieldset = fieldset.nextElementSibling;
     fieldset.classList.add('hidden');
     nextFieldset.classList.remove('hidden');
+    return(nextFieldset.id);
   }
 
   _handleBack(event) {
@@ -68,6 +76,7 @@ export class Form {
     const previousFieldset = fieldset.previousElementSibling;
     fieldset.classList.add('hidden');
     previousFieldset.classList.remove('hidden');
+    return(previousFieldset.id);
   }
 
   _handleSubmitForm(event) {
@@ -189,13 +198,16 @@ export class Form {
   setEventListener() {
     this._buttonsNext.forEach((button) => {
       button.addEventListener('click', (event) => {
-        this._handleNext(event);
-        this._setVisibleInputs();
+        const idForm = this._handleNext(event);
+        this._setVisibleInputs(idForm);
       });
     });
 
     this._buttonsBack.forEach((button) => {
-      button.addEventListener('click', this._handleBack)
+      button.addEventListener('click', (event) => {
+        const idForm = this._handleBack(event);
+        this._setVisibleInputs(idForm);
+      });
     });
 
     this._form.addEventListener('submit', (event) => this._handleSubmitForm(event));

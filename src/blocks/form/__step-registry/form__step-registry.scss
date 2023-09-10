@@ -3,10 +3,12 @@
   gap: 0;
   @extend %additionalText;
   margin-top: $margin6;
+  margin-bottom: 8px;
   width: calc(100% - 349px);
 
   @media screen and (max-width: $desktop) {
     width: 100%;
     margin-top: $margin2-5;
+    margin-bottom: 0;
   }
 }

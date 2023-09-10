@@ -134,7 +134,7 @@
         <p class="form__step-number">шаг 2 из 4</p>
         <h2 class="form__step-name">Заполните форму</h2>
 
-        <div class="form__step-header" data-category-id="cafe">
+        <div class="form__step-text" data-category-id="cafe">
           <p class="form__step-description">Для участия вы можете выбрать:</p>
           <ul class="form__step-list">
             <li>определенную позицию из меню</li>
@@ -142,16 +142,16 @@
             <li><span>процент от продаж определенных позиций или всего меню</span></li>
           </ul>
         </div>
-        <div class="form__step-header" data-category-id="lekture">
+        <div class="form__step-text" data-category-id="lekture">
           <p class="form__step-description">Определитесь с типом мероприятия — лекция, консультация или мастер-класс.</p>
           <p class="form__step-description">Когда люди будут покупать билеты, вам будут приходить уведомления на электронную почту.</p>
         </div>
-        <div class="form__step-header" data-category-id="party">
+        <div class="form__step-text" data-category-id="party">
           <p class="form__step-description">Организуйте свою посиделку, вечеринку или концерт.</p>
           <p class="form__step-description">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
           <p class="form__step-description">Установите пожертвование, например кусочек пирога за любую комфортную сумму.</p>
         </div>
-        <div class="form__step-header" data-category-id="other">
+        <div class="form__step-text" data-category-id="other">
           <p class="form__step-description">Организуйте свою посиделку, вечеринку или концерт.</p>
           <p class="form__step-description">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
           <p class="form__step-description">Установите пожертвование, например кусочек пирога за любую комфортную сумму.</p>
@@ -169,15 +169,15 @@
           <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="выбрано">
         </span>
 
+        <div class="form__radio form__radio_online" data-category-id="lekture,other">
+          <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="online" name="lektureOnline" value="online">
+          <label class="form__step-radiogroup" for="online">онлайн</label>
+
+          <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="offline" name="lektureOnline" value="offline">
+          <label class="form__step-radiogroup" for="offline">оффлайн</label>
+        </div>
+
         <div class="form__step-inputs">
-          <div class="form__radio form__radio_online" data-category-id="lekture,other">
-            <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="online" name="lektureOnline" value="online">
-            <label class="form__step-radiogroup" for="online">онлайн</label>
-
-            <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="offline" name="lektureOnline" value="offline">
-            <label class="form__step-radiogroup" for="offline">оффлайн</label>
-          </div>
-
           <fieldset class="field field_city" data-type-event="offline">
             <label class="field__title">город</label>
             <span class="field__input field__icon" placeholder="выберите из списка">выберите из списка</span>
@@ -196,14 +196,13 @@
               <label class="form__step-radiogroup" for="partyOpen">открытое мероприятие</label>
               <p class="form__step-comment">адрес отобразим в карточке события</p>
             </div>
-
             <div class="form__step-radiogroup-comment">
               <input class="form__step-checkbox" type="radio" id="partyClosed" name="partyType">
               <label class="form__step-radiogroup" for="partyClosed">закрытое мероприятие</label>
               <p class="form__step-comment">адрес увидят только, те кому вы оправите ссылку на событие</p>
             </div>
           </div>
-          <fieldset class="field" data-category-id="lekture,party,other">
+            <fieldset class="field" data-category-id="lekture,party,other">
             <label class="field__title">дата проведения</label>
             <input type="text" class="field__input" placeholder="укажите дату в формате дд.мм.гггг">
           </fieldset>
@@ -235,14 +234,14 @@
 
   <!-- Шаг 3 -->
   <!-- контакты (кафе) -->
-  <fieldset class="form__main hidden" id="formContactsCafe">
+  <fieldset class="form__main form__main_last-step hidden" id="formContactsCafe">
     <div class="form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
         <h2 class="form__step-name">укажите контакты и часы работы</h2>
         <p class="form__step-description">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий.</p>
       </div>
-      <div class="form__step-category form__step-category_contacts">
+      <div class="form__step-contacts">
         <div class="form__step-inputs">
           <fieldset class="field" data-category-id="cafe">
             <label class="field__title">часы работы заведения</label>
@@ -308,7 +307,7 @@
     <div class="form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 4 из 4</p>
-        <h2 class="form__step-name">добавьте фото</h2>
+        <h2 class="form__step-name">добавление фото</h2>
         <p class="form__step-description">Как правило, профессиональные фото выглядят более привлекательно.</p>
         <p class="form__step-description">Технические требования:</p>
         <ul class="form__step-list">
@@ -319,7 +318,6 @@
           <li>ширина не менее 1600 пикселей</li>
         </ul>
       </div>
-      <div class="form__step-category">
         <div class="form__foto">
           <input type="file" class="form__input-file hidden">
           <img src="../images/icons/close-foto.svg" alt="закрыть" class="form__foto-close hidden">
@@ -327,7 +325,6 @@
           <img src="../images/icons/icon-foto.svg" alt="загрузить" class="form__foto-icon">
           <span class="form__foto-label"></span>
         </div>
-      </div>
     </div>
     <div class="form__actions">
       <button class="button form__button_twice button_direction_back" type="button">

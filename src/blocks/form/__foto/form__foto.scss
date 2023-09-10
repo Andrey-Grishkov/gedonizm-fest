@@ -8,9 +8,11 @@
   gap: $margin1-5;
   cursor: pointer;
   position: relative;
+  margin: 48px 0 20px;
 
   @media screen and (max-width: $tablet) {
-    width: 320px;
-    height: 220px;
+    width: 316px;
+    height: 216px;
+    margin: 20px 0;
   }
 }

@@ -8,5 +8,10 @@
   @media screen and (max-width: $tablet) {
     flex-direction: column;
     gap: $margin2-5;
+    margin: 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+    gap: 0;
   }
 }

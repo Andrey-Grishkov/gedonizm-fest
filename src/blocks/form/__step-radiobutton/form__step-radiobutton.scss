@@ -17,4 +17,9 @@
     border-color: $purple;
     color: $light-grey;
   }
+
+  @media screen and (max-width: $mobile) {
+    width: calc(100vw - 80px);
+    padding: 10px $margin2-5 - 2px;
+  }
 }

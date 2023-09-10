@@ -2,5 +2,9 @@
     @extend %mainTitle;
     margin: 0;
     letter-spacing: -1.92px;
-    text-transform: lowercase;   
+    text-transform: lowercase;
+
+    @media screen and (max-width: $mobile) {
+      letter-spacing: 0;
+    }
 }
