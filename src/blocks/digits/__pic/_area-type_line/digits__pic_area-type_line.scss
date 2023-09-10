@@ -4,11 +4,13 @@
   height: 69px;
   width: 230px;
   justify-self: end;
-  margin-top: -$margin10;
+  margin-right: 8px;
+  margin-top: 2px;
+
 
   @media screen and (max-width: 1300px) {
-    grid-area: line-small;
-    justify-self: center;
+    margin-top: -135px;
+    margin-right: -178px;
   }
 
   @media screen and (max-width: 970px) {

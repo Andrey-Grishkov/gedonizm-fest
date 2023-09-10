@@ -5,6 +5,6 @@
   list-style-type: none;
 }
 
-.about__text-list-part:last-child {
-  margin-bottom: 0;
+.about__text-list-part:last-of-type {
+  margin-bottom: 30px;
 }

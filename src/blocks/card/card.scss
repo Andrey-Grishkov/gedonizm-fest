@@ -1,3 +1,14 @@
+.card {
+  min-width: 320px;
+  min-height: 388px;
+  border-radius: 24px;
+  background-color: #FCFAF7;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-bottom: 24px;
 
 .card{
     min-width: 322px;

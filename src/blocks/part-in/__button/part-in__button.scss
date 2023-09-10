@@ -1,6 +1,9 @@
 .part-in__button {
-  @media screen and (max-width: 640px) {
+  margin-top: 14px;
+
+  @media screen and (max-width: $tablet) {
     border-color: $white;
-    color: white;
+    color: $white;
+    margin-top: 4px;
   }
 }

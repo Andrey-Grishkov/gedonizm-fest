@@ -1,12 +1,4 @@
 .slider__title{
-    margin: 0;
-    max-width: 840px;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 52px;
-    font-family: 'TT Firs Neue';
-    @media all and (max-width:$tablet){
-        font-size: 32px;
-        line-height: 36px;
-    }
+    @extend %secondTitle;
+    max-width: 840px; 
 }

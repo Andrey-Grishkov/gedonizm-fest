@@ -1,7 +1,7 @@
 .about__info {
   margin: 0 auto;
   margin-top: $margin5;
-  margin-bottom: $margin10;
+  margin-bottom: 140px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 80px;
@@ -18,11 +18,11 @@
   @media screen and (max-width: 1180px) {
     max-width: 640px;
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 10px;
     justify-items: center;
   }
 
   @media screen and (max-width: 640px) {
-    max-width: 280px;
+    min-width: 280px;
   }
 }

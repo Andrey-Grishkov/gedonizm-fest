@@ -1,3 +1,24 @@
 .digits__circle_area-type_cookies {
+  position: absolute;
   grid-area: cookies;
+  top: -110px;
+  left: -1.94vw;
+  z-index: -2;
+
+  @media screen and (max-width: 1400px) {
+    left: -7vw;
+  }
+
+  @media screen and (max-width: 1300px) {
+    left: -11vw;
+  }
+
+  @media screen and (max-width: 1300px) {
+    left: -16vw;
+  }
+
+  @media screen and (max-width: 970px) {
+    top: 0;
+    left: 0;
+  }
 }
