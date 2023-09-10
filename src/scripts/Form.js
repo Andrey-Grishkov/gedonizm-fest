@@ -90,6 +90,9 @@ export class Form {
       dataTotal['тип вечеринки'] = this._getTypeParty(this._partyType);
     };
     dataTotal = this._getInputsData(dataTotal);
+
+    location.assign("../index.html");
+    localStorage.setItem("request",true);
   }
 
   _handleCategory(event) {

@@ -1,8 +1,8 @@
 {
-  "name": "everland",
+  "name": "gedonizmfest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "pages/index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andrey-Grishkov/Everland.git"
+    "url": "https://andrey-grishkov.github.io/gedonizm-fest/"
   },
   "author": "Yandex Students Team",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Andrey-Grishkov/Everland/issues"
+    "url": "https://andrey-grishkov.github.io/gedonizm-fest/"
   },
-  "homepage": "https://github.com/Andrey-Grishkov/Everland#readme",
+  "homepage": "https://andrey-grishkov.github.io/gedonizm-fest/",
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",

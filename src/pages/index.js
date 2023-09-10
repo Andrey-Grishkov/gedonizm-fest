@@ -1,25 +1,25 @@
-import { Form } from './scripts/Form.js';
-import './pages/index.scss';
+import { Form } from '../scripts/Form.js';
+import './index.scss';
 import {
   dataFilterTagsTypeEvent,
   dataFilterTagsDays,
   containerTagsTypeDays,
   containerTagsTypeEvt,
-} from "./scripts/constants";
-import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport, buttonCardLikes,buyButton, likeButton,thanksMessage } from './scripts/constants';
-import ButtonUpManager from './components/ButtonUpManager';
-import FilterTag from "./scripts/filter-tags";
-import Section from './scripts/section';
-import Card from './scripts/Card';
-import { dataPeterburgCards } from './scripts/dataPeterburgCards';
-import popupCard from './scripts/PopupCard';
-import { LocationPopover } from './scripts/Popover';
-import popupLikesCard from './scripts/popupLikesCards';
-import popupSupport from './scripts/popupSupport.js';
-import { PhotoGallery } from './scripts/PhotoGallery';
-import Popup from './scripts/popup.js';
-import popupBuy from './scripts/popupBuy.js';
-import { Banner } from './scripts/Banner.js';
+} from "../scripts/constants.js";
+import { buttonUp, configPhotoGallery, initialPhotoGalleryImages, buttonSupport, buttonCardLikes,buyButton, likeButton, thanksMessage, requestMessage } from '../scripts/constants.js';
+import ButtonUpManager from '../components/ButtonUpManager.js';
+import FilterTag from "../scripts/filter-tags.js";
+import Section from '../scripts/section.js';
+import Card from '../scripts/Card.js';
+import { dataPeterburgCards } from '../scripts/dataPeterburgCards.js';
+import popupCard from '../scripts/PopupCard.js';
+import { LocationPopover } from '../scripts/Popover.js';
+import popupLikesCard from '../scripts/popupLikesCards.js';
+import popupSupport from '../scripts/popupSupport.js';
+import { PhotoGallery } from '../scripts/PhotoGallery.js';
+import Popup from '../scripts/popup.js';
+import popupBuy from '../scripts/popupBuy.js';
+import { Banner } from '../scripts/Banner.js';
 
 const formContainer = document.querySelector('.form');
 if (formContainer) {
@@ -35,6 +35,11 @@ if(localStorage.getItem('buy') === 'true'){
     thanksMessage.classList.add('hidden')
   }
   setTimeout(hidemessege,10000)
+}
+
+if (localStorage.getItem('request') === 'true') {
+  requestMessage.classList.remove('hidden');
+  localStorage.setItem('request', false);
 }
 
 /* карточки для слайдера */
@@ -151,7 +156,7 @@ if(buyButton){
     buyPopup.setEventListeners()
   })
 }
-/* попуп с лайкнутыми карточками  из попупа карточки */ 
+/* попуп с лайкнутыми карточками  из попупа карточки */
 if(likeButton){
   likeButton.addEventListener('click',function(){
     cardPopup.close()
