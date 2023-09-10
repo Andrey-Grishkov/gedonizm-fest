@@ -15,12 +15,14 @@
 
 @import "../blocks/field/field.scss";
 @import "../blocks/field/__input/field__input.scss";
-@import "../blocks/field/_type/field_type_icon.scss";
+@import "../blocks/field/__icon/field__icon.scss";
+@import "../blocks/field/__icon/_defined/field__icon_defined.scss";
 @import "../blocks/field/__input/_state/field__input_state_error.scss";
 @import "../blocks/field/__title/field__title.scss";
 @import "../blocks/field/__warning/field__warning.scss";
 @import "../blocks/field/__warning/_error/field__warning_error.scss";
 @import "../blocks/field/__multiline/field__multiline.scss";
+@import "../blocks/field/__multiline/_contacts/field__multiline_contacts.scss";
 
 @import "../blocks/container-buttons/container-buttons.scss";
 @import "../blocks/button/button.scss";
@@ -61,12 +63,13 @@
 @import "../blocks/form/__steps-name/form__steps-name.scss";
 @import "../blocks/form/__actions/form__actions.scss";
 @import "../blocks/form/__button/form__button.scss";
+@import "../blocks/form/__button/_twice/form__button_twice.scss";
 
 @import "../blocks/form/__step/form__step.scss";
 @import "../blocks/form/__step-header/form__step-header.scss";
 @import "../blocks/form/__step-number/form__step-number.scss";
 @import "../blocks/form/__step-category/form__step-category.scss";
-@import "../blocks/form/__step-caption/form__step-caption.scss";
+@import "../blocks/form/__step-contacts/form__step-contacts.scss";
 @import "../blocks/form/__step-image/form__step-image.scss";
 @import "../blocks/form/__step-radiobutton/form__step-radiobutton.scss";
 @import "../blocks/form/__step-checkbox/form__step-checkbox.scss";
@@ -78,6 +81,14 @@
 @import "../blocks/form/__step-comment/form__step-comment.scss";
 @import "../blocks/form/__foto/form__foto.scss";
 @import "../blocks/form/__foto-label/form__foto-label.scss";
+@import "../blocks/form/__foto-image/form__foto-image.scss";
+@import "../blocks/form/__foto-close/from__foto-close.scss";
+@import "../blocks/form/__step-caption/form__step-caption.scss";
+@import "../blocks/form/__step-registry/form__step-registry.scss";
+@import "../blocks/form/__step-list/form__step-list.scss";
+@import "../blocks//form/__radio/_party-type/form__radio_party-type.scss";
+@import "../blocks/form/__step-text/form__step-text.scss";
+@import "../blocks/form/__main/_last-step/form__main_last-step.scss";
 
 @import "../blocks/hidden/hidden.scss";
 

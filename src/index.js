@@ -26,6 +26,7 @@ if (formContainer) {
   const form = new Form();
   form.setEventListener();
 }
+
 // let forms = new Form(['cafe', 'lekture', 'party', 'other']);
 if(localStorage.getItem('buy') === 'true'){
   thanksMessage.classList.remove('hidden')

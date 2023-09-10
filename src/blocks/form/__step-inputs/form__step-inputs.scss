@@ -2,6 +2,7 @@
   margin: $margin2-5 0 0;
   @include flex(column, flex-start, flex-start);
   gap: $margin4;
+  width: 100%;
 
   @media screen and (max-width: $desktop) {
     gap: $margin2;

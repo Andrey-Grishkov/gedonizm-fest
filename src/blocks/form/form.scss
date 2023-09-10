@@ -1,18 +1,14 @@
 .form {
-    max-width: 1440px;
-    margin: $margin3 auto $margin10;
+    margin: $margin5 $margin5 $margin10;
     @include flex(column, flex-start, flex-start);
     @extend %mainText;
     gap: $margin5;
 
-    @media screen and (max-width: $desktop) {
-        max-width: 825px;
-        margin: $margin2-5 auto 0;
+    @media screen and (min-width: 1441px) {
+      margin: $margin5 max($margin5, 40px + calc((100vw - 1440px) / 2)) $margin10
     }
 
-    @media screen and (max-width: 865px) {
-        max-width: 360px;
-        margin-left: $margin2-5;
-        margin-right: $margin2-5;
+    @media screen and (max-width: $desktop) {
+        margin: $margin2-5 max($margin2-5, 240px - ($desktop - 100vw)) 0
     }
 }

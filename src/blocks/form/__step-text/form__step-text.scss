@@ -1,14 +1,14 @@
-.form__step-header {
+.form__step-text {
   @include flex(column, flex-start, flex-start);
   gap: $margin1-5;
-  width: 309px;
+  max-width: 309px;
   margin-bottom: 28px;
 
   @media screen and (max-width: $desktop) {
-    width: 320px;
+    max-width: 320px;
   }
 
   @media screen and (max-width: $mobile) {
-    margin-bottom: $margin2-5;
+    margin-bottom: 0;
   }
 }

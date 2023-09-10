@@ -1,7 +1,7 @@
 .form__steps-description {
   @extend %mainText;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $tablet) {
     grid-column: 1 / 3;
   }
 }

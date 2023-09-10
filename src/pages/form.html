@@ -49,7 +49,7 @@
     </div>
   </header>
 
-  <form action="" class="form">
+  <form class="form">
     <h1 class="form__header">Стать участником</h1>
     <!-- начальная форма -->
     <fieldset class="form__main" id="formMain">
@@ -95,36 +95,32 @@
         </div>
         <div class="form__step-category">
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="cafe" name="category"  data-category-type-event="offline" checked>
-          <label class="form__step-radiobutton" for="cafe">
-            <p class="form__step-caption">кафе/бар/ресторан</p>
+          <label class="form__step-radiobutton" for="cafe">кафе/бар/ресторан
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
 
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="lekture" name="category" data-category-type-event="online">
-          <label class="form__step-radiobutton" for="lekture">
-            <p class="form__step-caption">мастер-класс/лекция</p>
+          <label class="form__step-radiobutton" for="lekture">мастер-класс/лекция
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
 
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="party" name="category" data-category-type-event="offline">
-          <label class="form__step-radiobutton" for="party">
-            <p class="form__step-caption">посиделки/вечеринка</p>
+          <label class="form__step-radiobutton" for="party">посиделки/вечеринка
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
 
           <input class="form__step-checkbox form__step-checkbox_category" type="radio" id="other" name="category" data-category-type-event="online">
-          <label class="form__step-radiobutton" for="other">
-            <p class="form__step-caption">другое</p>
+          <label class="form__step-radiobutton" for="other">другое
             <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="карта">
           </label>
         </div>
       </div>
 
       <div class="form__actions">
-        <button class="button button_direction_back" type="button">
-          назад
+        <button class="button form__button_twice button_direction_back" type="button">
+          отмена
         </button>
-        <button class="button button_type_primary button_direction_next" type="button">
+        <button class="button form__button_twice button_type_primary button_direction_next" type="button">
           далее
         </button>
       </div>
@@ -138,57 +134,61 @@
         <p class="form__step-number">шаг 2 из 4</p>
         <h2 class="form__step-name">Заполните форму</h2>
 
-        <div class="form__step-header" data-category-id="cafe">
+        <div class="form__step-text" data-category-id="cafe">
           <p class="form__step-description">Для участия вы можете выбрать:</p>
-          <ul class="form__step-description">
+          <ul class="form__step-list">
             <li>определенную позицию из меню</li>
             <li>группу позиций</li>
             <li><span>процент от продаж определенных позиций или всего меню</span></li>
           </ul>
         </div>
-        <div class="form__step-header" data-category-id="lekture">
+        <div class="form__step-text" data-category-id="lekture">
           <p class="form__step-description">Определитесь с типом мероприятия — лекция, консультация или мастер-класс.</p>
           <p class="form__step-description">Когда люди будут покупать билеты, вам будут приходить уведомления на электронную почту.</p>
         </div>
-        <div class="form__step-header" data-category-id="party">
+        <div class="form__step-text" data-category-id="party">
           <p class="form__step-description">Организуйте свою посиделку, вечеринку или концерт.</p>
           <p class="form__step-description">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
           <p class="form__step-description">Установите пожертвование, например кусочек пирога за любую комфортную сумму.</p>
         </div>
-        <div class="form__step-header" data-category-id="other">
+        <div class="form__step-text" data-category-id="other">
           <p class="form__step-description">Организуйте свою посиделку, вечеринку или концерт.</p>
           <p class="form__step-description">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
           <p class="form__step-description">Установите пожертвование, например кусочек пирога за любую комфортную сумму.</p>
         </div>
       </div>
 
-      <div class="form__step-category">
+      <div class="form__step-registry">
 
         <input class="form__step-checkbox" type="checkbox" checked>
-        <label class="form__step-radiobutton form__step-radiobutton_checked">
+        <span class="form__step-radiobutton form__step-radiobutton_checked">
           <p class="form__step-caption" data-category-id="cafe">кафе/бар/ресторан</p>
           <p class="form__step-caption" data-category-id="lekture">мастер-класс/лекция</p>
           <p class="form__step-caption" data-category-id="party">посиделки/вечеринка</p>
           <p class="form__step-caption" data-category-id="other">другое</p>
           <img class="form__step-image" src="../images/icons/icon-checked.svg" alt="выбрано">
-        </label>
+        </span>
+
+        <div class="form__radio form__radio_online" data-category-id="lekture,other">
+          <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="online" name="lektureOnline" value="online">
+          <label class="form__step-radiogroup" for="online">онлайн</label>
+
+          <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="offline" name="lektureOnline" value="offline">
+          <label class="form__step-radiogroup" for="offline">оффлайн</label>
+        </div>
 
         <div class="form__step-inputs">
-          <div class="form__radio form__radio_online" data-category-id="lekture,other">
-            <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="online" name="lektureOnline" value="online">
-            <label class="form__step-radiogroup" for="online">онлайн</label>
-
-            <input class="form__step-checkbox form__step-checkbox_type-event" type="radio" id="offline" name="lektureOnline" value="offline">
-            <label class="form__step-radiogroup" for="offline">оффлайн</label>
-          </div>
-
-          <fieldset class="field" data-type-event="offline">
+          <fieldset class="field field_city" data-type-event="offline">
             <label class="field__title">город</label>
-            <input type="text" class="field__input field_type_icon" placeholder="выберите из списка">
+            <span class="field__input field__icon" placeholder="выберите из списка">выберите из списка</span>
           </fieldset>
-          <fieldset class="field" data-type-event="offline">
+          <fieldset class="field" data-category-id="cafe">
             <label class="field__title">название заведения</label>
             <input type="text" class="field__input" placeholder="введите название заведения">
+          </fieldset>
+          <fieldset class="field" data-category-id="lekture,party,other">
+            <label class="field__title">название мероприятия</label>
+            <input type="text" class="field__input" placeholder="введите название мероприятия">
           </fieldset>
           <div class="form__radio form__radio_party-type" data-category-id="party">
             <div class="form__step-radiogroup-comment">
@@ -196,13 +196,16 @@
               <label class="form__step-radiogroup" for="partyOpen">открытое мероприятие</label>
               <p class="form__step-comment">адрес отобразим в карточке события</p>
             </div>
-
             <div class="form__step-radiogroup-comment">
               <input class="form__step-checkbox" type="radio" id="partyClosed" name="partyType">
               <label class="form__step-radiogroup" for="partyClosed">закрытое мероприятие</label>
               <p class="form__step-comment">адрес увидят только, те кому вы оправите ссылку на событие</p>
             </div>
           </div>
+            <fieldset class="field" data-category-id="lekture,party,other">
+            <label class="field__title">дата проведения</label>
+            <input type="text" class="field__input" placeholder="укажите дату в формате дд.мм.гггг">
+          </fieldset>
           <fieldset class="field">
             <label class="field__title">контактное лицо</label>
             <input type="text" class="field__input" placeholder="введите ФИО">
@@ -213,17 +216,17 @@
           </fieldset>
           <fieldset class="field" data-category-id="cafe">
             <label class="field__title">описание</label>
-            <textarea type="text" class="field__input field__multiline" placeholder="Укажите, что из меню будет принимать участие в акции"></textarea>
+            <textarea class="field__input field__multiline" placeholder="Укажите, что из меню будет принимать участие в акции"></textarea>
           </fieldset>
         </div>
       </div>
     </div>
 
     <div class="form__actions">
-      <button class="button button_direction_back" type="button">
+      <button class="button form__button_twice button_direction_back" type="button">
         назад
       </button>
-      <button class="button button_type_primary button_direction_next" type="button">
+      <button class="button form__button_twice button_type_primary button_direction_next" type="button">
         далее
       </button>
     </div>
@@ -231,22 +234,22 @@
 
   <!-- Шаг 3 -->
   <!-- контакты (кафе) -->
-  <fieldset class="form__main hidden" id="formContactsCafe">
+  <fieldset class="form__main form__main_last-step hidden" id="formContactsCafe">
     <div class="form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 3 из 4</p>
         <h2 class="form__step-name">укажите контакты и часы работы</h2>
         <p class="form__step-description">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий.</p>
       </div>
-      <div class="form__step-category">
+      <div class="form__step-contacts">
         <div class="form__step-inputs">
           <fieldset class="field" data-category-id="cafe">
             <label class="field__title">часы работы заведения</label>
-            <input type="text" class="field__input field_type_icon" placeholder="например: 10:00-13:00, 13:00-19:00">
+            <input type="text" class="field__input" placeholder="например: 10:00-13:00, 13:00-19:00">
           </fieldset>
           <fieldset class="field" data-category-id="lekture,party,other">
             <label class="field__title">время проведения</label>
-            <input type="text" class="field__input field_type_icon" placeholder="например: 18:00-22:00">
+            <input type="text" class="field__input" placeholder="например: 18:00-22:00">
           </fieldset>
 
           <fieldset class="field">
@@ -261,12 +264,12 @@
             <input type="text" class="field__input" placeholder="+7(" value="+7(">
           </fieldset>
 
-          <fieldset class="field" data-type-event="online">
+          <fieldset class="field" data-category-id="cafe,party">
             <label class="field__title">ссылка на сайт</label>
             <input type="text" class="field__input" placeholder="https://" value="https://">
           </fieldset>
 
-          <fieldset class="field" data-category-id="cafe">
+          <fieldset class="field" data-category-id="cafe,party">
             <label class="field__title">ссылки на соцсети</label>
             <input type="text" class="field__input" placeholder="каждую ссылку с новой строки">
           </fieldset>
@@ -278,11 +281,11 @@
 
           <fieldset class="field">
             <label class="field__title">описание</label>
-            <textarea type="text" class="field__input field__multiline"  data-category-id="cafe,other"
+            <textarea class="field__input field__multiline field__multiline_contacts"  data-category-id="cafe,other"
                       placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
-            <textarea type="text" class="field__input field__multiline"  data-category-id="lekture"
+            <textarea class="field__input field__multiline field__multiline_contacts"  data-category-id="lekture"
                       placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"></textarea>
-            <textarea type="text" class="field__input field__multiline" data-category-id="party"
+            <textarea class="field__input field__multiline field__multiline_contacts" data-category-id="party"
                       placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"></textarea>
           </fieldset>
 
@@ -290,10 +293,10 @@
       </div>
     </div>
     <div class="form__actions">
-      <button class="button button_direction_back" type="button">
+      <button class="button form__button_twice button_direction_back" type="button">
         назад
       </button>
-      <button class="button button_type_primary button_direction_next" type="button">
+      <button class="button form__button_twice button_type_primary button_direction_next" type="button">
         далее
       </button>
     </div>
@@ -304,12 +307,10 @@
     <div class="form__step">
       <div class="form__step-header">
         <p class="form__step-number">шаг 4 из 4</p>
-        <h2 class="form__step-name">добавьте фото</h2>
+        <h2 class="form__step-name">добавление фото</h2>
         <p class="form__step-description">Как правило, профессиональные фото выглядят более привлекательно.</p>
-        <p class="form__step-description"></p>
         <p class="form__step-description">Технические требования:</p>
-        <p class="form__step-description"></p>
-        <ul class="form__step-description">
+        <ul class="form__step-list">
           <li>формат: jpeg, png</li>
           <li>вес: не более 5 МБ</li>
           <li>альбомная ориентация</li>
@@ -317,18 +318,19 @@
           <li>ширина не менее 1600 пикселей</li>
         </ul>
       </div>
-      <div class="form__step-category">
         <div class="form__foto">
-          <img src="../images/icons/icon-foto.svg" alt="фото" class="form__foto-icon">
+          <input type="file" class="form__input-file hidden">
+          <img src="../images/icons/close-foto.svg" alt="закрыть" class="form__foto-close hidden">
+          <img src="#" alt="фото" class="form__foto-image hidden">
+          <img src="../images/icons/icon-foto.svg" alt="загрузить" class="form__foto-icon">
           <span class="form__foto-label"></span>
         </div>
-      </div>
     </div>
     <div class="form__actions">
-      <button class="button button_direction_back" type="button">
+      <button class="button form__button_twice button_direction_back" type="button">
         назад
       </button>
-      <button class="button button_type_primary" type="submit">
+      <button class="button form__button_twice button_type_primary" type="submit">
         завершить
       </button>
     </div>
@@ -608,6 +610,10 @@
 </template>
 
 <div id="location-popover" class="popover">
+  <ul class="popover__list"></ul>
+</div>
+
+<div id="action-location" class="popover">
   <ul class="popover__list"></ul>
 </div>
 
