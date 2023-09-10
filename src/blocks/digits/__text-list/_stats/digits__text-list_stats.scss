@@ -1,0 +1,9 @@
+.digits__text-list_stats {
+  position: absolute;
+  max-width: 303px;
+  bottom: $margin2-5;
+
+  @media screen and (max-width: 970px) {
+    text-align: center;
+  }
+}

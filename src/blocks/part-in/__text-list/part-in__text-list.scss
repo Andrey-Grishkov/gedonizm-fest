@@ -1,0 +1,15 @@
+.part-in__text-list {
+  width: 420px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  @include flex(column, flex-start, flex-start);
+  gap: 18px;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    color: $white;
+    margin: 0;
+    gap: 16px;
+  }
+}

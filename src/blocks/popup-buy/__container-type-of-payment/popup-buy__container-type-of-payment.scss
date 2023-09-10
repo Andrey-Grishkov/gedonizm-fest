@@ -1,0 +1,11 @@
+.popup-buy__container-type-of-payment{
+    display: flex;
+    width: 532px;
+    margin: 0 auto;
+    height: 48px;
+    align-items: center;
+    cursor: pointer;
+    @media screen and (max-width: $tablet) {
+        width: 320px;
+    }
+}

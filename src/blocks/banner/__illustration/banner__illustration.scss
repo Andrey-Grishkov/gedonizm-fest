@@ -1,0 +1,15 @@
+.banner__illustration {
+  width: 420px;
+  height: auto;
+  fill: $dark-primary;
+  box-sizing: border-box;
+
+  @media all and (max-width: $tablet) {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+.banner_color_primary .banner__illustration {
+  fill: $white;
+}

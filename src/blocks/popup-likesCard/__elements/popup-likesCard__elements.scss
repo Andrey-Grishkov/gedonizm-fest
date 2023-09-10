@@ -1,13 +1,25 @@
 .popup-likesCard__elements {
-     padding-left: 40px;
-     padding-right: 40px;
-    max-width: 800px;
-    display: grid;
+    padding: 20px 40px 0 40px;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     column-gap: 17px;
     row-gap: 20px;
-    @media screen and (max-width:768px){
+    background-color: $light-grey;
+    overflow: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: #EBE9ED;
+        border-radius: 8px;
+    
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: #96949E;
+        border-radius: 8px;
+    }
+    @media screen and (max-width:$tablet){
         padding: 0;
         margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);

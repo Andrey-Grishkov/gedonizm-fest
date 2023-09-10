@@ -1,13 +1,11 @@
 .field__input {
   // height: 24px;
   outline: none;
+  @extend  %mainText;
   border: 2px solid #96949e;
   border-radius: 24px;
   padding: 10px 22px;
   border-style: solid;
-  font-family: 'TT Firs Neue';
-  font-size: 18px;
-  font-weight: normal;
   color: #3b3748;
   line-height: 24px;
   &:focus {

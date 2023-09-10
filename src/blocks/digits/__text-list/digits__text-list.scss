@@ -1,0 +1,13 @@
+.digits__text-list {
+  position: relative;
+  @extend %mainText;
+  align-self: center;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: 100%;
+  }
+}

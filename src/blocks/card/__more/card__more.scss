@@ -1,11 +1,8 @@
 .card__more {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
+    @extend  %additionalText;
     color: #96949E;
-    font-family: 'TT Firs Neue';
     background-color: transparent;
     border: 0  none;
     cursor: pointer;
+    padding: 1px;
 }

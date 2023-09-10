@@ -9,6 +9,6 @@
 
   @media screen and (max-width: $tablet) {
     @include flex(column, space-between, flex-start);
+    gap: 48px;
   }
-
 }
