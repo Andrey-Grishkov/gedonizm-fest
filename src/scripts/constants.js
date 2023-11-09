@@ -52,9 +52,9 @@ export const configPhotoGallery = {
 };
 
 export const initialPhotoGalleryImages = [
-  { src: '../images/gallery/image-park.svg', alt: 'Парк' },
-  { src: '../images/gallery/image-girl.svg', alt: 'Девушка' },
-  { src: '../images/gallery/image-coctails.svg', alt: 'Коктели' },
-  { src: '../images/gallery/image-exhibition.svg', alt: 'Выставка' },
-  { src: '../images/gallery/image-party.svg', alt: 'Вечеринка' }
+  { src: './images/gallery/image-park.svg', alt: 'Парк' },
+  { src: './images/gallery/image-girl.svg', alt: 'Девушка' },
+  { src: './images/gallery/image-coctails.svg', alt: 'Коктели' },
+  { src: './images/gallery/image-exhibition.svg', alt: 'Выставка' },
+  { src: './images/gallery/image-party.svg', alt: 'Вечеринка' }
 ];
