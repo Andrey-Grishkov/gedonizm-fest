@@ -48,7 +48,7 @@ ___
 
 __Наставник__: [Алексей Мартынов](https://github.com/FenixDeveloper) 🏇
 __Project Manager__: Юлия Сметанина 🏌🏻
-__Team Leader__: [Андрей Гришков](https://github.com/Andrey-Grishkov) 🏋🏼‍♂️
+__Team Leader__: [Андрей Гришков](https://github.com/Andrey-Grishkov) 🏋🏼‍♂   ️
 
 #### Команда разработчиков:
 [Тяжеломов Андрей](https://github.com/tyazhelomov) 🏃
