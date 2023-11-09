@@ -46,15 +46,15 @@ ___
 
 ### 👨‍👨‍👦‍👦 Команда проекта
 
-__Наставник__: [Алексей Мартынов](https://github.com/FenixDeveloper) 🏇
-__Project Manager__: Юлия Сметанина 🏌🏻
-__Team Leader__: [Андрей Гришков](https://github.com/Andrey-Grishkov) 🏋🏼‍♂   ️
+__Наставник__: [Алексей Мартынов](https://github.com/FenixDeveloper) 🏇\
+__Project Manager__: Юлия Сметанина 🏌🏻\
+__Team Leader__: [Андрей Гришков](https://github.com/Andrey-Grishkov) 🏋🏼‍️
 
 #### Команда разработчиков:
-[Тяжеломов Андрей](https://github.com/tyazhelomov) 🏃
-[Роман Маскаев](https://github.com/polpotcamp) 🤺
-[Екатерина Турова](https://github.com/turovaes) 🤸🏻‍♀️
-[Игорь Извольский](https://github.com/Izvolsky) 🚴‍♀️
+[Тяжеломов Андрей](https://github.com/tyazhelomov) 🏃\
+[Роман Маскаев](https://github.com/polpotcamp) 🤺\
+[Екатерина Турова](https://github.com/turovaes) 🤸🏻‍♀️\
+[Игорь Извольский](https://github.com/Izvolsky) 🚴‍♀️\
 [Дмитрий Валентинов](https://github.com/ValentinovDmitrii) ⛹🏽‍♂️
 
 ___
