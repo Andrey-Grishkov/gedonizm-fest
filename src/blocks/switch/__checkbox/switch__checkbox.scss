@@ -1,0 +1,40 @@
+.switch__checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+
+ &:checked + .switch__label .switch__span-content_list {
+    color: #FFFFFF;
+  }
+
+  &:checked + .switch__label .switch__image_list {
+    filter: none;
+  }
+
+  &:checked + .switch__label:before {
+    transform: translateX(141px);
+    transition: transform 300ms linear;
+  }
+
+  &:checked + .switch__label .switch__span-content_map {
+    color:#96949E;
+  }
+
+  &:checked + .switch__label .switch__image_map {
+    filter: invert(61%) sepia(6%) saturate(355%) hue-rotate(211deg) brightness(97%) contrast(90%);
+  }
+
+  @media screen and (max-width: 360px) {
+    &:checked + .switch__label:before {
+      transform: translateX(90px);
+    }
+  }
+}
+
+

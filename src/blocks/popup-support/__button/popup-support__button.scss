@@ -1,0 +1,9 @@
+.popup-support__button{
+    width: 532px;
+    margin: 32px auto 40px auto;
+    padding: 0;
+    @media all and (max-width:$tablet) {
+       width: 320px;
+       margin: 32px auto 32px auto;
+    }
+}

@@ -1,0 +1,8 @@
+.popup-card__title{
+    max-width: 620px;
+    @include text(32px, 36px,500);
+    margin: 32px auto 0 auto;
+    @media screen and (max-width:$tablet){
+        width: 320px;
+    }
+}

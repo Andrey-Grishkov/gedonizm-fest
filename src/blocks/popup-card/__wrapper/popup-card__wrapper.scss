@@ -1,0 +1,11 @@
+.popup-card__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 40px;
+    @media screen and (max-width:$tablet){
+        width:320px ;
+        margin: 0 auto;
+    }
+}

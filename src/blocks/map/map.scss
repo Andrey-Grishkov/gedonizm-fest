@@ -1,0 +1,20 @@
+.map {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media screen and (max-width: 730px) {
+  .map {
+    height: 100%;
+  }
+}

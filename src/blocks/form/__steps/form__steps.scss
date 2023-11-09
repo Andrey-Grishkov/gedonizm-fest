@@ -1,0 +1,13 @@
+.form__steps {
+  @include grid(0);
+  margin: -8px 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: orderedlist;
+  @extend %thirdTitle;
+  width: 100%;
+
+  @media screen and (max-width: $mobile) {
+    margin: 0;
+  }
+}

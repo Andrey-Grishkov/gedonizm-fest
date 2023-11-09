@@ -1,0 +1,7 @@
+.form__button_twice {
+  width: 204px;
+
+  @media screen and (max-width: $mobile) {
+    width: 154px;
+  }
+}

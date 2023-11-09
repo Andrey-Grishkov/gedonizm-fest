@@ -1,0 +1,24 @@
+.button {
+  position: relative;
+  min-width: 152px;
+  padding: 12px 24px;
+  max-height: 48px;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.5s ease-in, border-color 0.5s ease-in, background-image 0.5s ease-in, opacity 0.5s ease-in, cursor 0.5s ease-in;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 1024px) {
+  .button {
+    min-width: 148px;
+    max-height: 44px;
+    border-radius: 22px;
+    padding: 12px 20px;
+  }
+}

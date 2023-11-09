@@ -1,0 +1,15 @@
+.about__trust-pic {
+  @include backgroundImage('../images/man-illustration.svg');
+  width: 510px;
+  background-size: contain;
+  margin-top: 70px;
+  margin-left: 70px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 970px) {
+    display: none;
+  }
+}

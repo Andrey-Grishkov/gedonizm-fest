@@ -1,0 +1,25 @@
+.form__step-radiobutton {
+  @include flex(row, space-between);
+  @extend %mainText;
+  font-weight: 500;
+  gap: 0;
+  content: "";
+  border: 2px solid #3B3748;
+  width: calc(100% - 48px);
+  border-radius: 26px;
+  cursor: pointer;
+  z-index: 2;
+  padding: 10px calc($margin3 - 2px);
+  align-items: center;
+
+ .form__step-checkbox:checked + & {
+    background-color: $purple;
+    border-color: $purple;
+    color: $light-grey;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: calc(100vw - 80px);
+    padding: 10px $margin2-5 - 2px;
+  }
+}

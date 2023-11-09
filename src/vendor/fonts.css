@@ -1,0 +1,27 @@
+/*Шрифты*/
+@font-face {
+  src:
+    url("../vendor/fonts/TT_Firs_Neue_Medium.woff2") format('woff2'),
+    url("../vendor/fonts/TT_Firs_Neue_Medium.woff") format('woff'),
+    url("../vendor/fonts/TT_Firs_Neue_Medium.ttf") format('truetype'),
+    url("../vendor/fonts/TT_Firs_Neue_Medium.eot") format('eot'),
+    url("../vendor/fonts/TT_Firs_Neue_Medium.otf") format('otf');
+
+
+  font-family: 'TT Firs Neue';
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src:
+    url("../vendor/fonts/TT_Firs_Neue_Regular.woff2") format('woff2'),
+    url("../vendor/fonts/TT_Firs_Neue_Regular.woff") format('woff'),
+    url("../vendor/fonts/TT_Firs_Neue_Regular.ttf") format('truetype'),
+    url("../vendor/fonts/TT_Firs_Neue_Regular.eot") format('eot'),
+    url("../vendor/fonts/TT_Firs_Neue_Regular.otf") format('otf');
+
+  font-family: 'TT Firs Neue';
+  font-weight: 'normal';
+  font-style: normal;
+}

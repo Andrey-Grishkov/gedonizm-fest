@@ -1,0 +1,21 @@
+.form__steps-item {
+  @include grid();
+  grid-template-columns: 77px 306px 417px;
+  grid-template-rows: auto;
+  align-items: start;
+   box-shadow: 0px -1px 0px 0px $light-grey inset;
+   padding: $margin2-5 0;
+   width: 100%;
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 68px calc(100vw - 68px - $margin5);
+    grid-template-rows: auto;
+    column-gap: 0;
+    row-gap: $margin2;
+  }
+
+  &::before {
+    counter-increment: orderedlist;
+    content: counter(orderedlist);
+  }
+}

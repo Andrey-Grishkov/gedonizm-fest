@@ -1,0 +1,8 @@
+.card__title {
+    @include text(24px, 24px, 500);
+    margin:16px 20px 0 20px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.4;
+    }
+}

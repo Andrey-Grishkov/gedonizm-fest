@@ -1,0 +1,11 @@
+.slider__content {
+    padding-top: 80px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @media all and (max-width:$tablet) {
+        padding: 40px 20px;
+    }
+}

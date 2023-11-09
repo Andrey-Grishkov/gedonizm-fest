@@ -1,0 +1,15 @@
+.field__multiline {
+  min-height: 108px;
+  resize: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: $desktop) {
+  .field__multiline {
+    min-height: 76px;
+    border-radius: 22px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 18px;
+  }
+}

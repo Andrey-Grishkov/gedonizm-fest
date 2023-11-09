@@ -1,0 +1,32 @@
+.switch {
+  background: #ebe9ed;
+  border-radius: 100px;
+  overflow: hidden;
+  width: 282px;
+  height: 48px;
+  text-align: center;
+  font-family: TT Firs Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  border: 4px solid #ebe9ed;
+  color: #96949e;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 360px) {
+  .switch:before {
+    width: 86px;
+  }
+
+  .switch {
+    width: 180px;
+    height: 44px;
+    border-width: 2px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

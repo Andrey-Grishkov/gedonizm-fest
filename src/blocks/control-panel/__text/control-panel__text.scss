@@ -1,0 +1,10 @@
+.control-panel__text {
+  @extend  %mainText;
+  color: #3b3748;
+  text-align: center;
+}
+@media screen and (max-width: 960px) {
+  .control-panel__text {
+    display: none;
+  }
+}

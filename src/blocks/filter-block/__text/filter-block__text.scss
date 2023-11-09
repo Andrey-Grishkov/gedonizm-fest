@@ -1,0 +1,5 @@
+.filter-block__text {
+  @include text(32px, 36px,500);
+  color: #3b3748;
+  padding: 16px 0;
+}

@@ -1,0 +1,14 @@
+.about__text-list {
+  position: relative;
+  @extend %mainText;
+  min-width: 1fr;
+  align-self: start;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    min-width: 100%;
+  }
+}

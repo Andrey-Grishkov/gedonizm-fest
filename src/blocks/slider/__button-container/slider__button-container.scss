@@ -1,0 +1,10 @@
+.slider__button-container {
+  max-width: 240px;
+  margin-top: 8px;
+  margin-bottom: 80px;
+
+  @media all and (max-width:$tablet) {
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+}

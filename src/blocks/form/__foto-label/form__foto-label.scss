@@ -1,0 +1,19 @@
+.form__foto-label {
+  &::before {
+    content: "перетащите фото сюда или загрузите с устройства";
+  }
+  &::after {
+    content: "";
+  }
+
+  @media  (max-width: $desktop) {
+    &::after {
+      content: "загрузить с устройства";
+    }
+    &::before {
+      content: "";
+    }
+  }
+}
+
+

@@ -1,0 +1,12 @@
+.map-container-grid {
+  display: grid;
+  grid-template-columns: 370px auto;
+  grid-template-rows: 88px auto;
+}
+
+@media screen and (max-width: 730px) {
+  .map-container-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}

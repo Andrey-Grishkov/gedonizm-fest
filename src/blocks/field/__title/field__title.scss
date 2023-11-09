@@ -1,0 +1,13 @@
+.field__title {
+  width: 432px;
+  @extend  %mainText;
+  padding: 0 24px;
+  color: #96949E;
+}
+
+@media screen and (max-width: $desktop) {
+  .field__title {
+    padding: 0 20px;
+    width: 280px;
+  }
+}

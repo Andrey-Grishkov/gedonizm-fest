@@ -1,0 +1,15 @@
+.form__step-image {
+  position: relative;
+  width: $desktop-size-icon;
+  height: $desktop-size-icon;
+  align-self: center;
+  z-index: 2;
+  pointer-events: none;
+  // margin: $margin1-5 $margin3 $margin1-5 0;
+
+  @media screen and (max-width: $desktop) {
+    width: $mobile-size-icon;
+    height: $mobile-size-icon;
+
+  }
+}

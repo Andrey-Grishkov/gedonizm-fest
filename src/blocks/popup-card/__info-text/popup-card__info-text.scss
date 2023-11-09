@@ -1,0 +1,9 @@
+.popup-card__info-text{
+    min-width: 176px;
+    @extend  %additionalText;
+    margin: 12px 0;
+    word-wrap: break-word;
+    @media screen and (max-width:$tablet){
+        min-width: 104px;
+    }
+}

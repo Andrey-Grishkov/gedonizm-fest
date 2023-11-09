@@ -1,0 +1,15 @@
+.switch__image {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  z-index: 2;
+  pointer-events: none;
+  transition: filter 0.3s linear;
+}
+
+@media screen and (max-width: 540px) {
+  .switch__image {
+    display: none;
+  }
+}

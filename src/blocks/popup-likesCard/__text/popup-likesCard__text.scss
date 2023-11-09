@@ -1,0 +1,9 @@
+.popup-likesCard__text {
+    @include text(48px, 52px,500);
+    margin: 0 0 0 40px;
+    @media screen and (max-width:768px){
+        max-width: 320px;
+        @include text(32px, 36px);
+        margin: 20px 0 0 20px;
+    }
+}

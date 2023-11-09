@@ -1,0 +1,9 @@
+.gallery__slider {
+  display: none;
+  gap: 12px;
+  margin-top: 12px;
+
+  @media screen and (max-width: $tablet) {
+    @include flex (row, center, center);
+  }
+}

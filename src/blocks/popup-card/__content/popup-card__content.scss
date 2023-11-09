@@ -1,0 +1,17 @@
+.popup-card__content{
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: #EBE9ED;
+        border-radius: 8px;
+    
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: #96949E;
+        border-radius: 8px;
+    }
+}

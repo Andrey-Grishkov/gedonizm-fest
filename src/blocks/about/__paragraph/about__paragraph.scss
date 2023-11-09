@@ -1,0 +1,9 @@
+.about__paragraph {
+    width: 100%;
+    @extend %mainText;
+    margin: 18px 0 0 0;
+    &:first-child{
+        margin: 0;
+    }
+}
+

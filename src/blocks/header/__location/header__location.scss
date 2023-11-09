@@ -1,0 +1,12 @@
+.header__location {
+  justify-content: flex-start;
+  min-width: 230px;
+
+  &:hover .button__text {
+    color: $violet;
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}

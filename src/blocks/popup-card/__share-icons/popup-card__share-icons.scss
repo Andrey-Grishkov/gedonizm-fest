@@ -1,0 +1,8 @@
+.popup-card__share-icons{
+    @media screen and (max-width:$tablet){
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        width: 180px;
+    }
+}

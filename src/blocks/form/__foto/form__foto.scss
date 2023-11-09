@@ -1,0 +1,18 @@
+.form__foto {
+  @include flex(column, center, center);
+  @extend %mainText;
+  width: 527px;
+  height: 294px;
+  border: 2px solid $dark-secondary;
+  border-radius: 22px;
+  gap: $margin1-5;
+  cursor: pointer;
+  position: relative;
+  margin: 48px 0 20px;
+
+  @media screen and (max-width: $tablet) {
+    width: 316px;
+    height: 216px;
+    margin: 20px 0;
+  }
+}

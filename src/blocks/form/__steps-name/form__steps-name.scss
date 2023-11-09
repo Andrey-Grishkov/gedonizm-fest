@@ -1,0 +1,8 @@
+.form__steps-name {
+  margin: 0;
+  letter-spacing: -0.32px;
+
+  @media screen and (max-width: $mobile) {
+    letter-spacing: 0;
+  }
+}

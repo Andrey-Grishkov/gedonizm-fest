@@ -1,0 +1,8 @@
+.card__more {
+    @extend  %additionalText;
+    color: #96949E;
+    background-color: transparent;
+    border: 0  none;
+    cursor: pointer;
+    padding: 1px;
+}

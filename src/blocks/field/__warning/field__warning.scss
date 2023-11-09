@@ -1,0 +1,16 @@
+.field__warning {
+  width: 396px;
+  @extend  %mainText;
+  padding: 0 24px 0 60px;
+  color: #3B3748;
+  background: url('../images/icons/field_warning_icon.svg') no-repeat 24px 24px;
+  background-position: left 24px center;
+}
+
+@media screen and (max-width: $desktop) {
+  .field__warning {
+    width: 252px;
+    padding: 0 20px 0 48px;
+    background-size: 20px 20px;
+  }
+}

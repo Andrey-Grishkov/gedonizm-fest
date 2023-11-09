@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Гедонизм-фест</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Главная страница проекта Гедонизм-фест">
+  <meta name="keywords" content="Ночлежка, помощь, гедонизм-фест, социальный проект, кафе, бездомные">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=de6ccfa4-cdb5-4899-b61d-65a7d18cfc29&lang=ru_RU"
+    type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map("popup-map", {
+        center: [55.76, 37.64],
+        zoom: 7
+      });
+    }
+  </script>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="content header__content">
+      <div class="header__logo">
+        <a class="logo logo_size_small" href="index.html"></a>
+        <button class="button button_type_text header__location">
+          <span class="button__icon button__icon_position_left button__icon_type_checkpoint"></span>
+          <span class="button__text">Cанкт-Петербург</span>
+        </button>
+      </div>
+      <nav>
+        <ul class="list header__navigation">
+          <li class="list__item">
+            <a href="api-info-page.html" class="button button_type_text header__navigation-button">
+              <span class="button__text">куда пойти</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="form.html" class="button button_type_text header__navigation-button">
+              <span class="button__text">стать участником</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="about.html" class="button button_type_text header__navigation-button">
+              <span class="button__text">о фестивале</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="button button_type_text button-likeCards">
+          <span class="button__icon button__icon_position_left button__icon_type_like"></span>
+          <span class="button__text">хочу пойти</span>
+        </button>
+        <button class="button button_type_primary header__actions_hidden_small">
+          <span class="button__text">поддержать</span>
+        </button>
+        <button class="header__menu"></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="banner_type_error" class="banner hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">ошибка 404</h2>
+          <h4 class="banner__subtitle">похоже, такой страницы не существует</h4>
+          <button class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </button>
+        </div>
+        <img src="<%=require('../images/banners/illustration-404.svg')%>" alt="ошибка 404" class="banner__illustration">
+      </div>
+    </section>
+    <section id="banner_type_thanks" class="banner banner_color_primary hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">спасибо!</h2>
+          <h4 class="banner__subtitle">благодаря вам мы сможем помочь людям начать жить снова</h4>
+          <button class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </button>
+        </div>
+        <img src="<%=require('../images/banners/illustration-thanks.svg')%>" alt="спасибо" class="banner__illustration">
+      </div>
+    </section>
+    <section id="banner_type_success" class="banner banner_color_primary hidden">
+      <div class="banner__content">
+        <div class="banner__text-content">
+          <h2 class="banner__title">спасибо за заявку!</h2>
+          <h4 class="banner__subtitle">с вами свяжутся в ближайшее время</h4>
+          <button class="button button_type_secondary banner__button">
+            <span class="button__text">на главную</span>
+          </button>
+        </div>
+        <img src="<%=require('../images/banners/illustration-thanks-application.svg')%>" alt="спасибо за заявку"
+          class="banner__illustration">
+      </div>
+    </section>
+    <div class="main-screen">
+      <div class="main-screen__img"></div>
+      <div class="main-screen__more">
+        <p class="main-screen__more-text">узнать больше</p>
+        <a href="#about" class="main-screen__more-button">
+          <img class="main-screen__more-buttonIcon" src="../images/icons/downPointer.svg" alt="Узнать больше">
+        </a>
+      </div>
+    </div>
+    <section class="main-about content">
+      <h1 class="main-about__title">просто приятно помогать</h1>
+      <div class="main-about__text-block">
+        <p class="main-about__paragraph">
+          Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте
+          домашние посиделки с друзьями — и помогайте бездомным!
+        </p>
+        <p class="main-about__paragraph">
+          Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.
+        </p>
+        <button class="button button_type_secondary main-about__button" onclick="document.location='about.html'">
+          <span class="button__text">узнать подробнее</span>
+        </button>
+      </div>
+    </section>
+    <section class="slider">
+      <div class=" content slider__content">
+        <h2 class="slider__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
+        <div class="slider__buttons">
+          <button class="button button_type_secondary">
+            <span class="button__text">посетить мастер класс</span>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
+          </button>
+          <button class="button button_type_secondary">
+            <span class="button__text">выпить кофе</span>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
+          </button>
+          <button class="button button_type_secondary">
+            <span class="button__text">не выходить из дома</span>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
+          </button>
+          <button class="button button_type_secondary">
+            <span class="button__text">сходить на экскурсию</span>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
+          </button><button class="button button_type_secondary">
+            <span class="button__text">побывать в музее</span>
+            <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"></span>
+          </button>
+        </div>
+        <div class="slider__elements"></div>
+        <div class="slider__button-container">
+          <button class="button button_type_primary" onclick="document.location='api-info-page.html'">
+            <span class="button__text">смотреть все события</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="digits">
+      <h2 class="digits__subtitle">цифры дня</h2>
+      <div class="digits__main">
+        <div class="digits__circle digits__circle_area-type_dinner digits__circle_size_big">
+          <div class="digits__pic digits__pic_area-type_dinner"></div>
+          <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_right">
+            <h2 class="digits__subtitle">2 500</h2>
+            <p class="digits__text-list-part">
+              cтолько обедов приготовили для нуждающихся
+            </p>
+          </div>
+        </div>
+        <div class="digits__pic digits__pic_area-type_line"></div>
+        <div class="digits__circle digits__circle_size_small"></div>
+        <div class="digits__circle digits__circle_area-type_cookies digits__circle_size_big">
+          <div class="digits__pic digits__pic_area-type_cookies"></div>
+          <div class="digits__text-list digits__text-list_stats digits__text-list_stats_position_left">
+            <h2 class="digits__subtitle">15 000</h2>
+            <p class="digits__text-list-part">
+              cтолько печенья продали в поддержку акции
+            </p>
+          </div>
+        </div>
+        <div class="digits__pic digits__pic_area-type_lines"></div>
+      </div>
+    </section>
+    <section class="part-in">
+      <h2 class="part-in__title">примите акцию у&nbsp;себя</h2>
+      <ul class="part-in__text-list">
+        <li class="part-in__text-list-item">
+          Кто может принять участие в акции?
+        </li>
+        <li class="part-in__text-list-item">
+          Абсолютно все. Продавайте кофе в своем кафе, устройте мастер-класс
+          по вязанию или соберите друзей у себя дома. Помогать просто,
+          узнайте подробности и заполните форму
+        </li>
+        <li class="part-in__text-list-item">
+          <a class="button button_type_secondary part-in__button" href="form.html">
+            <span class="button__text">стать участником</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="photo-block content">
+      <h2 class="photo-block__title">#hedonismfest</h2>
+      <p class="photo-block__subtitle">Ставь хештег и попади в ленту на сайте</p>
+      <div class="gallery">
+        <div class="gallery__slider">
+        </div>
+      </div>
+    </section>
+    <section class="team content">
+      <h2 class="team__title">уже в команде</h2>
+      <ul class="team__list">
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+        <li class="team__list-item"></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="content footer__content">
+      <div class="footer__illustration"></div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">организатор:</h3>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Ночлежка</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="mailto:info@hedonismfest.ru"
+                class="button button_type_text footer__button footer__button_color_primary">
+                <span class="button__text">info@hedonismfest.ru</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">сделано с любовью:</h3>
+        <nav class="footer__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">Fastsol Digital</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">shishki.collective</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="button button_type_text footer__button">
+                <span class="button__text">студентами Яндекс.Практикума</span>
+                <span class="button__icon button__icon_position_right button__icon_type_link"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__block-title">мы в соцсетях:</h3>
+        <nav class="footer__nav">
+          <ul class="list footer__social">
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_facebook"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_instagram"></a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="footer__social-icon footer__social-icon_type_vk"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <div class="popup Card-popup">
+    <div class=" popup-card">
+      <div class="popup-card__close">
+        <div class="popup__close"></div>
+      </div>
+      <div class="popup-card__content">
+      <img class="popup-card__img" src="<%=require('../images/img.png')%>" alt="Человек">
+      <div class="popup-card__support">
+        <div class="popup-card__support-icon"></div>
+        <p class="popup-card__support-text"> перечисляем в
+          пользу Ночлежки 10% от выручки</p>
+      </div>
+        <div class="popup-card__wrapper">
+          <p class="popup-card__type">тип</p>
+          <p class="popup-card__time">время</p>
+        </div>
+        <p class="popup-card__title">Название</p>
+        <p class="popup-card__description">Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь
+          состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а
+          какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно
+          обратить на это внимание и переписать их, сделав подлинно своими.
+          апра
+        </p>
+        <div class="popup-card__wrapper popup-card__wrapper-grey">
+          <p class="popup-card__info-text">длительность</p>
+          <p class="popup-card__info-text" id="duration"></p>
+        </div>
+        <div class="popup-card__wrapper">
+          <p class="popup-card__info-text">стоимость</p>
+          <p class="popup-card__info-text" id="cost">11</p>
+        </div>
+        <div class="popup-card__wrapper popup-card__wrapper-grey">
+          <p class="popup-card__info-text">площадка</p>
+          <p class="popup-card__info-text" id="place">11</p>
+        </div>
+        <div class="popup-card__wrapper">
+          <p class="popup-card__info-text">адрес</p>
+          <div class="popup-card__adress-wrapper">
+            <p class="popup-card__info-text" id="adress">11</p>
+            <p class=" popup-card__info-text popup-card__adress-more"></p>
+          </div>
+        </div>
+        <div class="popup-card__wrapper popup-card__wrapper-grey">
+          <p class="popup-card__info-text">телефон</p>
+          <p class="popup-card__info-text" id="phone">11</p>
+        </div>
+        <div class="popup-card__wrapper ">
+          <p class="popup-card__info-text">соц.сети</p>
+          <p class="popup-card__info-text" id="social">11</p>
+        </div>
+        <div class="popup-card__wrapper popup-card__share">
+          <div class="footer__block popup-card__share-links">
+            <h3 class="footer__block-title">мы в соцсетях:</h3>
+            <nav class="footer__nav popup-card__share-icons">
+              <ul class="list footer__social">
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_facebook"></a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_vk"></a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_twitter"></a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="footer__social-icon footer__social-icon_type_telegram"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="button button_type_text popup-card__share-text">
+            <span class="button__icon button__icon_position_left button__icon_type_window "></span>
+            <span class="button__text">скопировать ссылку</span>
+          </button>
+        </div>
+      </div>
+      <div class="popup-card__buttons">
+        <button class="button button_type_secondary popup-card__button popup-card__button-like">
+          <span class="button__icon button__icon_position_left button__icon_type_like"></span>
+          <span class="button__text">хочу пойти</span>
+        </button>
+        <button class="button button_type_primary  popup-card__button popup-card__button-buy ">
+          <span class="button__text ">купить билет</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup Likescard-popup">
+    <div class="popup-likesCard">
+      <button class="button button_type_text popup-likesCard__button-back ">
+        <span class="button__text">назад</span>
+        <span class="button__icon button__icon_position_right button__icon_type_pointer-secondary"
+          style="transform: scale(-1, 1)"></span>
+      </button>
+      <div class="popup-card__close popup-likesCard__close">
+        <div class="popup__close"></div>
+      </div>
+      <p class="popup-likesCard__text">все адреса</p>
+      <div class="popup-likesCard__buttons">
+        <button class="popup-likesCard__button-off popup-likesCard__map">карта</button>
+        <button class=" popup-likesCard__button-off popup-likesCard__button-on popup-likesCard__list">список</button>
+      </div>
+      <div class="popup-likesCard__elements popup-likesCard__elements_opened"></div>
+      <div class="popup-map">
+        <div class="map" id="popup-map" style="height: 100%;">
+          <div class="map__container-icons">
+            <img class="map__zoom" src="<%=require('../images/icons/icon-map-zoom.svg')%>" alt="Изменение масштаба">
+            <img class="map__pointer" src="<%=require('../images/icons/icon-map-pointer.svg')%>"
+              alt="Текущее положение">
+          </div>
+        </div>
+      </div>
+      <div class="popup-likesCard__elements"></div>
+    </div>
+  </div>
+  <div class=" popup popup_position_center popup_type_support ">
+    <div class="popup-support">
+      <div class="popup-card__close popup__close-back">
+        <div class="popup__close"></div>
+      </div>
+      <h2 class="popup-support__maintext">пожертвовать</h2>
+      <p class="popup-support__text">сумма</p>
+      <div class="popup-support__container-price">
+        <button class="button button_type_primary">
+          <span class="button__text">100₽</span></button>
+        <button class="button button_type_secondary">
+          <span class="button__text">300₽</span></button>
+        <button class="button button_type_secondary">
+          <span class="button__text">500₽</span></button>
+        <button class="button button_type_secondary">
+          <span class="button__text">1000₽</span></button>
+        <button class="button button_type_secondary">
+          <span class="button__text">3000₽</span></button>
+        <input type="text" class="popup-support__input-num" placeholder="другая сумма">
+      </div>
+      <p class="popup-support__text popup-support__text-big-top-margin" >email</p>
+      <input type="email" class="popup-support__input-email" placeholder="укажите почту для отправки чека">
+      <p class="popup-support__text popup-support__text-big-top-margin">способ оплаты </p>
+      <label class="popup-buy__container-type-of-payment">
+        <input type="radio" name="type-of-payment" class="popup-buy__radio" checked >
+        <span class="popup-buy__radio_fake"></span>
+        <span class="popup-buy__radio_text">баноковской картой</span>
+      </label>
+      <label class="popup-buy__container-type-of-payment">
+        <input type="radio" name="type-of-payment" class="popup-buy__radio">
+        <span class="popup-buy__radio_fake" ></span>
+        <span class="popup-buy__radio_text">PayPal</span>
+      </label>
+      <p class="popup-support__description">Нажимая кнопку «перейти к оплате» вы соглашаетесь с условиями <a href="#" class="popup-support__description-link">оферты,
+        политики</a> в отношении обработки и защиты персональных данных и даёте <a href="#" class="popup-support__description-link">согласие</a> на их обработку </p>
+      <button class="button button_type_primary popup-support__button">
+        <span class="button__text">перейти к оплате</span></button>
+    </div>
+  </div>
+  <div class=" popup popup_position_center popup_type_buy">
+    <div class="popup-support">
+      <div class="popup-card__close popup__close-back">
+        <div class="popup__close"></div>
+      </div>
+      <h2 class="popup-support__maintext">купить билет</h2>
+      <p class="popup-support__text">сумма и количество</p>
+      <div class="popup-buy__container">
+        <p class="popup-buy__cost">500 ₽</p>
+        <button class="popup-buy__minus"><img src="../images/icons/minus.svg" alt="minus"
+            class="popup-buy__icon"></button>
+        <input type="number" class="popup-buy__quantity" value="1">
+        <button class="popup-buy__plus"><img src="../images/icons/plus.svg" alt="plus"
+            class="popup-buy__icon"></button>
+      </div>
+      <p class="popup-support__text popup-support__text-big-top-margin">email</p>
+      <input type="email" class="popup-support__input-email" placeholder="укажите почту для отправки чека">
+      <p class="popup-support__text popup-support__text-big-top-margin">способ оплаты </p>
+      <label class="popup-buy__container-type-of-payment">
+        <input type="radio" name="type-of-payment" class="popup-buy__radio" checked>
+        <span class="popup-buy__radio_fake"></span>
+        <span class="popup-buy__radio_text">баноковской картой</span>
+      </label>
+      <label class="popup-buy__container-type-of-payment">
+        <input type="radio" name="type-of-payment" class="popup-buy__radio">
+        <span class="popup-buy__radio_fake"></span>
+        <span class="popup-buy__radio_text">PayPal</span>
+      </label>
+      <p class="popup-support__description">Нажимая кнопку «перейти к оплате» вы соглашаетесь с условиями <a href="#"
+          class="popup-support__description-link">оферты,
+          политики</a> в отношении обработки и защиты персональных данных и даёте <a href="#"
+          class="popup-support__description-link">согласие</a> на их обработку </p>
+      <button class="button button_type_primary popup-support__button">
+        <span class="button__text">перейти к оплате</span></button>
+    </div>
+  </div>
+  <template id="card">
+    <div class="card">
+      <div class="card__like">
+        <button class="card__like-icon"></button>
+      </div>
+      <img class="card__img" src="../images/img.png" alt="empty">
+      <div class="card__wrapper">
+        <p class="card__type"></p>
+        <p class="card__time"></p>
+      </div>
+      <p class="card__title"> </p>
+      <p class="card__description"></p>
+      <div class="card__wrapper">
+        <p class="card__adress"></p>
+        <button class="card__more"></button>
+      </div>
+    </div>
+  </template>
+  <div id="location-popover" class="popover">
+    <ul class="popover__list"></ul>
+  </div>
+
+</body>
+
+</html>

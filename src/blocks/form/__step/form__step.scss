@@ -1,0 +1,17 @@
+.form__step {
+  @include flex(row, flex-start, flex-start);
+  padding-left: 0;
+  justify-self: center;
+  gap: $margin5;
+  width: 100%;
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    gap: $margin2-5;
+    margin: 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+    gap: 0;
+  }
+}

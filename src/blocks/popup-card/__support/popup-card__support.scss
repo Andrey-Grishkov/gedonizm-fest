@@ -1,0 +1,13 @@
+.popup-card__support{
+    width: 100%;
+    height: 36px;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    @include text(16px, 20px,400);
+    @media screen and (max-width:$tablet){
+        height: 52px;
+        padding: 0 0 0 20px;
+        width: 100%;
+    }
+}

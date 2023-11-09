@@ -1,0 +1,18 @@
+.header__menu {
+  display: none;
+  @include backgroundImage('../images/icons/menu.svg');
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    @include backgroundImage('../images/icons/menu-hover.svg');
+  }
+
+  @media screen and (max-width: $desktop) {
+    display: block;
+  }
+}

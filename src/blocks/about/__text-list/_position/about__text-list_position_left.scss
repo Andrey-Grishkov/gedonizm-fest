@@ -1,0 +1,9 @@
+.about__text-list_position_left {
+  margin-left: 280px;
+  margin-right: -110px;
+  margin-top: 65px;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+  }
+}
